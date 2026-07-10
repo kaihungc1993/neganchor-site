@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黑魔法·權謀霸術工程學 · 課程對策速查</title>
+<style>
+:root {
+  --bg: #f7f5f0; --panel: #ffffff; --ink: #26221c; --muted: #6b6357;
+  --line: #e4ddd0; --accent: #8a5a2b; --quote: #efe9dd;
+  --danger: #8a3a3a; --danger-bg: #f6e8e6; --good: #2e6b4f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Heiti TC", sans-serif;
+  font-size: 16px; line-height: 1.75;
+}
+.wrap { max-width: 1100px; margin: 0 auto; padding: 36px 22px 80px; }
+h1 { font-size: 28px; margin: 0 0 12px; }
+.intro p { color: var(--muted); margin: 8px 0; }
+h2 {
+  font-size: 21px; margin: 44px 0 14px; display: flex; align-items: center; gap: 10px;
+  border-bottom: 1px solid var(--line); padding-bottom: 8px;
+}
+.sq { display: inline-block; width: 12px; height: 12px; flex: 0 0 12px; }
+.count { font-size: 13px; color: var(--muted); font-weight: 400; margin-left: 6px; }
+.toolbar { margin: 18px 0 4px; display: flex; gap: 10px; flex-wrap: wrap; }
+.toolbar button {
+  border: 1px solid var(--line); background: var(--panel); color: var(--muted);
+  padding: 6px 14px; border-radius: 6px; font-size: 14px; cursor: pointer; font-family: inherit;
+}
+.toolbar button:hover { border-color: var(--accent); color: var(--accent); }
+.nav { margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.nav a {
+  display: inline-flex; align-items: center; gap: 7px; text-decoration: none;
+  color: var(--muted); border: 1px solid var(--line); background: var(--panel);
+  padding: 5px 12px; border-radius: 6px; font-size: 14px;
+}
+.nav a:hover { color: var(--ink); border-color: var(--accent); }
+.callout {
+  border: 1px solid #dcc0bb; border-left: 4px solid var(--danger); background: var(--danger-bg);
+  border-radius: 6px; padding: 16px 20px; margin: 26px 0;
+}
+.callout h2 { border: none; margin: 0 0 8px; padding: 0; color: var(--danger); font-size: 18px; }
+.callout ul { margin: 0; padding-left: 22px; }
+.callout li { margin: 6px 0; }
+table.matrix { width: 100%; border-collapse: collapse; background: var(--panel); margin: 14px 0 6px; }
+table.matrix th, table.matrix td {
+  border: 1px solid var(--line); padding: 10px 14px; text-align: left; vertical-align: top; font-size: 15px;
+}
+table.matrix th { background: var(--quote); }
+table.matrix td:nth-child(2) { color: var(--good); }
+table.matrix td:nth-child(3) { color: var(--danger); }
+.grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+details.card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+}
+details.card[open] { border-color: var(--accent); }
+details.card summary {
+  list-style: none; cursor: pointer; padding: 14px 16px 12px; display: flex;
+  flex-wrap: wrap; align-items: center; gap: 6px 8px; position: relative; padding-right: 96px;
+}
+details.card summary::-webkit-details-marker { display: none; }
+details.card summary:hover { background: var(--bg); }
+.card-head { display: flex; align-items: center; gap: 8px; flex: 0 1 auto; }
+.card-head .sq { width: 10px; height: 10px; flex: 0 0 10px; }
+.card-title { font-weight: 600; font-size: 16px; }
+.chap {
+  position: absolute; top: 12px; right: 16px; margin: 0; font-size: 12px; color: var(--accent); border: 1px solid var(--line);
+  background: var(--quote); padding: 1px 8px; border-radius: 10px; white-space: nowrap;
+}
+.card-meta { margin: 0; display: flex; gap: 6px; flex-wrap: wrap; flex: 0 1 auto; }
+.pill {
+  font-size: 12px; border: 1px solid; border-radius: 10px; padding: 0 8px; line-height: 1.6;
+}
+.card-summary { flex-basis: 100%; width: 100%; margin: 8px 0 0; color: var(--muted); font-size: 14.5px; }
+.card-body {
+  border-top: 1px solid var(--line); padding: 6px 20px 16px; font-size: 15px;
+}
+.card-body ul { padding-left: 22px; margin: 10px 0; }
+.card-body li { margin: 6px 0; }
+.card-body p { margin: 10px 0; }
+.card-body strong { color: var(--accent); }
+.card-body blockquote {
+  margin: 12px 0; padding: 8px 16px; background: var(--quote);
+  border-left: 3px solid var(--accent); border-radius: 4px; color: #4a4236;
+}
+::selection { background: #d9c4a3; }
+footer { margin-top: 60px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>黑魔法·權謀霸術工程學 · 課程對策速查</h1>
+<div class="intro">
+<p>本頁把整門課 200 集（1-1 至 5-40）裡所有「可直接上手」的實戰對策拆出來，打散原本的章節順序，改按 心態識局 → 向上 → 向下 → 派系鬥爭 → 官腔話術 → 自保識人 六個實戰叢集重新歸類；每張卡收合時只顯示一句摘要，展開後是具體操作與但書。理論脈絡請回《全課精讀》查原文。</p>
+</div>
+<div class="toolbar">
+<button onclick="document.querySelectorAll('details.card').forEach(d=>d.open=true)">全部展開</button>
+<button onclick="document.querySelectorAll('details.card').forEach(d=>d.open=false)">全部收合</button>
+</div>
+<nav class="nav">
+<a href="#cluster-0"><span class="sq" style="background:#7b5aa6"></span>心態與識局：看懂權力遊戲<span class="count">12</span></a>
+<a href="#cluster-1"><span class="sq" style="background:#a6552e"></span>向上：搞定上級阿法<span class="count">17</span></a>
+<a href="#cluster-2"><span class="sq" style="background:#2e6b4f"></span>向下：御下與帶團隊<span class="count">30</span></a>
+<a href="#cluster-3"><span class="sq" style="background:#8a5a2b"></span>派系與鬥爭<span class="count">19</span></a>
+<a href="#cluster-4"><span class="sq" style="background:#8a3a3a"></span>官腔與話術<span class="count">7</span></a>
+<a href="#cluster-5"><span class="sq" style="background:#3a5a8a"></span>自保與識人<span class="count">15</span></a>
+</nav>
+<div class="callout">
+<h2>紅線：這些事做了就等著出局</h2>
+<ul>
+<li>越權是職場大忌——動用不屬於你的權力，再善意也要先請示；身為上級看到下屬越權，則要大張旗鼓表態警告，否則權力旁落。（3｜28~32、5｜16~20）</li>
+<li>牽涉自己的違法任務碰都別碰——那是「投名狀」：一起犯法＝把柄互扣的恐怖平衡，想退出時共犯會堵你的嘴。真要玩只玩法律灰色地帶。（5｜12~14）</li>
+<li>別檢舉上級的不法情事——匿名難一擊必殺、光「被懷疑是你」就足以弄死你；具名＝賣主求榮，日後接手的阿法永不提拔你。正解是暗中蒐證、等他自爆。（5｜12~14）</li>
+<li>出包絕不甩鍋給直屬阿法——寧可自己吞；在「得罪一個阿法」與「得罪兩個阿法」之間永遠選前者。（5｜26）</li>
+<li>高層鬥爭時別自以為置身事外——不選邊＝同時對兩邊宣戰；置身事外需要「雙方都爭取你」的絕對主導權，基層沒有。（4｜5~9、5｜9~11）</li>
+<li>別在大阿法面前質問賞罰雙標、別提另一位同事的名字——只會被升級成「看不懂政治訊號的超級白目」。（1｜32~36）</li>
+<li>社交認證別當贈品廉價送出——那是替挖牆角者開後門、替自己養競爭者、替盟友製造衝突；想拿，讓人憑本事來掙。（3｜27）</li>
+<li>合夥時獨門技術／研發絕不上交——那是你唯一的恐怖平衡籌碼，交出去就等著被榨乾踢出局。（3｜34、5｜24）</li>
+<li>沒有信任基礎絕不送大禮——可能被當政敵試探、被拿來檢舉博清高，甚至給早就看你派系不爽的上級開戰藉口。（2｜13~15、2｜17~19）</li>
+<li>別用遠超行情的薪水收買人心——肥羊配大鐮刀，只會吸來心懷不軌的病態人格；賞罰要有度。（4｜11~15）</li>
+<li>別用職務上的合法傷害權刁難大阿法的親友團——他們直達天聽，你會被大阿法唸＋親友團報復雙面夾擊。（5｜6~8）</li>
+<li>離職時別講真話、別提改善建議——會走到離職必帶心寒或無能為力，建議不會被採納，還可能被抹殺痕跡甚至封殺；官腔收尾，本事留到下一站。（1｜19~20）</li>
+</ul>
+</div>
+
+<section class="cluster" id="cluster-0">
+<h2><span class="sq" style="background:#7b5aa6"></span>心態與識局：看懂權力遊戲<span class="count">12 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">抓住「支持」這條主線</span><span class="chap">1｜1、1｜6~7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">權力＝資源，資源＝支持；判斷任何權力場先問「誰的支持流向誰」，升官看實質權力有沒有增加，不是頭銜。</p>
+</summary>
+<div class="card-body"><ul>
+<li>想取得並維繫權力，必先有資源（人、錢、人才、武器），而資源歸根結底來自「有人願意支持你」——選舉、股東會、職場派系萬變不離其宗。</li>
+<li>支持的本質是「聲望值」：你在對方心中的分數，來自你能否滿足他的「價值缺口」。分數被扣到零，對方就準備走人或取而代之。</li>
+<li>操作：把多數人當「動物性＋少量社會性」來研究其渴望（升遷、健康、擇偶），能滿足需求就換到支持；並把「時間變化」納入觀察——人是會變的。</li>
+<li>但書：頭銜位階只在蜜月期有用——部屬一邊把你當神拜、一邊考核你；爬得越高、人設與期待越大，破滅時的鄙視來得越兇。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">先辨識關鍵阿法，再排升遷藍圖</span><span class="chap">1｜2~4、1｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">別只盯最高層——找出真正握有基層支持、能左右大局的關鍵阿法；短期目標是「成為直屬上級的關鍵阿法」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>權力四角色：大阿法（最高領導）、關鍵阿法（能決定大阿法生死的關鍵少數）、小阿法（部門頭頭）、基層。基層聽的是朝夕相處的小阿法，不是遙遠的大阿法——想掌權就把關鍵阿法餵飽、綁住。</li>
+<li>第一步：辨識組織裡誰是關鍵阿法、要具備什麼能力才算小阿法；第二步：靠「能解決別人解決不了的問題」從基層升成小阿法。</li>
+<li>公司太大就先聚焦最近的上級：以「成為部門經理的關鍵阿法」為務實短期目標。</li>
+<li>基層階段重點觀察三件事：上頭能不能提拔人才（給時間確認是裝死還是沒看見）、有無值得拉攏的平級同事（平級最易交心，嫡系與革命情感要在共患難中蘊釀）、直屬上級的權力架構。</li>
+<li>心法：高築牆、廣積糧、緩稱王；棒打出頭鳥，務必沉住氣——可以暫當「奴隸」，但要有理由。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">職場三種心態</span><span class="chap">2｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">循序漸進、認清互相利用、保有往上爬的慾望——貢獻與升官之間還隔著「上頭有沒有看到你的價值」這道橋。</p>
+</summary>
+<div class="card-body"><ul>
+<li>萬丈高樓平地起：基層→小阿法→關鍵阿法→大阿法一層層升級，基層環境最多養出小阿法；要懂藏拙、別操之過急。</li>
+<li>職場是互相利用的地方：不論在哪個位置，都要向上提供價值（換提拔）、向下提供價值（換效忠）。只給錢的老闆留不住人，奴性十足的員工只能當工具。</li>
+<li>別像藍藥丸純情男以為「老實貢獻總有一天被看到」——沒有「被看見」這道橋，你的貢獻只是自爽，甚至被攔胡、替人作嫁。往上爬的慾望會驅使你找方法、揣摩上意。</li>
+<li>場域判斷：小公司靠能力崛起機會較高；大企業官僚，需要技巧讓價值被看見；官場政治圈則權謀比能力更重要。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">分辨對方效忠的對象，再用對收買方式</span><span class="chap">1｜8~10</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">部下的「忠誠」其實在滿足自己的價值缺口——先判斷他效忠的是理念、利益還是你本人，再用最划算的方式滿足他。</p>
+</summary>
+<div class="card-body"><ul>
+<li>忠誠常是狐假虎威：部下怕的是你背後的「虎」。要嘛自己變成虎，要嘛讓虎一直站在你背後。</li>
+<li>效忠理念者收買成本最低（旗號正中其理念就死忠相挺），但屬少數，且只憑理念挺你恰恰代表他離權力圈很遠。</li>
+<li>效忠利益者是多數：對小阿法用「綁樁」（標案、灰色地帶分利），對基層給眼前的「牛肉」（直接影響荷包的東西）。</li>
+<li>效忠你本人最難也最稀有，魅力來自三關鍵：能力（用對方最自豪的能力輾壓、或掌握他沒有的能力）、人品（＝可預測性，穩定的契約精神）、黑暗面（「不小心」露出對敵人殘忍的狠辣，讓人不敢與你為敵）。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">三種遊戲規則：階段對了再比</span><span class="chap">2｜20</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">基層→小阿法比「能力」、小阿法→關鍵阿法比「實力」、關鍵阿法→大阿法比「血腥與投胎」——用錯階段的打法就是送死。</p>
+</summary>
+<div class="card-body"><ul>
+<li>第一階段（比能力）：把能力當收攬人心的手段——指導別人工作（先隨口試探、別當說教鬼）、承擔責任讓更上級看見你；此時弱小，盡量不樹敵、善用官腔、絕不檯面上翻臉，趁沒人注意快速升級。</li>
+<li>第二階段（比實力）：思路從個人升級成手下派系人馬的利益；靠結盟或吃掉其他小阿法的組織壯大，換取其他小阿法及其派系的支持；仍要低調防功高震主。</li>
+<li>第三階段（比血腥）：大阿法只有一個——開國（最穩最難）、竊國（血腥不下開國）、繼承（投對胎）。爭不贏就豁達：能當到關鍵阿法基本不缺錢，別硬在刀口舔血。</li>
+<li>此模型也可套整個產業生態（經銷商、中盤、總代理、原廠），把自家公司的位置帶入對照。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">看懂合法傷害權，打點好每一個「小鬼」</span><span class="chap">1｜21、1｜22~24</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">真正能傷你的是「可辦可不辦」的主觀裁量——助理、行政、財務、人資、業績認列、法務、驗收這七種不起眼的位子都能卡死你的錢與前途。</p>
+</summary>
+<div class="card-body"><ul>
+<li>合法傷害權＝職務讓人能「合乎規定地」動到你的金錢或升遷，要害在灰色地帶的主觀意識：對方可做可不做時，選擇辦你。「擋人財路如殺人父母」。</li>
+<li>「閻王易見，小鬼難纏」：上位者與人為善才是最佳策略；真正難纏的是渴求名利的小鬼。</li>
+<li>七種要打點的職位：①私人助理（阿法的耳目，想接近難搞的阿法可從助理下手）；②秘書／行政（好收買，一杯手搖飲就搞定）；③財務（報帳核銷挑毛病＝財務版「再議」）；④人資（你把價值傳達給上頭的合法管道，官僚越繁雜越掌你生死）；⑤業績認列單位（報價與工時全看交情）；⑥法務／風評單位（一句「有重大法律風險」就是包裝成專業的打槍）；⑦驗收／採購（挾私怨就一直找理由退件）。</li>
+<li>心法：凡握有合法傷害權者都值得投注資源——不只不能得罪，還要想競爭對手會經營到什麼程度。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">看懂權謀案例的四個思路</span><span class="chap">2｜24~27</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">拆任何案例先問四件事——當事人的真實階級、各方的籌碼與目標、有沒有被道德制約綁住、樣本數夠不夠多。</p>
+</summary>
+<div class="card-body"><ul>
+<li>階級：判斷角色「真實階級」（有德不配位者也有潛龍）才能預判；也要看資料作者與受眾的階級——重點放在事實陳述、對價值觀持保留（「喜歡看見別人成功」是給普羅大眾的洗腦）。</li>
+<li>籌碼（＝實力）：對方遠強於你→低調別惹；相當→頂多慘勝；遠弱於你→輕易捏死。情報越細越能看到隱藏籌碼；也要看清各方目標——很多開戰純屬意氣之爭，贏了沒好處。</li>
+<li>價值觀：儒家制約的三個坑——縮限想像空間（「他應該不會這麼壞吧」）、以追利為恥（錢該花刀口上）、無法理解罪惡（糾結「他怎麼能這樣」而非冷靜拆招）。被捅一次就該醒。</li>
+<li>樣本數：人心陰暗面是「內隱知識」，只能靠大量案例累積。別把一本經典讀爛——同樣時間多讀幾本，以量取勝。</li>
+<li>想懂高階內心世界，最省成本的路是「大量閱讀歷史小說＋換位思考」，可模擬出約八成。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">認清公司的本質：獨裁，不是民主</span><span class="chap">1｜31</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">公司是一台以獲利為唯一目的的獨裁機器——別因「太封建、愛官腔」離職，換到哪都一樣；基層可隨時替換，能撼動大阿法的只有關鍵阿法。</p>
+</summary>
+<div class="card-body"><ul>
+<li>公司付薪水是「買你的時間與能力」去槓桿更大獲利，不是養你；整間公司為上頭大阿法的美好生活打拼。</li>
+<li>基層唯一武器是罷工，但基層可替換——號召集體離職只是把「可替換的人數」變多，大阿法照簽離職單。</li>
+<li>大阿法真正怕的是關鍵阿法離職（培養耗時、離開多半變最棘手的競爭者）——想有談判力，就把自己變成關鍵阿法。</li>
+<li>遇到肯付高薪的好老闆＝運氣好或他精算過，不改變獨裁本質；判斷處境時別把善意當制度。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">灰色地帶的判讀與生存</span><span class="chap">1｜32~36</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">規定的白紙黑字只是表象——語焉不詳的規定＝刻意留的灰色地帶；要在裡面爽，就躲在檯面下、別當高調白目。</p>
+</summary>
+<div class="card-body"><ul>
+<li>灰色地帶三特色：小福利（隨時可因看你不爽收回）、小奸小惡（被容忍是因為對阿法有價值）、不在公開場合發生（一上檯面就非黑即白、監督者必須執法）。</li>
+<li>「犯法」有四個可操作階段，大阿法都有裁量空間：是否自覺犯規、是否被抓到、犯行大小、懲罰力度（甚至能「表面貶官、實則升官」）。真正檢測你和大阿法關係的，是你犯錯後他怎麼處置你。</li>
+<li>判讀規定的誠意：真想解決問題的規定必有配套、滴水不漏；語焉不詳＝留灰色地帶，先想它的政治意義在哪、小心別踩。</li>
+<li>生存法則：職場不是講道理的地方——能否提供價值、阿法喜不喜歡你，才決定你在灰色地帶裡是被罩還是被辦。跟大阿法計較規定雙不雙標，是職場最蠢的行為。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">能力練成實力：長線押極端軟能力</span><span class="chap">1｜11~15</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">能力是個人本事、實力是能調動的資源人脈；長線練權謀（極端軟能力）、中期補管理（中介能力）、硬技術當談資，循潛龍→貴人→槓桿累積。</p>
+</summary>
+<div class="card-body"><ul>
+<li>能力三層：極端硬能力（專業，練到贏過同領域八成人即符合效益，可委外）；軟硬中介能力（人員調配、行銷、客訴等領域管理，跨界必須優先補上，否則被顧問型關鍵阿法整碗端走）；極端軟能力（權謀與人性，可降維打擊套用任何行業，終身累積）。</li>
+<li>識人是大阿法第一能力、沒有上限：能在人才未成名前便宜拉攏，也能吸引聰明人投靠。練習法——獨處時預測事態發展，熟練後當話題篩出識貨的聰明人。</li>
+<li>用人：純聰明人眼高手低、智勇雙全者難駕馭且伴隨功高震主、「沒心眼」型最適合一般職位；對專業強社交零的人要先在專業上打趴他才駕馭得了。</li>
+<li>三個時期：潛龍（耐住性子練專業＋觀察人際規律）→貴人（先有能力才有遇貴人的本錢；貴人不限有錢長輩，能力超強的員工、可靠廠商都算）→槓桿（拿資源上桌博更大利益，走「大家爽」的開放路線，別走割韭菜的封閉路線）。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">把所有人都當曹操</span><span class="chap">5｜39</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">平常用最難對付的梟雄當假想敵做心智模擬，回到現實就舉重若輕——修煉方向是「怎樣讓一票人才死心塌地替我賣命」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>現實中曹操很少、笨蛋超多，但把人當笨蛋會便宜行事、陰溝裡翻船；高心理負擔的「負重訓練」讓你面對真高手不失準。</li>
+<li>梟雄的精準指標：身邊有一票真心賣命、獨當一面的人才（不是隨便可取代的人力）。以此自問需要什麼——能力、實力、心理素質、收買人心的手段。</li>
+<li>別當教主：靠洗腦只吸得到無腦信徒、心腹全是庸才走狗；觀察一個領袖看其「終極目的」是貪圖被吹捧，還是為更高勝利權衡妥協。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">爭權之前，先問自己要什麼</span><span class="chap">2｜39、2｜40、5｜40</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">分憂與架空只一線之隔、「被架空」不一定是壞事——先問「不掌權能不能拿到我要的」；學權謀的終局是不再使用權謀。</p>
+</summary>
+<div class="card-body"><ul>
+<li>分憂＝搶「大阿法嫌麻煩」的事；架空＝連專屬決策權也搶走。二把手有架空之心幾乎必然，真正決定動不動手的是「現況夠不夠爽」與「大阿法留沒留後手」。</li>
+<li>當你已拿到真正想要的（錢、清閒），樂得當躺領分紅的太上皇也是贏——前提是你鎮得住接班人（對方知道你才是大魔王、做事還仰賴你的社交認證）。</li>
+<li>權謀天天用＝拿心血去換（過慧易夭）；名利越大、魔鬼的誘惑與代價越大。對多數人而言「選擇當好人」不是道德，是利益與代價的最佳平衡。</li>
+<li>高段的不再用權謀：設計出「讓每個人基於自私卻能推動組織前進」的遊戲規則，勝過事事鬥心機。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<section class="cluster" id="cluster-1">
+<h2><span class="sq" style="background:#a6552e"></span>向上：搞定上級阿法<span class="count">17 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">選一條「被利用」的路線：螺絲釘／利劍／軍師／走狗</span><span class="chap">2｜2~6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">想被重用，先主動創造被阿法利用的價值——職務功能、扛重責分憂、提供洞見、走狗鷹犬四條路線可複選。</p>
+</summary>
+<div class="card-body"><ul>
+<li>路線一（職務功能）：用本事增加收益或維持運轉。連履歷都要寫「能讓阿法聯想到可利用你」的經歷，無關的好事寫了不加分甚至暗扣分。</li>
+<li>路線二（扛重責分憂）：替阿法解決棘手鳥事，紅得最快，但需三前提——有大事出現（運氣）、大事落到你手上（權謀，至少要有小阿法資格）、你解決得了（能力）。可遇不可求。</li>
+<li>路線四（走狗鷹犬）：核心是無條件維護大阿法的權力，第一排序是大阿法而非自己。告密仔分支——交換在檯面下、當面講、不留證據；先閒聊摸清大阿法價值觀，再「假裝不小心」說漏嘴帶情報；要當就當「有動機」的、宣誓效忠把利益最大化，別當婊子又立牌坊。打手分支——揣摩大阿法「想動卻不能動誰」再出手，猜錯有風險，不能自己去問。</li>
+<li>自認不夠聰明也沒關係：忠心耿耿（一心維護大阿法利益）自然會做出正確決定，出包大阿法也較願意幫你扛。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">幕僚／軍師的生存守則</span><span class="chap">2｜2~6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#7b5aa6;color:#7b5aa6">心腹</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">幕僚要躲幕後、把光環留給大阿法；開口前先評估信任夠不夠——信任不夠就別講，等他主動問（有問再講）。</p>
+</summary>
+<div class="card-body"><ul>
+<li>三道門檻：知識洞見（權謀屬通才）、智慧（過濾輕重緩急、守口如瓶——洩密只容許犯一次）、信任（最難，越茲事體大越需要高度信任）。</li>
+<li>越大的組織越難贏得信任，走幕僚路線從新創／小組織切入較有機會（諸葛亮選兩手空空的劉備，不選已有荀彧郭嘉的曹操）。</li>
+<li>兩種參謀人格：進攻型（擅開拓與陰狠詭計，需黑暗面，缺點過狠招反撲）、防守型（見招拆招、爛牌少輸為贏，一般人可修煉）。看大阿法是哪種人選路線；只能選一個就選防守型。</li>
+<li>心態：成功不必在我、功成身退，苗頭不對趁早閃人。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">用忠誠當價值，請調重點新部門</span><span class="chap">2｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">忠誠（能久任、靠得住）本身就是日益稀缺的價值；想紅得快，主動請調到公司重點發展的新部門。</p>
+</summary>
+<div class="card-body"><ul>
+<li>新市場屬不穩定系統、容易有大事，且大阿法初期必親自盯著——戰績會被看見（搞砸也黑得快）；爽部門穩定不被盯，適合養老不適合上位。</li>
+<li>面試官預設員工平均只待兩年，「會待很久」的人大阿法才願意投放培養資源；待一年的多半淪為免洗。</li>
+<li>忠誠換到的是三張門票：長線培養計劃、嫡系人馬身份、被託付重大責任。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">被拗的解法：調整工作節奏</span><span class="chap">2｜8~12</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">績效越好越被拗——把工作量減到舒服的程度、裝忙拖到交件前才交，藉此挑「能確保價值」的工作、避開雜事。</p>
+</summary>
+<div class="card-body"><ul>
+<li>先破除奴隸心態：「努力工作」這手段成效不彰就該換方法，你越發揮越成為被拗的理由；單看薪水／工作比，贏家是那個普通堪用的同事。</li>
+<li>操作：①工作減量（五份減到兩三份）；②要會演戲——別直接反映「工作太多」（可能失去重要工作），而是裝「現在全滿」勉為其難拒接、踩穩底線；③趁機挑工作，搶重要的、推掉別人也能做的雜事。</li>
+<li>調整節奏＝向上級傳「跟以往不一樣」的訊號，聰明上級會來探口風——這正是你要的開口機會。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">開口要賞：時機、順序與停損</span><span class="chap">2｜8~12</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">專案忙完打鐵趁熱主動開口；優先要加薪而非升官、要「實權」而非虛名；以兩三次為停損，再裝死就換公司。</p>
+</summary>
+<div class="card-body"><ul>
+<li>回應上級探口風的三選擇：直說（適合大方重義氣的上級，先摸清他是將軍還是弄臣）、隱晦暗示（「家人生病沒錢請看護」，安全但可能遇裝死）、官腔裝死（像開轉蛋）。</li>
+<li>優先加薪：錢能解決的是小事；升官需要空缺、資歷與底氣（有其他員工服你），沒底氣先緩。升官要提前半年一年布局，確保自己是口袋名單第一。</li>
+<li>「要求更高權限完成工作」是好籌碼：即將越權前主動徵詢授權，要小而與工作相關的實權、有合理說詞——拿到後上級會盯你怎麼用，用得好就是升官理由。</li>
+<li>換位理解上級為何捨不得賞：加薪不可逆又影響其他員工；升官有彼得原理、骨牌效應，還有「你會不會變成壓著我打的競爭者」的私心。看懂了就別硬碰，用時機與實績去換。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">揣摩上意的四大面向</span><span class="chap">3｜6~10、3｜11</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">從「工作決策、出身背景、人際互動、環境變數」四面向研究上級，把資源花在他關注的刀口上——這是情報手段，不是拍馬屁。</p>
+</summary>
+<div class="card-body"><ul>
+<li>工作決策：從他「問什麼問題」判斷當前重點；觀察領導風格（抓宏觀/細節、重能力/交際、獨斷/集思廣益）把自己調成變色龍。</li>
+<li>出身背景：他怎麼爬上來（技術上位者偏愛技術型、業務出身偏愛交際型——人喜歡同類）；看他怎麼收尾失敗（慣性甩鍋的上級，下屬要優先自保）。</li>
+<li>人際互動（最重要）：公私是否分明（高階玩法是桌上擺相關小物引他主動開口）；他最信任誰（知道一個人信任誰幾乎能預測其決策）；他從什麼管道獲得資訊（把想傳的訊息「餵」進他偏好的管道，讓他以為是自己發現的；愛突襲發問的就事先模擬問題備好簡報）。</li>
+<li>環境變數：觀察上級的動線與常去地點（如陽台），調整自己出現的頻率讓「巧合」更自然；摸清組織價值觀（偏好有家庭的員工就經營對應人設，可另開給同事看的社群小帳）。</li>
+<li>揣摩≠拍馬屁：揣摩是讀懂需求、提供真價值；拍馬屁只是討好。觀察期抓近兩三年即可，人的行為模式短期不變。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">觀察筆記：把摸透上級縮短到一到三個月</span><span class="chap">2｜13~15、2｜16</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">對掌你命脈的關鍵人物寫觀察筆記——一次只寫一人、開啟獵殺模式、收斂眼神、密集一個月後改偶爾翻閱；筆記帶進墳墓。</p>
+</summary>
+<div class="card-body"><ul>
+<li>可記錄：聊天內容與肢體語言、信件用字與回覆時間規律、公開場合談話（他的面具）、私下社交（較真實的一面）；反覆對照、下結論、驗證、修正。</li>
+<li>四原則：一次只寫一個人（獵殺模式耗能）；慎選對象（只用在利益相關、掌你命脈的人；確認是真朋友就封存）；留意自己的眼神（上位者對目光敏銳）；控制節奏（先密集一個月建立輪廓，之後翻閱刺激靈感即可）。</li>
+<li>進階：功底加深後，筆記對象會從上級轉向「你最討厭的敵人」——能對這種人做冷靜觀察，是成大器的心理素質。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">送禮前的四道評估</span><span class="chap">2｜13~15、2｜17~19</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">送禮是牽涉階級、對價、信任與派系的「人情儲值」——先評估身份對價與派系，再想清楚四種可能的負面反應。</p>
+</summary>
+<div class="card-body"><ul>
+<li>四個常見誤解：伴手禮要符合對方社會地位（送錯禮＝馬屁拍錯）；對價要算清（兩盒水果求升官＝羞辱；對方心裡「升你要花三五百萬」照樣不收）；平常不聯絡直接送＝臨時抱佛腳必敗（可能被當試探或設局）；收禮＝間接認可你的派系（可補一句「以個人身份前來」暫時隔離派系因素）。</li>
+<li>四種負面反應要先排除：理想主義清官暗自記一筆；即將退休或調職者收禮不辦事（要有情報網掌握人事異動）；空降者拿你檢舉博清高（孤家寡人最易被當韭菜）；早看你派系不爽者藉機肅清。</li>
+<li>提拔＝命運綁定：你出包，上級會拿你甩鍋——培養關係時務必看到上級要承擔的隱形成本。</li>
+<li>越貴重的禮需要越高的信任門檻，事前要互相試探；用觀察筆記先摸透對方人品、處境與派系。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">送禮的藉口：送給他重要的人</span><span class="chap">5｜15</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">能不能讓對方坦然收禮，關鍵在藉口——「送你家人的」讓他不必演三辭三讓；送他看得比自己還重的人（小孩、寵物），好感直接爆表。</p>
+</summary>
+<div class="card-body"><ul>
+<li>藉口一（首選、幾乎萬用）：把禮物跟對方家人長輩合理連結，用第三方說法降低收禮尷尬（雖然多半最後還是進他口袋）。</li>
+<li>藉口二：送對方重要的人（正宮、老婆）——妙在不必投其所好，重點從禮物價值轉移到「你有想到他重要的人」的心意。</li>
+<li>藉口三：判斷出他「看得比自己還重要」的對象（少子化年代常是孩子，或被擬人化的寵物），集中火力進攻，比直接對他本人好更有效率。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">小錢照收、賞賜先推</span><span class="chap">2｜17~19、1｜37~39</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">上級事後給的跑腿小錢該收下（讓事情簡單）；無功的賞賜與蠅頭小利一律先推回去——他真要賞會一再塞回來。</p>
+</summary>
+<div class="card-body"><ul>
+<li>收小錢的理由：幾百塊換不到人情（人情有門檻）；不收反而讓上級多想（廉價馬屁？佔員工便宜？），還會讓貪小便宜的上級往後連問都不問。</li>
+<li>領賞原則：有功領賞、功賞相符→開心收；賞賜明顯高過功勞→要嘛器重要嘛測試，安全牌先推回；無功的蠅頭小利→每次都退、退到他嫌煩也退——他會欣賞你的紀律，讓你越來越靠近權力核心。</li>
+<li>總原則：老闆的賞賜一定要由他主動開口；不確定就退回去。想靠小便宜佔好處的人，哪天老闆想起來會一夕黑掉。</li>
+<li>遇到貪小便宜不給錢的上級：給軟釘子（「我手邊沒現金，請先給我」）。會因此記仇的上級不值得跟——用小事看透一個人很划算。</li>
+<li>培養關係的正道是投其所好＋做出驚人成果，讓交情從公事延伸到私事；「主動貼錢不收費」是雙方夠熟的「果」，不是培養關係的「因」——別把因果弄反。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">惹火上級的預警訊號與補救</span><span class="chap">2｜21~23</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">上級不會突然討厭你——臭臉、刁難找碴、架空是三大警訊，萌芽期就要化解；真撕破臉只剩「準備離職」或「把不合公開化」兩條路。</p>
+</summary>
+<div class="card-body"><ul>
+<li>三訊號都要「跟別人比、跟以前比」：只對你臭臉／最近才開始→注意；雞蛋裡挑骨頭、越管越細（逼寫行程日報）→發洩兼不信任；重要會議獨漏你→架空，離走人不遠。人好的上級會直接找你聊，那是送分題，趕快修正。</li>
+<li>預防三檢視：換位思考（至少知道他的核心利益、別觸逆鱗）、自身能力（上級敢翻臉多半已評估你只是小咖）、情緒控管（病因常是自己愛擺臭臉）。</li>
+<li>已惹火：道歉是死馬當活馬醫，別抱「爭對錯」的幼稚心態；若他開始用合法傷害權搞你（報表拖累、業績做不到、會議被電）就準備離職——換工作比換肝簡單，但別空手走，記取教訓。</li>
+<li>公開化（適合捨不得走或臉皮夠厚者）：讓同事都知道你們劍拔弩張，把暗箭逼成明槍——公開吵架就對同事苦笑帶風向；私下吵架就找愛八卦的同事「請教怎麼修復關係」讓消息傳開。之後自己絕不能犯錯，他再動你就像挾怨報復。但這等於另類開戰，仍要備好離職。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">遇到越級指揮：服從高階、尊重直屬、吞鍋讓功</span><span class="chap">5｜26</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">更高階的阿法越過直屬指揮你——先想清楚兩人關係，接任務後向直屬請示執行方式；出包寧可自己吞，做得好把功勞歸給直屬。</p>
+</summary>
+<div class="card-body"><ul>
+<li>第一步是「思考」不是observe——調出平時觀察的資料，判斷上級與直屬是否有過衝突、彼此實力如何，為將來選邊備好判斷依據。</li>
+<li>任務非急件也非倒茶水，就先向直屬阿法請示執行方式：既表尊重，又能觀察兩人關係（直屬唯唯諾諾→好處理；直屬看上級不爽→你可能是棋子，要想更多）。</li>
+<li>陷阱：直屬若想對幹上級，會朝「對他有利」的方向改你的成果、故意讓它出包扯上級後腿。出包後你若說「這是直屬的意思」＝甩鍋大忌，他兩手一攤打死不認、日後用合法傷害權報復你。</li>
+<li>功勞歸屬：上級親自改過而大獲好評，可收割但別讓兩位阿法對質；若直屬沒干涉、成果又好，把功勞歸給直屬（「是他指導的」）——「有過自己背、有功歸上級」，懂主僕之道的直屬一定在別處補償你；不懂補償的，認真考慮還跟不跟他混。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">大阿法越級找你開會：當一件大型家具</span><span class="chap">5｜27</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">大阿法越過直屬找你開會＝公開架空你的直屬；來得及就先知會直屬一聲，會議上全程閉嘴，被cue才就專業暢所欲言。</p>
+</summary>
+<div class="card-body"><ul>
+<li>二話不說參加（這本身是任務指派）；主動告知直屬能降低他事後疑神疑鬼。</li>
+<li>會議上你階級最低就當大型家具，不主動發言；被當場cue＝給你社交認證，只答專業問題、政治問題打官腔；被要求事後私談＝大阿法很重視你，千載難逢。</li>
+<li>看穿背後動機（都指向大阿法當下對直屬不滿）：警告直屬、真心提拔你順便修理他、或拿你當制衡棋子引直屬恨你——你不會知道是哪種，見機行事。</li>
+<li>事後直屬必問「會議說了什麼」：選擇站直屬就全講並表忠誠；選擇站大阿法（通常正常人選這邊，因為大阿法不會輪調走），私談內容就不必全盤托出。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">心腹的本分：擋炮火、背鍋、開第一槍</span><span class="chap">3｜19</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#7b5aa6;color:#7b5aa6">心腹</span></div>
+<p class="card-summary">合格心腹要「主動」維護大阿法的權力安全——事情快查到大阿法時主動請纓背鍋、代做他不便出手的事、改革令下帶頭開第一槍。</p>
+</summary>
+<div class="card-body"><ul>
+<li>當坦克：追查快燒到大阿法時，長眼的心腹主動把斷點留在自己身上；背鍋是鷹犬走狗的政治責任，大阿法則要備好配套、風頭過後好好獎勵。</li>
+<li>做大阿法不能做的事（輿論反擊、訴訟、把黑說成白）：不要主動問——揣摩他是「想做不能做」才代勞，若他是真不想做，亂代勞也是錯。</li>
+<li>開第一槍：改革令下眾人面面相覷時帶頭把風氣帶起來；進階是看穿大阿法「故意推注定失敗的方案好堵老臣的嘴」，帶頭執行加速失敗。</li>
+<li>非心腹也適用：總在危急時挺身救主的下屬，大阿法應多獎勵、考慮重用。背鍋通常落在沒特殊能力的鷹犬身上，軍師另有價值——混江湖前想清楚自己是哪種。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">身為心腹如何正確撈油水</span><span class="chap">3｜20</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#7b5aa6;color:#7b5aa6">心腹</span></div>
+<p class="card-summary">油水任務先確認「是賞賜、是測試、還是大阿法自己要撈」，再算利益網路、做好斷點、顧好吃相——進口袋的才是真的。</p>
+</summary>
+<div class="card-body"><ul>
+<li>判斷是不是賞賜：靠平日對大阿法個性的掌握＋評估自己近期功過（立功、擋炮火、不可取代性）。千萬別傻到去問有沒有油水可撈。</li>
+<li>背景調查：逐一查窗口、廠商、被暗示的對象——若廠商股東都與大阿法家族有關、窗口全是嫡系，這是大阿法自己要撈，你認真辦事等下次。</li>
+<li>利益網路：錢像水、要用瓶子裝——先想拿多少、要花多少籌碼擺平關係人；連旁觀同事都要花小成本安撫（請飲料、年節意思一下）。</li>
+<li>斷點：金流多轉幾層、現金最不惹麻煩；重點是用合法方式保護自己、別粗糙到連累大阿法。實拿優先：總額大但打理成本高，不如少拿多留。</li>
+<li>吃相就是考核：大阿法藉此檢驗心腹手腕，過關才放心交付更大的任務。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">上級失勢：挺不挺與怎麼切割</span><span class="chap">5｜12~14</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">人品能力俱佳只是時運不佳的，可雪中送炭賭他翻盤；因犯蠢失勢的直接跳船——切割是「切給外人看」的，讓新陣營敢接手你。</p>
+</summary>
+<div class="card-body"><ul>
+<li>挺的邏輯：別人都跳船時你留下，能快速贏得信任，他翻盤你一飛沖天；但只適用「人品能力好、對你恩重如山」的上級。</li>
+<li>綁定淺就不用煩惱；綁定深想「無痛退場」是不可能的——人處逆境心思敏感，再正當的理由他都當你跳船，仇恨大小看他人品。</li>
+<li>切割的做法（做給外人看）：公開場合避免同框、必須出席就站遠、社群停止按讚互動、甚至刪舊合照——對外傳達「關係已生變」，否則新阿法怕你還跟原上級密切往來而不敢用你。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">功高震主的自救三解法</span><span class="chap">1｜27~28</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">業務爬到高位＝最功高震主的角色——修心性保人和、持續開拓業績綁住權力結構，或乾脆創業；三者至少佔一。</p>
+</summary>
+<div class="card-body"><ul>
+<li>業務是對外打仗的軍隊、行政是保護大阿法的權力中樞：行政拿「公司規定」刁難業務，本質是替大阿法制衡你——看懂就不會白白憤怒。</li>
+<li>解法一（最重要）：修煉心性。謙卑一點、演也要演——傲慢會失去人和、讓你分不清大阿法是真器重還是伺機宰你。許多超業在第一次登上業績榜首那天種下敗因。</li>
+<li>解法二：持續開拓業績，讓公司一直需要你（「誰更需要誰，權力就在誰手上」；司馬懿靠「只有我擋得住孔明」存活）。見效快，但不配合修心，權力結構一變就必死。</li>
+<li>解法三：創業（自知降不了傲慢者的出路）。保險、房仲類業務較不怕功高震主——帶得走客戶仍得仰賴公司產品。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<section class="cluster" id="cluster-2">
+<h2><span class="sq" style="background:#2e6b4f"></span>向下：御下與帶團隊<span class="count">30 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">新官上任三部曲：弄懂規矩→立自己的規矩→重分資源</span><span class="chap">3｜1~5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">升上小阿法別急著立威——先摸透明規矩與潛規則，趁重大專案暗渡陳倉立自己的規矩，再用「不公平」的籌碼分配收人打人。</p>
+</summary>
+<div class="card-body"><ul>
+<li>弄懂規矩：細緻理解下屬職務與工作分法、基層潛規則（五人以上必有）、日常工作可行性——底下沒人做得來的工作，要在落到你肩上前先閃掉；確定某人能勝任，就語氣和緩而堅定地指派並給專業理由。</li>
+<li>基層不聽話千萬別一狀告上去——那等於宣告你無能領導，升你官就是要你解決管理問題。</li>
+<li>立規矩：保留好規矩、改掉擾民爛規矩（簡化簽核可收割名聲）；別剛上任就宣布新規（＝用頭銜硬壓、招陽奉陰違），等重大專案「以專案需要之名」把想要的規矩藏進去，順勢把決策權收到手上、對上多要方便；專案後成效好就沿用。</li>
+<li>重分資源：上級要你扛專案是要你「解決問題」不是搞權力——寧可把專案做到 80 分，戰功才是最貨真價實的權力。用不公平分配拉攏人才（給爽工作示善意、或給難工作＋更多籌碼示重視），公開說法訴諸「任務與能力匹配」、私下訴諸情感與前途。</li>
+<li>重新平衡勢力：打壓囂張跋扈、擺老不做事、被前任養太爽的個體——抽籌碼、派難活測他服不服，服就給糖、不服就找麻煩；收買「不受寵的基層」與「新進員工」（雪中送炭最划算），但把不受寵者野心養大前最好已升官離開。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">接手「黑衣特種部隊」：認清自己是虛職</span><span class="chap">3｜1~5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">能力超強、自主運作的團隊不需要名義上的主管——最忌用頭銜硬壓（必死）；想混資歷就當好橡皮圖章，別破壞系統平衡。</p>
+</summary>
+<div class="card-body"><ul>
+<li>認清三件事：你只是虛職；最適任的是那位不願升管理職的資深基層；菜鳥少尉硬壓二十年士官長＝必死。</li>
+<li>若只想混資歷，就跟真正的地下阿法相安無事、別東管西管；想要實權就得先貢獻他們認可的價值，急不得。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">圈套任務：讓他失敗，藉機剷除</span><span class="chap">3｜12~16</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">要除掉麻煩人，就派遠超他能力的任務讓他摔——演技要讓他真心相信你器重他，並事先備妥失敗後的損害控管。</p>
+</summary>
+<div class="card-body"><ul>
+<li>誘餌要真：公司專案打官腔即可；私人指派（擦屁股、髒活）演技門檻更高，必須先有互信。</li>
+<li>先算成本：難度要遠高於他的能力；事先備妥對公司與大阿法的交代。傷敵八百自損一千就先緩，等更划算的機會。</li>
+<li>循序漸進：設多次小圈套讓他連續失敗、賭注越下越大，最後一發擊潰；全程演出「我很器重你、你要爭氣」。</li>
+<li>挑對自己職涯無關緊要的任務下手，失敗補救成本最低。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">骯髒任務：找心腹，並備好棄子劇本</span><span class="chap">3｜12~16</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">見不得光的事只交給真心腹；任務可能失敗時執行者就是棄子——對心腹「事先告知」切割、事後私下補償；對想除掉的人則不告知，還要防他反咬。</p>
+</summary>
+<div class="card-body"><ul>
+<li>真要幹骯髒事（洗負評、養網軍、發黑函）就找把你利益看得比自己重的心腹，確保出包也不出賣你。</li>
+<li>心腹當棄子：事先講明失敗後的切割，事後私下給福利留住他的心。</li>
+<li>麻煩人物當棄子：骯髒任務失敗正好順便處理掉——當然不告知失敗機率，還要把他可能出賣你的方式全部想好，並預備他被切割後困獸之鬥的反撲。</li>
+<li>別用骯髒任務測忠誠：失敗（他出賣你）的代價太高又毫無進展，划不來。</li>
+<li>在一般任務裡埋「公司利益 vs 你的利益」的衝突可測忠誠：下屬發現會損你利益而「故意做得不漂亮以保護你」＝長眼又忠心；但替你爭取「會出事的非法好處」的人不是壞就是蠢——是在害你。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">艱困任務測忠誠，並分辨他忠於誰</span><span class="chap">3｜12~16</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">爽任務留給已通過測試的人累積戰功；吃力不討好的艱困任務是篩忠誠的試金石——再看他忠的是大阿法、你，還是組織。</p>
+</summary>
+<div class="card-body"><ul>
+<li>只測「即將進入核心權力圈」的人；測試資源要可負擔、損害要可逆。</li>
+<li>忠誠對象三分法：委婉拒絕或暗示要大阿法認證→忠於大阿法（非你的嫡系，互動小心）；平常不與更高阿法往來卻肯接→忠於你（可培養為心腹）；奴性低格局大、忠於組織理念→「龍非池中物」，心胸寬就結為平輩、心胸窄就趁羽翼未豐處理。</li>
+<li>但書：城府深者會用「主動接艱困任務」偽裝忠誠——它是指標之一，不能當唯一指標。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">離間型任務：拆掉結黨</span><span class="chap">3｜12~16</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">員工聚在一起損害上級權益才叫結黨——用二桃殺三士、績效衝突、指派麻煩人物三招拆散，但別把團隊弄成一盤散沙。</p>
+</summary>
+<div class="card-body"><ul>
+<li>二桃殺三士：用有限資源／獎勵讓下屬互爭（業務工作天生自帶離間屬性，零和搶業績）。</li>
+<li>績效衝突：私下對技術部門提高績效要求並畫餅，逼他「自己想到」人力工時漲價、進而壓縮業務部門利潤——切記別主動教他漲價，免得人為痕跡太明顯。</li>
+<li>指派麻煩人物進新團隊：最好團隊裡有他的朋友A，再加重A的工作量使其協調不過來而爆炸，讓負面效應擴散。</li>
+<li>平衡：離間防勞方團結，但工效必然下降——弄到公司倒掉就因小失大。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">挑心腹的忠誠標準：只能暗中篩</span><span class="chap">3｜17</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">忠誠不能用問的——用服從性測試、與你怪癖共存的默契、對私下好處是否誠實申報來篩，必要時自導自演設局。</p>
+</summary>
+<div class="card-body"><ul>
+<li>心腹是私領域角色：堅持「公私分明」的人與心腹之路絕緣（養心腹或當心腹皆然）。</li>
+<li>服從性測試：故意提無理要求（公事或私事），看他願不願把你的需求擺第一。</li>
+<li>默契：你卸下心防露出鳥脾氣怪癖時，看他能否容忍並順毛摸；最高境界是一個眼神就知道該做什麼。</li>
+<li>誠實申報：心腹有你的社交認證，外人會巴結送禮——觀察他是否一條不漏告知。前提是你先有情報網（先一步掌握誰接觸他）；沒人巴結就找第三方演戲送禮測反應。</li>
+<li>心腹接近權力核心、日後要執行髒活，嚴加考核甚至設局完全合理、值得花成本。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">心腹幕僚的相處：標準深不可測、私下開綠燈</span><span class="chap">3｜18</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">心腹是信任位階、幕僚是職務，別混為一談——心腹標準只能放心裡絕不白紙黑字；要聽實話就私下替幕僚開綠燈。</p>
+</summary>
+<div class="card-body"><ul>
+<li>忠誠≠當狗：荀彧郭嘉是心腹也敢直諫——因為摸準了曹操能納逆耳忠言。</li>
+<li>標準一旦被摸清就會被投其所好、被動挨打；摸不清你，你才握有觀察與挑選的主動權。</li>
+<li>開綠燈要「私下講」：公開講會被疑沽名釣譽；聰明幕僚會先只講一半試探你的資質與內外一致，判斷你玩真的才說更多。</li>
+<li>不斷提升自己的智力，別把動腦全外包——否則無從威懾幕僚。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">灰色地帶測試：加分關與生死關</span><span class="chap">1｜37~39</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">刻意拿好處當誘餌，在對方表態前先測出人品——加分關（過了很罕見）看高尚，生死關（沒過就掰）看能否同甘共苦。</p>
+</summary>
+<div class="card-body"><ul>
+<li>加分關：給對方一個「主動不佔便宜」的機會（如合作分潤明顯超過其貢獻，看他會不會主動說領鐘點費就好）。約九成人過不了；過關者可直接視為可信夥伴。</li>
+<li>生死關：出包時說「損失我自己吸收、錢照付給你」——這是官腔＋測試（如黃袍加身要再三推辭），正確解法是他主動按比例分擔。裝傻不退就是沒過。就算他是出於「想長期合作」的利益考量而退，一樣算過。</li>
+<li>日常版（賞賜／找零）：多給的錢沒說歸他，看他會不會上繳——單一事件不能定論，但要持續觀察。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">權力圈與金錢測試</span><span class="chap">1｜37~39</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">依對方在你權力圈的位置選測試工具——基層用三五百蠅頭小利、平起平坐的一方之霸用「可承擔的金錢灰色地帶」、內圍人先給爽案子測態度。</p>
+</summary>
+<div class="card-body"><ul>
+<li>權力圈同心圓：核心是心腹與關鍵阿法（髒活與重大資源只跟他們商量）；越外圍分到的肉越少。抱大腿前先自問自己在哪一圈。</li>
+<li>基層：小利測試立竿見影；對小利不動心者「不圖小利必有大謀」，是人才或另有居心，要再多測。</li>
+<li>有實力但未宣誓效忠者（最易被忽略、最常背刺人）：故意留下能佔便宜的金錢灰色地帶（代墊貨款、外包一次付清、該AA的先幫他付），看他是否真佔便宜——很準；務必用可承擔的損失來測。</li>
+<li>內圍：金錢過關後，委以重任前先給「酬勞明顯高過工作」的爽案子測態度，過了放進口袋名單，日後再交重擔。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">收買人心（一）：斗米養恩，石米養仇</span><span class="chap">4｜11~15</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">在對方深陷低谷、迫切需要時雪中送炭，一斗米就是救命稻草；時機錯（他正爽）或恩太大（此生還不起）都會反過來養出仇人。</p>
+</summary>
+<div class="card-body"><ul>
+<li>錯誤時機給恩＝錦上添花效益極低，日後給不起了他還因相對剝奪感恨你。</li>
+<li>恩惠太大超過對方還得起的範圍，巨大虧欠感會讓他恩將仇報（被收留者洗劫恩人的社會新聞）。</li>
+<li>請客吃飯收買不了真人才：職場爭名逐利，今天飯友明天翻臉；多數員工根本不想跟上級當朋友，大阿法不必自貶。</li>
+<li>給了恩惠就閉嘴：整天掛嘴邊提醒＝情緒勒索，會讓恩惠變成沒人敢拿的毒蛇猛獸；低調等子彈飛，沒成功就認栽停損。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">收買人心（二）：有名目的賞賜＋檯面下洩題</span><span class="chap">4｜11~15</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">賞賜必須有名目（訓練行為模式、創造稀缺）；檯面上的名目久了會變「公司規定」，要靠私下洩題把恩情算到自己頭上。</p>
+</summary>
+<div class="card-body"><ul>
+<li>名目讓人知道「做什麼有好處」、把恩惠跟你連在一起；賞賜無度＝徒耗資源的富二代行為。</li>
+<li>洩題：私下指點他哪個大客戶好簽，讓他更容易達成檯面上的名目——你出張嘴不花錢，恩情記在你頭上；可逐一私下洩題讓每人都以為自己最受寵，但小心對質破功。</li>
+<li>恩惠不能太頻繁：人心會膨脹，覺得一切是自己贏來的；只在他最需要時臨門一腳（結合斗米養恩）。要時時觀察受恩時的微表情判斷野心——除非你有意捧殺。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">收買人心（三）：保面子、知遇之恩、法外開恩</span><span class="chap">4｜11~15</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">救濟人才與其給錢不如「給工作」保全面子；知遇之恩要挑真有才又深陷谷底的人；法外開恩要有賞罰分明人設打底、對同一人只用一次。</p>
+</summary>
+<div class="card-body"><ul>
+<li>保面子：把貨運路線分一兩條給他、請他代班實則分薪水——雙方心知肚明把戲演完，他更感念。用面子收買人心是男人間的 game。</li>
+<li>知遇之恩三前提：對方真深陷谷底且有雄心壯志（沒志向的提拔了也不當回事）、真有才華（防自以為懷才不遇的草包）、提防人心膨脹（社群時代懂感念的人如獨角獸稀缺）。</li>
+<li>法外開恩四要點：等待犯錯（特別適用什麼都不缺的老江湖）；可搭配黑暗任務主動引誘犯錯（孔明派關羽守華容道，順勢收割人情）；你要先有「真的罰過人」的賞罰分明人設，開恩才珍貴；對象人緣不能太差（人緣好有人求情，順勢開恩一次收買兩人；人緣差時開恩會被全體鄙視）。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">進階知遇之恩：當第三方仲介推強將升官</span><span class="chap">5｜36~38</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">才華已外顯、人人搶著拉攏的超強員工，你獨佔不了知遇之恩——搭順風車：先向大阿法知會釋疑，再教他自己去談，全程淡化自己、不邀功。</p>
+</summary>
+<div class="card-body"><ul>
+<li>黑暗思路（打壓、扶植制衡）壓不住其才華，還會被大阿法看在眼裡「一次得罪兩方」；正解是送佛送上西，從中賺感恩。</li>
+<li>步驟一（向大阿法知會）：「我部門的S很有才華，看能不能讓他負責更大的案子，可以的話我再請他來跟你說」——試探大阿法是否真想提拔、用「更大的案子」優雅代替升官、「我再請他來跟你說」表明賞罰權在大阿法（主動釋疑，不是在結黨）。</li>
+<li>步驟二（跟S談）：教他去說「想替公司分憂、確認有哪些專案好先做準備、承擔責任」——完全不提你的名字（大阿法權謀意識強就明確交代「別提到我」）。讓S感受到你已幫他橋好、只差臨門一腳。</li>
+<li>仲介拿好處天經地義，但拼命邀功會讓人不舒服——淡化自己的重要性，感恩才留得住。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">最小理解劑量：用「你懂我」收服聰明人</span><span class="chap">5｜36~38</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">對才華與智慧兼具的人，話講太白像羞辱——測出他能舉一反三的「劑量」，日常任務只講三四分，這份默契本身就是知遇之恩。</p>
+</summary>
+<div class="card-body"><ul>
+<li>慢慢觀察測試把話說到幾分他能完全理解；測出是4分，日常就講3-4分——潛台詞是「以你的聰明，話到這就夠了」。</li>
+<li>對聰明人而言，「被同類認可、被理解又被尊重智慧」是強大的知遇之恩；即使你給不了高薪，他日後飛黃騰達也會記得最懂他的人是你。</li>
+<li>劑量按任務調整：日常小事講4分即可；極重要、複雜、全新的挑戰要講到6-7分以上——既是解釋所需，也拐彎告訴他「這次非比尋常」。</li>
+<li>分派任務後別像老媽子再三叮嚀——越了解下屬，越能拿捏「點到為止」或「講清楚」。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">管好群組＝管好一間微型公司</span><span class="chap">3｜21~25</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">群組大阿法必須扛「維護秩序」的責任——踩穩「禁止公開拉群組」的灰色地帶底線，破壞份子按「善意解讀→記名觀察→公開表態→借民氣裁決」處理。</p>
+</summary>
+<div class="card-body"><ul>
+<li>群組結構如中小企業：活躍成員約4~5%，裡面有資深小阿法；大阿法角色像小政府——提供公平、不被侵犯的環境。一旦放棄管理，聰明小阿法立刻鄙視、善良者閉嘴、壞份子搞小動作。</li>
+<li>兩大天然優勢要用好：言論透明（所有互動都看得到，差別在能否讀出意圖）、自帶情報網（會有景仰者主動提供情報，但要分辨來源是聰明人還是傻子）。</li>
+<li>結黨處理：技術上禁不了私下拉群，別白費力氣；但「公開拉群組」必禁、甚至趁機立版規——潛台詞「私下睜一隻眼閉一隻眼，只要不損我權力就不管」，解釋權留自己手上。</li>
+<li>破壞份子流程：初犯善意解讀按兵不動→情報提醒後記名觀察→再犯就不指名道姓公開表態（警告＋開綠燈歡迎補刀＋拔草測風向）→民氣足了做裁決、下「以後」二字的最後通牒→故意留他不踢，用來測其他成員能否讀懂風向。</li>
+<li>破壞份子若是自己的心腹：先私下臭幹、同時公開圓場；講不聽就殺無赦——保他的成本若是失去民心，絕不值得。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">群組結黨相挺：讓子彈飛，再以仲裁收尾</span><span class="chap">3｜26</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">同夥跳出來替破壞份子造神＝把檯面下的結黨搬上檯面——按兵不動讓風向發酵、讓懂事的成員主動出手，最後各打五十大板收網。</p>
+</summary>
+<div class="card-body"><ul>
+<li>判斷結黨 vs 真情義：自發相挺不會整齊劃一、操之過急；事發一週就集體洗白多半是被動員——就算真自發，也把這群人算成一伙。</li>
+<li>讓子彈飛：表面不動聲色，測試平常培養的成員會不會看風向、不需動員就主動揣摩上意出手——這是他們替你立功表態的時機。</li>
+<li>吵得越兇越好：看清誰本來就站你這邊、誰懂得加入聲勢浩大的一方；風向轉向後跳出來講「各打五十大板」的好話，實則是給對方陣營的最後通牒。</li>
+<li>收穫：摸清哪些人會結黨破壞秩序，這群人從此在你心中黑掉、失去利用價值。多數人做事粗糙，反制門檻其實不高。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">避免被架空：盯緊五個弱點</span><span class="chap">3｜28~32、1｜40</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">守住權力比奪權更難——最該提防的正是你最信任的心腹與關鍵阿法；資訊管道、錢、執行權、越權四個口子都要扣住，考核要「蝴蝶球」式突襲。</p>
+</summary>
+<div class="card-body"><ul>
+<li>心腹與關鍵阿法：正因信任才有巨大權力——授權是必要，但要「嚴加考核、甚至終生考核」；完全不被架空的唯一方法是全部自己做，不可能。</li>
+<li>資訊管道：現代造假成本高，被騙多半敗在自己懶——多查核、資訊轉個兩三手就真相大白；跟不上時代、不學習才給小人見縫插針之機。</li>
+<li>錢是命脈：別天真以為出錢就能躺領紅利——不查核，執行長99%會把公司的錢挖進自己口袋；引進金主前把權力稀釋算進去。</li>
+<li>蝴蝶球考核：心腹揣摩到極致連你的考核標準都能算準——解法是心血來潮、突襲式抽查（一年一次逐條對照核銷、連零頭都問，能震懾一兩年）。賞罰機制要「可預測」，信任與考核標準要「不可預測」，兩者不衝突。</li>
+<li>心力配置：跨國企業大阿法七成心力研究考核心腹；中小企業大阿法反而最常敗在「對人過度信任」——親友團或女人。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">防下屬藉執行收買人心：恩自上出</span><span class="chap">3｜28~32</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">最該防的不是撈油水，而是把你給的資源當自己的名義發出去——十個越權者九個半心懷不軌；有黑歷史的才派人盯，否則先信任放手。</p>
+</summary>
+<div class="card-body"><ul>
+<li>經典手法：海外經理把公司預算包裝成「自己賞的紅包」，出一張嘴就收買人心。</li>
+<li>正解是「恩自上出」：聰明下屬會把恩德歸功上級；馮諼式「替主公買義」的忠臣絕無僅有，別賭。</li>
+<li>派人盯（指派心腹A執行、心腹B「協助」實為監督）像化療——好事壞事一起清除、降低效率；只對有收買人心黑歷史的人用。</li>
+<li>越權要大張旗鼓表態（不必重罰，但雷聲要大，讓眾人知道非你本意）；有功而越權，罰太重生恨、不罰則權力旁落，尺度自己拿捏。被罰還自以為「動機純正」而不服的人——他不懂動機與觀感是兩回事，留著遲早出問題，可以開始找人取代了。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">派監軍：犧牲效率換掉權臣</span><span class="chap">3｜33</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">派監軍＝公開表態不信任、幾乎等於宣戰——用在逼退或鏟除功高震主者；對忠心但勢力過大的老臣，這是優雅的「杯酒釋兵權」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>兩個代價先認清：打草驚蛇（派出那一刻他就不再是你的心腹，可能被逼提前反撲——先備好接替人選）；效率大降（從地方自治變中央集權，組織越大損失越重）。</li>
+<li>值不值得：把「任務失敗的成本」與「權臣未來的麻煩」放上天枰，划算就長痛不如短痛。</li>
+<li>杯酒釋兵權版：對人品好、忠心但勢力過大的權臣（尤其接班人要處理忠於上一代的元老），派監軍會讓他心寒而主動低調退場——錢照給甚至加碼，只要他交權。別下不了手。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">正職領功、副職效力：制衡的預先布局</span><span class="chap">3｜35</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">對付權臣的根本在「事先布局」——扶植對象當正職、有才華但低調者當副職；權臣要趁他「羽翼未豐、急需立功」時就放進結構裡。</p>
+</summary>
+<div class="card-body"><ul>
+<li>曹叡布局（曹真正職、司馬懿副職）：借副手才能打勝仗、功勞歸正職壓住權臣、運氣好還能讓權臣背鍋清算。有功正職領、有鍋副職背。</li>
+<li>要鏟除的功高震主者放副職，必須趁他還需要立功——「努力仍可能被鏟除，但不努力完全沒機會」他才肯貢獻；已成名不需立功的權臣（司馬懿）任何布局都拿他沒轍。</li>
+<li>核心原理：任何關係中「最不需要對方的人」才掌權。權臣掌權正因你更需要他——戰略失誤無法用戰術補（十個曹真都徒勞），只能重新布局。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">制衡之術：二元對立與「口服心不服」</span><span class="chap">3｜36~40</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">制衡的目的不是防背叛（防不了），而是製造內鬥、削弱權臣、把傷害降到最低——只培養「一個」對手形成二元對立，用官位當引線。</p>
+</summary>
+<div class="card-body"><ul>
+<li>心態打底：被功高震主者背叛不是歸零災難——有提防就有底線；真正的歸零只發生在把核心權力毫無保留交出去的人身上。制衡他、他仍可能背叛，但你會留有更多實力。</li>
+<li>要二元不要三方：三方互鬥複雜度暴增、恐怖平衡只是一瞬；若有人跳出來說「多我一個才能終結對立」，他的私心絕對遠超忠誠。</li>
+<li>官位是首選引線：宣布兩人選一個升——更狠的是把官位給跌破眼鏡的B，製造A的相對剝奪感，A日後扯後腿的證據還能當清算把柄。升官確定前對任何人都別表態；被興師問罪就用「年資／資歷」給一套讓A口服心不服的說法。</li>
+<li>制衡人選不能是廢物：要用「人緣、人格特質」這類虛無縹緲的理由（別用工作成果這種一翻兩瞪眼的標準）；目標是讓A維持「嘴上講不過、嚥不下這口氣」的狀態——這最能引發內鬥。人選本質上要能取代原本那位（備位人選）。</li>
+<li>沒有合適人選就從零培養：別把資源全押一人，在麻煩人物翅膀長硬前同時養兩個。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">內鬥中的仲裁、各個擊破與捧殺</span><span class="chap">3｜36~40</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">大阿法在內鬥中永遠當裁判——引導雙方為贏而替公司創造利益；若兩人反過來聯手，就借仲裁形式單獨挑撥、必要時捧殺。</p>
+</summary>
+<div class="card-body"><ul>
+<li>仲裁尺度：內鬥偏離正軌、損及公司利益就出面阻止；對峙不開打時還要鼓勵動手。陰損手段若整體利益仍增加就睜隻眼閉隻眼。</li>
+<li>雙方聯手對抗你：用仲裁名義單獨找來各個擊破——對外鼓勵立功，對內暗示「另一位只是徒有虛名」。前提是確定他們不會對質（仇人相見通常不會冷靜對質），話術粗糙也戳不破。</li>
+<li>捧殺：不斷誇獎獎賞拉高對方傲氣——心高氣傲就目中無人、容易得罪人，挑撥更易成功，甚至等他自己失敗收場。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">副手職缺：常備的監軍與紅蘿蔔</span><span class="chap">5｜2~4、5｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">副手是大阿法的常備監軍與代理人——空著是隱性威脅與升官紅蘿蔔；填人時看給誰的人：同意部門推薦＝那人變部門嫡系，派自己心腹＝制衡。</p>
+</summary>
+<div class="card-body"><ul>
+<li>副手空缺的三用法：隱性威脅（「我隨時能派人扯你後腿，現在空著是在觀察你」）；派系制衡（看部門阿法不爽就派心腹當副手，甚至派其敵對派系二虎相爭——備好官腔理由）；升官紅蘿蔔（部門歷史上要真有過「努力升副手」的例子，員工才信）。</li>
+<li>副手是常備職缺，拿來分憂或監視都說得過去——被質疑就官腔打死不認，解釋空間遠大於另設的監軍。</li>
+<li>部門阿法出缺時的兩套操作：正派＝副手升正職、基層遞補副手（兌現紅蘿蔔）；陰暗＝故意讓人空降正職，讓等很久的副手累積巨大相對剝奪感、把怒火導向正職互鬥。</li>
+<li>嫡系副手的雙層獎勵：先提拔欣賞的員工當部門阿法；表現好之後，再把原本埋伏的嫡系副手撤掉「展現信任」——把本來就要做的事，做成讓員工感激涕零。</li>
+<li>提醒：「副總」通常是有實權的關鍵阿法，不是副手——判斷看實質權力，別看字面。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">資遣前置手段：先拆武裝再開鍘</span><span class="chap">5｜21~23</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">資遣＝開戰——先降低對方的不可取代性：基層拆技能（寫SOP、派種子教官）、主管拆權力（送進修趁空窗接管）、業務拆客戶關係；動實力堅強者會兩敗俱傷。</p>
+</summary>
+<div class="card-body"><ul>
+<li>基層：流程完整、門檻低的直接資遣；有特殊技能先讓他寫成 SOP 納入教育訓練；匠人級技藝派助手當「種子教官」跟身邊學、淡化其獨大。</li>
+<li>主管職：貿然開除會整隊跟著跑——主動分化其心腹；用出國進修、EMBA、休長假等藉口讓他離開公司，趁空窗期接手管理、分化人馬、安插自己人。</li>
+<li>業績好的業務：客戶人人可接觸型（健身房），直接跟客戶搭話、若有似無質疑其專業淡化關係（死忠客戶放掉別碰，會反告密）；B2B 買空賣空型，送進修找人接手客戶，或「捧殺」——升他當業務主管改抽團隊業績，心力轉向管理，趁機讓小業務接管客戶。</li>
+<li>警語：實力強的老臣一看前置手段就知道你要他走、可能先反撲——開戰前提是要能贏，這套只適用「只傷組織、不傷大阿法」的對象。</li>
+<li>換位自保：被要求去進修時先自問有沒有功高震主、白目惹眾怒——沒有就多半是真栽培；有的話時間還很充裕，正道是收斂變乖，邪道是把實力提升到「動你會傷到他自己」。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">會議冷落：暗示選邊的陽謀</span><span class="chap">5｜21~23</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">用「不撕破臉」的會議操作傳達冷落——跳過他不找開會、點名時獨漏他、最狠的是全場點名唯獨跳過他卻點他的副手。</p>
+</summary>
+<div class="card-body"><ul>
+<li>例行會議跳過他：傳達「已被冷落」的訊號，要貫徹到底每次都不找；被問起就打官腔（睜眼說瞎話也無妨）。</li>
+<li>讓他出席卻不給發言的三種強度：隨機跳過（意義最弱、引人討論不下結論）→全部點名唯獨跳過他（意義明顯、逼其他人考慮換邊站）→跳過他卻點名他的副手（把他當家具、同時暗示副手接班，眾人自會明白該巴結誰）。</li>
+<li>最強版會激起當事人危機意識——使用前先評估能否承受反撲。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">捧殺SOP：偷技術的完整劇本（與防法）</span><span class="chap">5｜24</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">對公司拼圖缺的技術人才，先開高薪引入局→蜜月期麻痺→捧成百年人才誘他傾囊相授→派人跟身邊學→學成榨乾踢開；幾百萬薪水換上億產值。</p>
+</summary>
+<div class="card-body"><ul>
+<li>正道選項先想：幫他籌組團隊、配合商業布局形成新事業體，往關鍵阿法培養——多數技術人才空有技術、不懂商業管理，得從頭練。</li>
+<li>偷法：規劃半年到一年——前三個月蜜月期麻痺心志，再捧上天誘他傾囊相授，派一兩人跟身邊學；成本依技術學習難度調整。</li>
+<li>甜言蜜語是零成本套路：把你捧上天、稱兄道弟，圖的就是獨門技術——講好話不花錢。</li>
+<li>給技術方的鏡像警告：被要求寫SOP、有人來「學你的東西」＝正在被降低重要性；認清自己的長期產值（獨門技術結合行銷產業鏈可再乘十），別因喝酒稱兄道弟就賤賣吃飯的傢伙。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">挖角人才：基本面＋承諾一致＋火力展示</span><span class="chap">4｜31</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">別再送禮畫餅比誠意——先備齊薪資、產業前景、自身名聲三個基本面，再用「請小忙→掛顧問」慢慢拉進來，讓他自己看到值得加入。</p>
+</summary>
+<div class="card-body"><ul>
+<li>基本面：薪資給得起對方身價行情（香蕉請不動獅子）；產業要有發展性（夕陽產業吸不到真人才）；你的個人品牌不能太差（人才會做背景調查，跟廢物大阿法共事是恥辱）。</li>
+<li>承諾一致原理：從請教專業問題、吃飯喝咖啡的小忙開始（店不能太差、禮要有檔次）；進階提議「與其無償教我，不如當公司顧問」——掛頭銜、領錢、不用進公司，多數人會答應，從此有名正言順的商業往來。</li>
+<li>火力展示：有價值的人要讓對方「自己發現」——顧問合約明訂每月開會，他每次來就近距離觀察你公司的經營與紀律；基本面做好、多來幾次自然提高加入機率。前提是公司真的有紀律，否則要藏拙。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">鎮不住的下屬：威懾優於事後補救</span><span class="chap">5｜16~20</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">處理手法再標準，鎮不住人照樣養出仇恨——對擅操弄人心的下屬，要用能力、實力、黑暗面「威懾」到他心生歹念也不敢動。</p>
+</summary>
+<div class="card-body"><ul>
+<li>「你怎麼想不重要，別人怎麼看你才重要」上對下也成立：口頭嘉許＋口頭提醒的處置本身沒錯，但對方自認立功沒被表揚（相對剝奪感）就可能升級成仇恨——處罰越權下屬時務必觀察表情，眼神含怨者日後會反撲。</li>
+<li>威懾＝上兵伐謀：直接讓對方打消惡搞的念頭（曹操鎮司馬懿）；被鄙視的老闆（藍藥丸）才會被下屬從鄙視養成仇恨。</li>
+<li>對手的分化組合拳長這樣（要能識別）：藉八卦拉近全體員工→鞏固關係→放大既有不滿、塑造共同敵人→帶人帶客戶離職。只有極忠誠的員工能抵抗分化。</li>
+<li>給建議一次為限：勸老闆培養備位、別讓單一戰將獨大，聽不進就放手。</li>
+<li>報復不會船過水無痕：惹到記仇的人會像幽靈糾纏（離職後仍從消防法規檢舉）——人脈與制度無漏洞才撼得住。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">手段的三種對象：造神、提防、純利弊</span><span class="chap">5｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">用手段前先分類——對遠方基層「造神」（內心要謙卑）、對心思不純者「提防＋威懾」、對同溫層外的非我族類「零情感、純利弊」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>造神：組織夠大時，手動製造輿論是最有效率的支持手段（崇拜刻在文化基因裡）；但技術上造神、內心必須極盡謙卑——真把自己當神就等著被反噬。</li>
+<li>心思不純的狠角色：借用其才華同時防被抓弱點（水至清則無魚，人品才華兼備是獨角獸）；對心思單純的好人切換善良模式、順便回血。</li>
+<li>非我族類：底線只是「別讓我方被進攻」，純用利弊得失應對，不需同理心。</li>
+<li>大前提是識人正確：把毫無心機的下屬當壞人提防，只會累死自己。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<section class="cluster" id="cluster-3">
+<h2><span class="sq" style="background:#8a5a2b"></span>派系與鬥爭<span class="count">19 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">結黨 vs 派系：先分清你在玩哪一種</span><span class="chap">4｜1、5｜28~30</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">派系替組織做事、把餅做大（領頭多是關鍵阿法）；結黨另立山頭、只顧分贓——想升官就得借力派系，大阿法看重的從來是你背後能調動的勢力。</p>
+</summary>
+<div class="card-body"><ul>
+<li>大阿法能否把重任交給你，取決於你能調動的資源與人力——你本人只是空殼，他看的是你背後派系裡最大的關鍵阿法。</li>
+<li>不加入派系＝放棄升官：只想安靜領薪水無妨；有明確職涯就必須借力。</li>
+<li>結黨可以「升級」成派系：奪得組織運作的關鍵要素就能不再躲藏——但以小博大極難，且放任結黨壯大到能叫板，是大阿法最不樂見的。</li>
+<li>判斷寄生還是生產：看它替組織創造價值、還是吸組織的血。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">大阿法必須有嫡系，並收編各派系</span><span class="chap">4｜2~4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">孤家寡人不可能號令所有派系——先有只聽你一人的嫡系當本錢；外部派系永遠「用著防著」，歷史悠久的內部派系「打不贏就加入」、收服其關鍵阿法的心。</p>
+</summary>
+<div class="card-body"><ul>
+<li>嫡系是從0到1的門票：沒籌碼時，沒有任何關鍵阿法會當第一個效忠的傻蛋（周天子、漢獻帝的教訓）；心腹是嫡系首選。</li>
+<li>外部派系（收購來的團隊、收編的降兵）：最早效忠的不是你，再忠誠也是外人——理想是解除其關鍵阿法的領導權、把派系收為直屬；收編不了就用著防著、且戰且走（曹操交代曹丕永遠防司馬懿）。</li>
+<li>內部派系：先翻派系歷史、看過往效忠對象抓其價值觀；只要沒踰越「仍忠於組織」的底線，就別把開戰放進選項——內戰勝負難料、重創組織，收服其心與內鬥鏟除的整體實力天差地遠。</li>
+<li>接班人必修：上一任讓你「到各部門歷練」的真意，就是讓你自己去贏得派系重臣的支持——社交認證可以給，服氣要自己掙。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">一朝天子一朝臣：換老闆時的保命動作</span><span class="chap">4｜5~9</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">新大阿法上任必然換自己人——第一時間查清誰是真老闆、主動收斂前朝福利、用行動在正確時機宣告忠誠；工作表現救不了選錯邊的人。</p>
+</summary>
+<div class="card-body"><ul>
+<li>確認真老闆：關鍵阿法會主動查股權登記確認誰過半——「跟了十年的劉璋 vs 剛認識的曹操」，不難選；小阿法拿不定主意就抄直屬關鍵阿法的答案。</li>
+<li>新大阿法逐一找人「聊天」不是聊天——是給機會兼威脅（要不要加入我）；接不接橄欖枝就是表態。</li>
+<li>前朝福利（超長午休、公器私用）要自動預設「正常老闆不會容許」、主動收斂——新大阿法沒說話＝默認要取消；繼續享用的白目會被按兵不動蒐證半年，再以曠職、挪用公款請走、一毛資遣費不付。</li>
+<li>被清算的人求舊大阿法說情＝害死自己：新大阿法會解讀成舊勢力還不交權，反而加速清算立威。</li>
+<li>核心結論：忠誠＞工作表現——「能否在正確時機用行動選對邊」遠比工作有沒有出包重要；除非你有稀缺價值，但找到替代者照樣踢走。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">派系分類的四把尺</span><span class="chap">4｜10</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">進新公司先掃描派系版圖——新舊派、改革/保守派、老臣/青壯派、嫡系/非嫡系；新人第一件事是認出大阿法的嫡系，知道誰惹不起。</p>
+</summary>
+<div class="card-body"><ul>
+<li>版圖變動要盯：不只大阿法換人，部門阿法換人也要看新任與被擊落者各屬哪派。</li>
+<li>老臣 vs 青壯：老臣常是既得利益者，青壯易被「相對剝奪感」煽動——大阿法可用世代對立做制衡。</li>
+<li>嫡系＝只忠大阿法、由其親手創立招募（外部人馬極少能轉嫡系）；非嫡系至少忠於組織理念。</li>
+<li>別急著加入嫡系：有搞頭的派系一堆人排隊，而且現任大阿法一下台，前朝嫡系常是第一個被清算的。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">基層建團隊：先行佈局，趁專案一次到位</span><span class="chap">4｜16</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">基層沒資源硬組團隊必散（請客換不來向心力，利益共同體才行）——先佈局觀察，等重大專案用「我需要支援」把人拉成利益共同體，職位與班底一次拿下。</p>
+</summary>
+<div class="card-body"><ul>
+<li>團隊的本質是利益共同體：利益綁在一起、一人滅亡全隊不好過，才會竭力互保；請客攏來的人遇大事就鳥獸散。</li>
+<li>佈局六步：觀察派系組成想好路線→做好專業、向所選派系的上級提供價值表忠誠→想自組團隊就先拉攏大阿法嫡系、不斷表善意防被誤會→弄清各派系敵友關係免講錯話→物色值得拉攏的基層人才（請客此時可用：先請對方幫小忙再回請，製造價值流動；已屬其他派系的避開）→有專案就挺身而出，撐不住就請求同事支援、把物色好的人拉進來。</li>
+<li>任務完成，你就是他們發自內心支持的「真小阿法」；在用團隊向大阿法證明忠誠之前，他會提防你但礙於實力動不了你——挺住。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">公司擴編：拿人事任命權建班底</span><span class="chap">4｜17~19</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">大阿法授權你組團隊＝建立班底的黃金窗口——但成員要「能力優先」向大阿法表態無私心；再依自己是打工仔還是股東，選嫡系或派系路線。</p>
+</summary>
+<div class="card-body"><ul>
+<li>人事任命權＝組派系的權力：可事先考核忠誠、把看順眼的人找進來；面試社會新鮮人（白紙好調教、有知遇之恩）最適合當鐵桿。</li>
+<li>為何能力優先：找來全是「只忠於你的廢物」，大阿法只能解讀成你在謀私；公司賺錢才是你加薪發獎金的必要條件；一群廢柴日後也無法互相制衡。能力與忠誠兼得如獨角獸——你能力不足就別指望強者服你。</li>
+<li>懂權謀的大阿法授權後會去拉攏你的下屬、收為直屬防你出走——這是必然，別玻璃心，換你也會這麼做。</li>
+<li>路線選擇：純打工仔（無股份）→走大阿法嫡系；共同創辦人/股東→自組派系監督制衡大阿法（防他挖空公司）；結黨自肥不建議。</li>
+<li>換位（大阿法視角）：擴編正是派監軍的好時機——一正一副去組團隊合情合理（「怕你忙不過來」），把監軍當「預先扶植的宿敵」培養，後期用來制衡或取代。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">向派系輸誠：主動請求派監軍</span><span class="chap">4｜20~22</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">被破格提拔、空降新部門時，最聰明的輸誠是主動向大阿法請監軍——一手交權贏信任、一手借尚方寶劍指揮團隊，最後把功勞全歸給監軍。</p>
+</summary>
+<div class="card-body"><ul>
+<li>表忠誠只能靠行動讓對方自己想：主動請監軍＝把過大的權力分回給大阿法，「我問心無愧、你大可派人監視」；即使他心知你的盤算，你終究付出了交權的代價。</li>
+<li>佈局：開口前先觀察哪個心腹「急著建功、缺業績」，主動接近、只請教公事（絕不談私事免落口實）；向大阿法請求時只說「想請有經驗的前輩指導」，別指名（指名會被疑勾結）。</li>
+<li>監軍＝大阿法代理人＝如朕親臨：帶著他狐假虎威指揮基層，趁叫得動人的窗口做出功績、建立真威望——尚方寶劍只能揮一次。</li>
+<li>這位監軍與你是命運共同體（你成功他沾光、你失敗他難辭其咎），會幫你擦屁股——但別當提款機。</li>
+<li>收尾：成功後在公開與私下場合拼命把功勞全歸給監軍、一點不留——對急著建功的人這是雪中送炭，一次收買大阿法與監軍兩邊的心。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">分化對手（一）：從悽慘落魄的派系下手</span><span class="chap">4｜23~29</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">別硬剛完整的組織——先拆最大塊；第一個切入點是組織裡過得慘的邊緣人，用「句句實話」的煽動養大相對剝奪感，再伺機拉攏成內應。</p>
+</summary>
+<div class="card-body"><ul>
+<li>鬥爭哲學：擊垮完整組織的成本非線性——分成兩半再讓它們內鬥，可能不花一毛。先畫組織架構圖，找出關鍵阿法手下的團體（供應商、重要部門、金主樁腳）逐一拆解。</li>
+<li>三要素：情報平常就做（連檯面下的政商、媒體、黑白兩道都要摸）；不要引發敵對意識（表面友好，讓對方在「一致對外」上產生分歧）；遇到滿腦正能量、不視人為敵的大阿法就是送分題。</li>
+<li>煽動手法：找落魄成員吃飯，裝若無其事誇「你們老闆很大方、升遷制度明確」——句句實話但他都爽不到，越聽越像針刺；被煽動後連大阿法日常的臭臉都變成仇恨催化劑。</li>
+<li>光煽動就足以讓他「當螃蟹」壞事；想更狠就拉攏成內應，從小合作做起、禮物好處不能省。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">分化對手（二）：二元對立的反對派</span><span class="chap">4｜23~29</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">曾掌權後失勢的反對派相對剝奪感最大、缺口如潰堤——直接找其阿法接洽常收奇效；他一開始收好處，就開啟了與魔鬼交易的序章。</p>
+</summary>
+<div class="card-body"><ul>
+<li>比落魄者更易引爆：都嘗過權力甜頭、實力又相當；下台後「由奢返儉難」、底下人還要吃飯。</li>
+<li>即使他一時堅持忠誠，也別把關係搞差——維持往來、用收買人心的手法給他錢解困；只要跨過「收一點沒什麼」的底線就上鉤了。</li>
+<li>防守方（大阿法）注意：對實力相當者再不爽也要忍住、給反對派甜頭與希望、管理仇恨——逼到狗急跳牆就是內戰，明爭暗鬥都重創組織。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">分化對手（三）：打斷大阿法與心腹的信任</span><span class="chap">4｜23~29</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">對權謀意識不足的心腹用四步離間——混臉熟→私下邀約製造「他跟外人很熟」的風向→讓子彈飛→開戰點火；加碼招是密會爆料與敏感時機送禮。</p>
+</summary>
+<div class="card-body"><ul>
+<li>四步驟：①藉頻繁露面、閒聊建立基本印象降戒心；②私下約咖啡只聊吃喝玩樂——真正目的是製造風向（IG限動標記、按讚等社群互動最好用，心腹渾然不覺而大阿法已心生疙瘩）；③維持熱度讓風向持續；④開戰時先前的密切往來瞬間引爆，他若還「不避嫌」繼續見你，正中下懷。</li>
+<li>加碼：以「幫他避嫌」為由約隱密處密會、再透露給八卦媒體；佈局期故意漏掉一兩筆酬謝，開戰後才「補款」——他在敏感時機收錢，大阿法多半當賄賂處理；不收就往上加碼到他鋌而走險。</li>
+<li>心理素質才是勝負關鍵：方法大家都會，進攻方門檻低；防守方大阿法要能表面不動聲色、暗中佈局、確定反意後在其起事時斬草除根、不給第二次機會。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">挑對時機：公司四個脆弱期</span><span class="chap">4｜30</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">分化要順勢而為——創業分贓期（分配不均）、外部挖角期（整隊被挖）、人心思變期（彼可取而代之）、鳥獸散期（元老帶隊出走）各有打法與防法。</p>
+</summary>
+<div class="card-body"><ul>
+<li>創業分贓期：第一桶金「分錢最難」，分錢全由老闆說了算的團隊撐不到一年——防守方一開始就要挑對人。</li>
+<li>外部挖角期：成員闖出名號最易被高薪挖走，最狠的是團隊剛組好被整隊挖走；此時也正需擴編，用錢留人來不及。</li>
+<li>人心思變期：權力架構完整、看似最穩，實則大阿法權力最不穩——分化系列最適用於此期；防守靠制衡、收買人心、掌握嫡系。</li>
+<li>鳥獸散期：老店產品過時，關鍵阿法想的不是你的位子而是帶團隊自立門戶——永遠要有他們離去的準備；有些大阿法選擇在熱度最高時賣掉公司獲利了結。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">分化盟友：陳平三步法</span><span class="chap">4｜32~34</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">權力平級的盟友比階級組織更好拆——給其中一方好處→把好處收回引爆相對剝奪感→話術把怒火導向另一方；全程不簽長約、打官腔留懸念。</p>
+</summary>
+<div class="card-body"><ul>
+<li>平級盟友少了「對權力的天生景仰」維繫，只能靠利益＋革命情感——誰也不服誰，先天脆弱。</li>
+<li>三步法：先給好處（種下相對剝奪感的種子）→收回好處（人對「失去」的恐懼遠大於追求）→讓他相信「不是我不給，是第三方害你拿不到」（冤有頭債有主）。</li>
+<li>操作「懷疑」要挑人：心志不堅、耳根軟、易不服氣者；或有才華、易把成就攬在自己身上、不甘屈居人下者。</li>
+<li>自媒體實戰：拿流量當誘餌私邀對方團隊的才華者合體→只幫「他個人」曝光（正中私心、不引懷疑）→嘗到甜頭後收回（「怕害你被團隊不滿」，他會懷疑是隊友去打小報告）→或續給好處但猛誇「你是團隊最強的」煽動單飛。粗暴版：把流量換成「錢」（業配）——沒白紙黑字的分錢原則，把錢丟過去團隊自己就散了。</li>
+<li>進階版：同時找兩人給不同價碼（備好「A/B測試」的說法），之後只找效果好的、冷落另一位；被質問就打官腔不把話說死——留懸念讓他自己亂想，憤怒才會持續累積（怒火永動機）。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">改革之前，先完成佈局</span><span class="chap">4｜35~39</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">改革動的是百年派系＋利益綁定的產業鏈——單一派系獨大時幾乎改不動；佈局完成前不要隨便推動改革，必要時靠外部制衡力量。</p>
+</summary>
+<div class="card-body"><ul>
+<li>改革的正確目標是「高貪腐低效率→小貪腐中效率」，不是零貪腐（那是獨角獸）；不過度影響運作的小貪腐是維持運作＋保護權力的代價。</li>
+<li>為何改不動：傳統背後是利益產業鏈（在各利益位置安插人馬，他們為飯碗與大阿法同陣線）；動到太多人利益就胎死腹中，還有「越改越糟」的風險要主導者拍胸脯扛。</li>
+<li>單一派系獨大百年、無外敵威脅＝毫無改進動力；能推動改革的常是「外部制衡派系」崛起（美軍派系 vs 黃埔）——想改革先養出制衡力量。</li>
+<li>劣勢派系翻盤的路徑就是整個第四章：收買人心→建嫡系→利用擴編與任務機會壯大→向派系輸誠→掌權後用分化離間削弱對手。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">用「升官」優雅地調走礙眼的人</span><span class="chap">4｜35~39</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">對沒犯錯、趕不走的對手派系成員，趁別處有空缺「做順水人情幫他升官調離」——既收買人心不樹敵，又把空出的位子安插自己人。</p>
+</summary>
+<div class="card-body"><ul>
+<li>比黑暗任務讓他出包格局更寬：不必製造仇恨，還可能收買他的心。</li>
+<li>最大難關是心態：要忍住不爽去提拔討厭的人，極度反直覺——李登輝把國防部長郝柏村「升」為行政院長、自己接軍權，就是這一手。</li>
+<li>派系鬥爭出現外力製造的破口時要把握——機會可遇不可求，錯過沒有第二次。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">利益綁樁：鈔票＋子彈</span><span class="chap">4｜40</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span></div>
+<p class="card-summary">收買人心成本最低、最抗抹黑的是利益——給「很長很粗的釣竿」（特許生意）讓樁腳的身家綁在你身上；最強組合是「挺我好處一堆＋不挺我有得你受」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>理念、人品、能力都會被抹黑（造謠遠快於闢謠），但錢的力量沒人能抹黑——他就算討厭你，看在生意的份上仍含淚力挺。</li>
+<li>三種作法：①挺我好處一起分（把特許利益分給關鍵阿法養肥，讓他知道「只有我給得起」）；②不挺我就讓你死（以官方稽查名義找麻煩到他表態，操作恐懼）；③不管挺不挺都幫你（最鄉愿愚蠢——以德報怨就沒東西面對真心挺你的人，是文宣幹話）。</li>
+<li>組合技①＋②最強：一邊鈔票一邊子彈，永不退流行。外來政權收民心最快的也是這招——鎖定民間世家大族給特許生意，讓他們當安撫民心的代理人。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">自行結黨的三個判斷</span><span class="chap">5｜28~30</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">要不要自己結黨看三件事——組織規模（新創小公司才有空間）、穩定狀況（群雄割據與危機期是良機）、大阿法的權謀意識（最關鍵）。</p>
+</summary>
+<div class="card-body"><ul>
+<li>規模：大組織派系早盤踞、地盤分完，弱小結黨一冒頭就被吃掉；三五人新創每人都握運作要素，強強聯手就能從結黨變派系；20人左右的公司開始有八卦土壤，你不做別人會做。</li>
+<li>拉攏對象：搶「未來能成派系基石」的人——安全牌從行政部門下手（權力中樞）；業務要謹慎（最易功高震主，拉攏他可能被大阿法視為同夥）。</li>
+<li>穩定狀況：二元對立最穩、沒你的空間；群雄割據各派忙著互鬥才有利結黨；公司出現經營危機時大家一致對外，用「七二一方針」（七分發展自己）趁機壯大——但扯後腿別扯到公司倒掉。</li>
+<li>大阿法權謀意識強＝星星之火直接被拍熄，先低調做事觀察他；大阿法是「韭菜」（無權謀意識）＝你不割也有人割，結黨收攏人心、慢慢接管運作單位就是自保與壯大的必要手段。</li>
+<li>結黨壯大後被「招安」是肯定，文明社會沒理由拒絕（拒絕＝開戰）；招安後遇平庸大阿法可繼續擴張架空，遇權謀大阿法就乖一點、知足能活久。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">帶槍投靠：如臨深淵的輸誠</span><span class="chap">5｜31</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">帶自己的團隊投靠＝一進門就自帶功高震主前提——用「假意上繳兵權」或「請派副手」主動輸誠；但你永遠不是自己人，還要防被借刀殺人。</p>
+</summary>
+<div class="card-body"><ul>
+<li>輸誠法一（上繳兵權）：主動說團隊可按公司編制打散、自己聽從調度——實務上不可能真做，但「需要這個說法」；權謀型大阿法會打槍讓你續管。警告：對平庸大阿法別用，他可能看不懂、真的答應，弄假成真。</li>
+<li>輸誠法二（較安全）：請大阿法派人當副手——「剛到新單位對規矩不熟，希望派人指導、需要時可代理職務」；「規矩」＝服從制度、「指導」＝願受其代理人管轄。</li>
+<li>認清現實：張遼張郃再忠心，曹操用他們時始終提防——這些作法只能降低敵意，你永遠是被提防的外人。</li>
+<li>招安可能是借刀殺人（梁山泊受招安後被派去平亂到凋零）——明知是刀也只能硬著頭皮立功；根本對策是加入前先摸清大阿法的個性與底細。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">雙頭馬車：選邊的三把尺</span><span class="chap">5｜9~11</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">被兩個平級阿法先後派任務——正常情況先來後到；對方發飆＝派系鬥爭的線索。已站隊就把難題上丟給老大罩你；要選邊用實力、合法傷害權、年紀三把尺。</p>
+</summary>
+<div class="card-body"><ul>
+<li>兩個以上副總的編制，99% 是大阿法的制衡設計——看到這種結構，多數狀況都可用派系鬥爭解讀。</li>
+<li>已站隊（平常跟A做事、A當你自己人）：把「B來找麻煩」回報給A＝再次宣告忠誠＋把處理不了的問題上丟，A會安撫甚至透露B的把柄；未站隊就冒然回報＝把問題丟給憑什麼幫你的人，只會換來官腔。</li>
+<li>三把尺：西瓜偎大邊（連對手把柄都掌握的一方情報網強、根基深；「匹夫見辱拔劍而起」的不能跟）；誰的合法傷害權大就先聽誰的（選打人比較不痛的）；年紀（選年長的＝上位空缺快但競爭者嗜血；選年輕的＝空間大，走帝王師路線別想取代他）。</li>
+<li>盤算只能放心裡：被探口風時一律官腔（按組織編制、職場倫理講）；選好邊就專做那位阿法的任務，少說話多做事。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">虛張聲勢的弄假成真</span><span class="chap">5｜33~35</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">大阿法</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">人心的崩潰與凝聚不取決於真假、只取決於「大家信不信」——危機時借錢也要準時發薪，求援時要唬出讓盟友敢加入的實力，假的會滾成真的。</p>
+</summary>
+<div class="card-body"><ul>
+<li>薪水晚發的真相：同一句「會晚幾天」，每個員工解讀天差地別（負面心錨、跳船準備）；一人開第一槍就從眾崩潰（擠兌邏輯），澄清也擋不住。「借錢按時發薪」把人心問題簡化成利息問題，超划算。</li>
+<li>攻城求援比喻：1萬兵老實說1萬，沒人願當第一個幫手→孤軍覆滅；唬成5萬讓友軍敢加入，場面真的超過20萬——你的唬爛讓假的弄假成真。</li>
+<li>空手套白狼的雪球：讓盟友相信你有實力→聚集的場面反過來讓每個人更信→加入的實力又成為吸引更多人的籌碼。</li>
+<li>兩面刃警告：唬來的力量必須有真本事駕馭，否則被看破手腳後潰散速度超乎想像。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<section class="cluster" id="cluster-4">
+<h2><span class="sq" style="background:#8a3a3a"></span>官腔與話術<span class="count">7 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">官腔的七種妙用：會講，更要會聽</span><span class="chap">1｜16~18</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">官腔是「不把話講透」的防身武器——應對政治正確、減少衝突、保留餘地、讓下屬揣摩、遮掩意圖、明哲保身、自謙避禍；位置越高越靠它。</p>
+</summary>
+<div class="card-body"><ul>
+<li>會聽比會講先：朋友說「我想想」「再看看」就是婉轉打槍；皇帝批「再議」、老闆說「我再想想」都是包裝過的否決——十之八九不是善意解讀，摸摸鼻子讀懂就好。</li>
+<li>保留餘地：直接表態就沒轉圜空間、還可能被剪成把柄；官腔傳達「不是不處理，只是時候未到」。</li>
+<li>測試工具：大阿法用冷漠的「再看看」不給細節，逼下屬旁敲側擊——同時測出誰愛拍馬屁、誰堪當大任。</li>
+<li>遮掩意圖：功高震主的超業來談加薪，用「提拔新人、共體時艱」給軟釘子，同時暗中接手客戶、挖角替補——將軍型超業常因缺政治智慧而莫名「被離職」。</li>
+<li>明哲保身兼撈錢：誰是金主就講他愛聽的話；風向當道時公開講主流愛聽的、實話私下說。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">藏鋒：自謙型官腔</span><span class="chap">1｜16~18</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">聚會被問近況切忌炫富——「混口飯吃，餓不死」「運氣好啦，小咖一個」；官腔的目的不是讓人相信，是傳達「這話題不必細聊」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>別低估人類惡意、「人是會變的」——炫耀等於昭告自己是隻不設防的肥羊。</li>
+<li>對方追問就官腔到底；藏鋒對心懷惡意者有初步威懾，但需要心理素質駕馭。</li>
+<li>功成名就者更要會：位置爬得越高，越需仰賴官腔的高級用途。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">離職官腔：生涯規劃＋一切都好</span><span class="chap">1｜19~20</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">離職會談是走過場——「為什麼離職」一律答「生涯規劃」；被問建議就答「公司很好、同事照顧」，配上尷尬又不失禮貌的微笑。</p>
+</summary>
+<div class="card-body"><ul>
+<li>「生涯規劃」四字萬用虛無：對方明知是幹話也拿你沒轍；被死命追問就官腔到底，比的是耐心不是技術。</li>
+<li>老闆問建議不是真要改善公司（真要改善會開會、找顧問）；會談全是官腔＝你在他們眼中只是基層。</li>
+<li>就算建議真有效，老闆也會採納並抹殺你的痕跡——心黑者甚至中傷你、讓你在業界消失。官腔和平收尾，下一站重新開始。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">進攻型官腔三式：拿規定當大旗</span><span class="chap">1｜25~26</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">下位者用官腔反守為攻——「公司規定就是這樣」立威逼服、找碴官腔軟逼低頭、「我正忙某大阿法的案子」借勢使力；火候依對方欠不欠電調整。</p>
+</summary>
+<div class="card-body"><ul>
+<li>第一式（規定當盾）三種目的：少做事兼出包甩鍋；暗示要好處（要藝高人膽大）；樹立權威——先搬規定觀察你上不上道，再「因為你」破例開後門，收割感激與信任。</li>
+<li>第二式（找碴官腔，如「車票貼歪了重貼」）：對囂張白目、不拜碼頭、又剛好有求於你的人用；不必怕被看出找碴——就是要讓他知道，只是用規定包裝。但對方若釋出更高格局的拉攏意圖，別因鼠目寸光錯過。</li>
+<li>第三式（搬大阿法）三層火候：先只說「手邊正忙，忙完幫你」；對方糾纏才搬出大阿法名號（政治訊號：我背後有人）；最狠是「我幫你請示大阿法看要不要先做你的」——他真敢說好，你就關起門在大阿法面前選擇怎麼講他（感謝他送頭）。內容傳遞資訊、語氣表情傳遞關係。</li>
+<li>大阿法名號不必真是其派系（職務需要也算），但別唬爛——用兩三次必出事。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">立場型與身份型官腔</span><span class="chap">1｜29</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">不必死背話術——先想清楚「我此刻的立場是什麼、身份是什麼」，凡「答了扣分、不答沒事」的問題，用眾所皆知的立場或角色打發。</p>
+</summary>
+<div class="card-body"><ul>
+<li>立場型：當所有人都知道你的立場，就用符合立場的話打圓場，避開自曝其短的問題（「謝謝指教，一切依法行政」同理）。切記：對外宣稱的立場≠真實立場，他宣稱的只是最符合利益的那個。</li>
+<li>身份型：按當下扮演的角色答（尾牙被問老闆看法，只能以「員工」身份答「老闆英明」）；多一個身份就多一件打太極的武器（「課程裡有講，為保護學員權益暫時保密」）。</li>
+<li>職場上所有「按規定來」的官腔，本質都是身份型官腔——公司給你職務就給了你身份，可攻可守。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">暗示與旁敲側擊</span><span class="chap">1｜30</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">進攻型官腔的精髓是「暗示」；對方聽不懂就在官腔裡夾線索，引導他自己領悟——「你可以問看看其他人都怎麼做的」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>話要講得無懈可擊、細品藏另一層意思；不能講白以免落人口實。</li>
+<li>換位思考評估請求：這件事對我有什麼好處？請求的難易（佔用時間該回饋等值好處，索取商業機密更不行）。</li>
+<li>拒絕的官腔要踩穩：不問細節（真想接受才會問時間），直接回馬槍「這是顧問等級的事，我恐怕沒這項專業」——暗示「你問的是我的商業機密」，別讓對方覺得還能糾纏。</li>
+<li>旁敲側擊：退件其實想要紅包，就補一句「你可以問看看其他人怎麼做的」——他問的人夠多，自然恍然大悟。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">「承擔更大責任」：要權不提官的話術</span><span class="chap">5｜36~38、2｜8~12</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">想升官別說升官——說「想替公司分憂、承擔更大責任」；要更多權限就在即將越權前主動請求授權，要小而實、與工作相關的實權。</p>
+</summary>
+<div class="card-body"><ul>
+<li>「承擔責任」不只是話術，是真實的權力邏輯：要做更多事就需要錢、人、團隊——執行任務本就是要求與擴張權力的絕佳時機。</li>
+<li>職場扶搖直上的關鍵從不是「領多少錢做多少事」，而是先承擔更多責任、開花結果後才變成薪水獎金。</li>
+<li>這種優雅話術也是過濾器：聽不懂或不會用的人，會被老狐狸鄙視。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<section class="cluster" id="cluster-5">
+<h2><span class="sq" style="background:#3a5a8a"></span>自保與識人<span class="count">15 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">被資深小阿法打壓：主動輸誠、核心權力留給他</span><span class="chap">2｜28~30</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">他怕的是你動他的奶酪——表明不搶餅、幫他打雜、公私交叉搏感情；混吃等退休型就凡事請示，但絕不碰他的「核心權力」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>職場不是學校：沒有好處沒人有義務教你；把你教會＝搬石頭砸自己的腳（業務型最明顯——例外是能從你業績抽成的業務主管，他是利益共同體會真心教）。</li>
+<li>輸誠三件套：表明不搶餅（「有沒有別人少跑的地方讓我試？」＝願接拓荒苦差）、幫他打雜跑腿（你出時間、業績算他）、私下相處（陽台抽菸、下班喝酒）。</li>
+<li>三種情境應對：他是維繫秩序的「吉祥物」→搶工作撼動不了他，但仍要多次請示到他授權；他還想往上爬→挺住打壓持續輸誠，最好的結局是他升官並推薦你接位；他混吃等退休又把持權力→凡事請示回報，並觀察出他的「核心權力」（如審假單）絕不越權——哪怕十萬火急，沒他親自授權（留證據）也別代批。</li>
+<li>你太勤快也會「無意間架空」他：工作太積極顯得別人低能，相對剝奪感會製造極強的仇恨——收著點。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">被欺負時的大局觀</span><span class="chap">2｜28~30</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">職場七成以上的被開刀是「你動到別人利益」——先冷靜查動機、掂自己實力，別急著反擊；當開心果炒場前，先看上級阿法喜不喜歡熱鬧。</p>
+</summary>
+<div class="card-body"><ul>
+<li>深謀遠慮者會先評估你的實力（看你孤家寡人才下手）；新人太認真突顯全部門擺爛、害大家被釘，就是最常見的「動到利益」。</li>
+<li>純粹無聊欺負新人的（職場少見）通常也是孤家寡人，可反擊——但先聯合其他被欺負者累積實力。</li>
+<li>開心果的因果別搞反：不是「當開心果就不被欺負」，而是「沒被欺負才有閒情當開心果」；炒熱場子＝把鎂光燈聚焦自己，那些目光未必善意。</li>
+<li>關鍵在上級：從聚餐觀察他喜熱鬧還是安靜；提防多疑的上級——你一炒場他懷疑你在拉攏人心結黨，學長能炒不代表你可以。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">對付愛告密的同事</span><span class="chap">2｜32</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">告密仔的威力來自上級的信任——把自己做到「無懈可擊」（不是問心無愧），把上級對你的信任養得比他厚，暗中收集他的把柄等他自爆。</p>
+</summary>
+<div class="card-body"><ul>
+<li>先分級：不篩選情報的流水帳型自己會被上級討厭，不用理；會篩選情報的再分「根基不穩」與「御用心腹」兩種——多去茶水間打聽分辨。</li>
+<li>無懈可擊＝別人連懷疑你的空間都沒有（辦公室門永遠開著、連小禮也婉拒）；「問心無愧」只是主觀自認，歷史上多少名臣敗在這四個字。</li>
+<li>對根基不穩者：跟他比累積信任的速度，等上級信任你勝過他，他的攻擊大半失效。</li>
+<li>對老牌心腹：採守勢自保，不動聲色收集把柄（打混、污錢，越多越好），在上級對他的信任動搖之前絕不出手；等他出包失寵時，把黑料交給「他的敵人」去處理——比你自己爆更有力，也免累積仇恨。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">別被鄙視：調性與距離的管理</span><span class="chap">2｜33~37</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">鄙視＝惡意的源頭，由「調性相剋＋食物鏈下游」與「距離過近」構成——藏拙、管理人設、對有利害關係的人保持若即若離。</p>
+</summary>
+<div class="card-body"><ul>
+<li>調性相剋有食物鏈上下游：上游強者會「吃掉」下游（霸凌的生物天性）。辨識法：觀察群體（個人會戴面具）、觀察聊天好惡（明顯厭惡的常是相剋調性）、判斷誰是贏家（別被負面語氣帶跑）。</li>
+<li>人設期待落空會把鄙視加重數倍：用虛假人設活在社群者，要祈禱能騙一輩子——否則崩壞後的真實人設別跟受眾調性相剋。</li>
+<li>距離產生敬畏、距離近就露餡：最容易鄙視教主的是他的心腹；「親則生狎，近則不遜」——與有利害關係的人，最佳策略是若即若離、就事論事，偶爾喝酒吃飯但控制好距離。</li>
+<li>距離近者掌握你的弱點與黑歷史：心懷不軌的心腹最有機會一刀斃命——隨侍身邊者的忠誠門檻要拉到最高。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">黑暗環境自保：別露出可被鄙視的軟弱</span><span class="chap">2｜38</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">在狼群裡，善良＋怯懦＝待宰的羊——特殊職場（詐騙、灰產）別把正常職場的信任搬過去；一旦被鄙視弱小，對方會覺得「與其合作不如直接吃掉你」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>先評估你的職位會遇到什麼同事：基層工讀生沒價值反而安全；往上爬就要自覺同級都是臉厚心黑的狠角色。</li>
+<li>講義氣、處處展現人性光輝（正常職場的好同事），在黑暗環境就是韭菜調性——同夥一發現你是好人又無比信任他，就把腦筋動到你身上。</li>
+<li>被坑後「打不還手」的怯懦會招來更多獵殺；不畏對方背景、憑法律硬幹的被害者反而拿回了錢。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">反常即妖：識人警訊與「等他自爆」</span><span class="chap">5｜16~20</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">條件與行為完全不合邏輯的人（八分正妹領最低薪做粗活還不走）要提高警覺；一時無解、而對手性格缺陷明顯時，拉長戰線等他自爆。</p>
+</summary>
+<div class="card-body"><ul>
+<li>反常組合先排除「人品好老實做事」（幾乎不可能），最可能是另有見不得光的盤算或隱忍圖謀。</li>
+<li>永遠提防身邊的人：別像藍藥丸老闆總在對方做壞事後才改觀——觀察人在獨處、暗處時的眼神與真實心思。</li>
+<li>挑釁式炫耀（離職後還與員工聚餐放閃、傳「人心還在我這」的訊號）是低道行——真高手默默做；看到這種對手可以放心，他遲早自爆。</li>
+<li>等自爆的戰略：沉不住氣、管不住慾望的對手（如劈腿被抓包），苦心經營的人心會瞬間崩盤——時間站在你這邊。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">面對大阿法的親友團：萬綠叢中過</span><span class="chap">5｜6~8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">小阿法</span></div>
+<p class="card-summary">親友團（含尚方寶劍型空降）是大阿法養來爽的、後台極硬——表面中立公事公辦、避其鋒邊緣化、引別的討厭鬼跟他互鬥、暗扣把柄逼他收斂。</p>
+</summary>
+<div class="card-body"><ul>
+<li>料敵從嚴放寬定義：大阿法三顧茅廬請來、給足社交認證的空降主管也算親友團。</li>
+<li>別同流合污：親友團是過街老鼠，貼上去＝負面社交認證流失支持；出事時你這小咖還可能變背鍋棄子。理想距離是「萬綠叢中過，片葉不沾身」——不得罪、也不被當同夥。</li>
+<li>變成你下屬時三步：避其鋒劃防火線（法定權力對他沒用，讓他爽、什麼都別讓他參與，無法成事至少別壞事）；正兵累積實力（在嫡系裡累積威望，贏過過街老鼠不難）；奇兵引內鬥（挑部門裡另一個討厭鬼跟他互鬥，你握仲裁權、誰死都賺）。</li>
+<li>抓到大把柄別急著上報：先關起門暗示他你已掌握一切、逼他收斂服從——把柄扣著別亂用，不必魚死網破；撐到自己升官離開也是可行解。</li>
+<li>對高等級小人做仇恨管理（郭子儀對盧杞）：越無能越自卑的人渾身G點、記仇一輩子——寧得罪君子，莫得罪小人。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">公開場合的主客之分：C位自覺</span><span class="chap">5｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">C位只有最大的阿法能站——判斷順序是「場子是誰的→誰大咖→觀眾為誰而來」；別人的場子被讀者圍住，要立刻制止「別害我」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>受邀來賓比主人大咖時，主人可能識相讓C位（堅持再三則可站）；來賓nice讓回，主人也可站回。</li>
+<li>教訓案例：受邀講師不客氣站了主辦人的C位——主辦人當下只閃過一絲不滿，但此後再沒請過他。</li>
+<li>副手與受邀者的權力邊界自覺：在正職／主人還沒信任你之前，搶鏡或越位的無心舉動會埋下嫌隙。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">錢與法律的自保常識</span><span class="chap">5｜12~14</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">跟錢有關的事最容易誤觸法網——發票、報帳、簽名有疑慮先問專業人士；上級交辦可疑任務就直接問「這樣真的沒問題嗎」並觀察他的表情。</p>
+</summary>
+<div class="card-body"><ul>
+<li>「犯法」分兩種：真有犯意去貪（至少爽過）、缺法律知識便宜行事而誤觸法網（最冤，半毛沒拿還犯法——替他人簽名＝偽造文書）。</li>
+<li>剛進公司就發現不法情事＝趕快閃：有人專把新人當免洗筷，出包後換間公司重玩。</li>
+<li>發現「與己無關」的不法（上級收回扣、掏空）：先判斷他犯罪本事高不高明——小阿法自己收回扣漏洞大、撐不久，遠離別浪費時間；正解是暗兵不動、默默蒐證、做好防火牆，等他自爆時拿證據自證清白，還能當加入新派系的投名狀。</li>
+<li>陽謀優於陰謀：把局設好、用利弊得失逼人做出不得不的選擇（看穿也只能照做）；遇到玩陰的就要比他更陰。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">避嫌：被分化鎖定時的防守</span><span class="chap">4｜23~29</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#7b5aa6;color:#7b5aa6">心腹</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">「瓜田李下」與你問心無愧無關——風頭緊時，會引誤會的見面、禮物、金流碰都別碰；真閃不掉就事事向大阿法請示匯報。</p>
+</summary>
+<div class="card-body"><ul>
+<li>敵人分化你的劇本：先混臉熟→私下邀約製造風向（社群互動最危險）→開戰時引爆；你若還「不避嫌」繼續往來，正中下懷。</li>
+<li>敏感時機的「補款」是經典陷阱：先前幫忙的酬謝留到開戰後才給——你一收，大阿法多半當賄賂處理。</li>
+<li>事先請示是最後的護身符：先問過的較能被接受，日後大阿法也會幫你擋麻煩——但這已是製造麻煩的選項，避嫌永遠優先。</li>
+<li>給被煽動者的解藥：仇恨如邪教、沾上難脫身——在憤怒的瞬間醒悟「覆巢之下無完卵」，守住「忠於組織」這條下屬底線。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">合夥的四把鑰匙：業務、財務、人事、研發</span><span class="chap">3｜34</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">合夥覺得被騙，多半是該握的權力從頭就沒握住——四把鑰匙至少要看得到、摸得著；比合約更可靠的是「對方離不開你」的權力制衡。</p>
+</summary>
+<div class="card-body"><ul>
+<li>業務／客戶／通路（錢怎麼進公司）：就算不跑業務，也要知道主力產品、大客戶、每季銷售——不知道就會被「啊就公司沒賺錢」唬弄。</li>
+<li>財務（錢怎麼到你手上）：完全放給「自己人」，對方就能在財報動手腳，明明賺錢做成沒賺。</li>
+<li>人事（最易被忽略）：擴編增資時看「新員工、新股東是誰找進來的」——都是對方人馬，表決時打聲招呼你就出局；要用籌碼爭取扶植自己人馬的權力。</li>
+<li>研發（金錢的源頭）：你的獨門技術／配方就是恐怖平衡的籌碼，死扣在手上對方就不敢得罪你——很多人沒想過「找你合夥只是幌子，要的是技術」。</li>
+<li>合約：賠得起的小額合作可不打（順便測人品）；金額大一定打、花錢請律師；核心目的是「制定懲罰條款」拉高小人違約成本——合約只能防君子，是最後底線。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">跟朋友創業：封存友情、確立階級</span><span class="chap">5｜25</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">職場框架與朋友框架只能取其一——進入職場那刻起「暫時」不是朋友：用稱呼確立階級、用共同利益取代義氣，而且上對下、下對上都別拿隱私開玩笑。</p>
+</summary>
+<div class="card-body"><ul>
+<li>常見悲劇是兩頭空：框架切不乾淨→公私不分→工作出包→大吵收場→連朋友都當不成。把友情封存，等不再有職場關係那天再拿出來，反而保得住。</li>
+<li>稱呼：對方位階高就叫「哥／老闆」——改稱呼能改變他在你腦中的地位、連動互動模式；公私一起調整，私下也維持上下有別。</li>
+<li>利益：讓維繫關係的核心變成共同利益；不想太功利就把彼此想成「有共同利益的戰友」。</li>
+<li>閉嘴鐵律：許攸公開喊曹操小名，損害其對屬下的權威，最終送命；反過來你當老闆當眾爆朋友下屬的糗事，一樣損害他管理的權威——上對下也要有分寸。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">同事請幫忙的尺度：功利地篩選</span><span class="chap">5｜32</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">只幫「懂感恩」且「有價值」的同事；幫的時候裝得勉為其難、有難度的忙分次完成增加互動；真正需要時裝死的人，果斷停損。</p>
+</summary>
+<div class="card-body"><ul>
+<li>沒邊界感的老好人最慘：「順便」幫忙耽誤自己進度、委屈往肚裡吞，最慘的被一句「家裡要養老小」就把升遷機會讓出去——核心利益絕不棄守。</li>
+<li>價值的定義很廣：握有合法傷害權者、將來會飛黃騰達的人才、密切合作的夥伴、要拉攏的對象。討厭的皇親國戚與陰險小人：小忙「幫一次為限」，之後保持距離防被無止盡索取。</li>
+<li>勉為其難是認知管理：別讓人覺得是舉手之勞，否則被當能者多勞、久了視為理所當然；眉頭一皺、像很費功夫，才能喚起愧疚、把感恩最大化。</li>
+<li>分次完成：每次回報進度兼閒聊——對有心拉攏卻苦無交流機會的同事，是合情合理的接觸藉口。</li>
+<li>停損線：咖啡點心不是結清人情的對價——你真正要的是日後工作上的實質協助；長期幫他、他卻在你真正需要時（對他是舉手之勞）找理由婉拒，就別再浪費時間。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">防技術被套走：認清自己的價值</span><span class="chap">5｜24、5｜21~23</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">被要求寫SOP、有人被派來「跟你學」＝公司正在降低你的重要性——趕緊增加價值、表態選邊、或趁還有時間投履歷；甜言蜜語是零成本的套技術話術。</p>
+</summary>
+<div class="card-body"><ul>
+<li>捧上天、稱兄道弟、開遠超行情的高薪引你入局——蜜月期麻痺、誘你傾囊相授、學成兔死狗烹，是標準劇本。</li>
+<li>愛惜羽毛不是雞湯：你的價值＝喊價籌碼；獨門技術結合行銷與產業鏈的長期產值可能再乘十，別把月入十萬過成月光族、更別酒過三巡就賤賣吃飯的傢伙。</li>
+<li>懂自己價值者能抬價，甚至不必入職、用外包合作談合理合約。</li>
+<li>被送去進修時先自問有沒有功高震主：沒有＝多半真栽培；有＝對方要瓦解你也需要很長時間，你有充裕時間布局。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">被雙標對待的正確反應</span><span class="chap">1｜32~36</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">基層</span></div>
+<p class="card-summary">同樣的事別人沒事你被辦——千萬別去質問；認栽聽訓、別提別人的名字、先銷聲匿跡，等大阿法淡忘再用價值翻紅。</p>
+</summary>
+<div class="card-body"><ul>
+<li>硬幹（「他也有做為什麼沒事」）只會被升級成看不懂政治訊號的超級白目。</li>
+<li>亡羊補牢三步：認栽乖乖聽訓；要試探就從同事口中問、且說「被公司約談」而非「被大阿法約談」（前者對事、後者對人易落口實）；先消失——大阿法盛怒時你越晃越喚醒厭惡，時機成熟再貢獻價值翻紅。</li>
+<li>上醫醫未病：平時就觀察自己在大阿法心中的分數（眼神、小動作）；看到語焉不詳的規定先想政治意義與灰色地帶在哪；翻紅要不著痕跡、循序漸進（馬屁逐週加溫）。由黑翻紅極難，必要時換間公司重新開始。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<footer>共 100 張卡片 · 依《黑魔法：權謀霸術工程學》全課 200 集（1-1 至 5-40）萃取實戰對策整理 · 點卡片展開詳解</footer>
+</div>
+</body>
+</html>

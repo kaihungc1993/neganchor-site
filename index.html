@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>neganchor 資料庫</title>
+<style>
+  :root { --bg:#0f1115; --panel:#171a21; --text:#e6e8ec; --muted:#9aa3af;
+          --accent:#6ea8fe; --border:#2a2f3a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); min-height:100vh;
+         font-family:-apple-system,"PingFang TC","Microsoft JhengHei","Noto Sans TC",Segoe UI,sans-serif;
+         display:flex; flex-direction:column; align-items:center; padding:48px 20px; }
+  h1 { font-size:22px; font-weight:700; margin:0 0 6px; }
+  p.sub { color:var(--muted); margin:0 0 32px; font-size:14px; }
+  .grid { display:grid; gap:14px; width:100%; max-width:720px; }
+  a.card { display:block; text-decoration:none; color:var(--text); background:var(--panel);
+           border:1px solid var(--border); border-radius:12px; padding:18px 20px; transition:.15s; }
+  a.card:hover { border-color:var(--accent); transform:translateY(-2px); }
+  a.card .t { font-size:16px; font-weight:600; }
+  a.card .d { color:var(--muted); font-size:13px; margin-top:4px; }
+  footer { color:var(--muted); font-size:12px; margin-top:40px; }
+</style>
+</head>
+<body>
+  <h1>neganchor 資料庫</h1>
+  <p class="sub">直播筆記與讀書會整理</p>
+  <div class="grid">
+    <a class="card" href="notes.html">
+      <div class="t">直播筆記瀏覽器</div>
+      <div class="d">539 篇直播筆記，依分類（職場／社交／識人／女人／階級／自我成長／父職指南）瀏覽與搜尋</div>
+    </a>
+    <a class="card" href="bad-men-trilogy.html">
+      <div class="t">壞男人三部曲</div>
+      <div class="d">全書整理</div>
+    </a>
+    <a class="card" href="quanmou-countermeasures.html">
+      <div class="t">權謀霸術 · 對策速查</div>
+      <div class="d">快速查閱對策</div>
+    </a>
+    <a class="card" href="quanmou-close-reading.html">
+      <div class="t">權謀霸術 · 逐節精讀</div>
+      <div class="d">逐節精讀筆記</div>
+    </a>
+    <a class="card" href="engineering-full-course.html">
+      <div class="t">權謀霸術工程學 · 全課精讀</div>
+      <div class="d">全課程精讀</div>
+    </a>
+    <a class="card" href="engineering-countermeasures.html">
+      <div class="t">權謀霸術工程學 · 課程對策速查</div>
+      <div class="d">課程對策速查</div>
+    </a>
+  </div>
+  <footer>Published via GitHub Pages</footer>
+</body>
+</html>

@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>壞男人的權謀霸術 · 對策速查（詳解版）</title>
+<style>
+:root {
+  --bg: #f7f5f0; --panel: #ffffff; --ink: #26221c; --muted: #6b6357;
+  --line: #e4ddd0; --accent: #8a5a2b; --quote: #efe9dd;
+  --danger: #8a3a3a; --danger-bg: #f6e8e6; --good: #2e6b4f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Heiti TC", sans-serif;
+  font-size: 16px; line-height: 1.75;
+}
+.wrap { max-width: 1100px; margin: 0 auto; padding: 36px 22px 80px; }
+h1 { font-size: 28px; margin: 0 0 12px; }
+.intro p { color: var(--muted); margin: 8px 0; }
+h2 {
+  font-size: 21px; margin: 44px 0 14px; display: flex; align-items: center; gap: 10px;
+  border-bottom: 1px solid var(--line); padding-bottom: 8px;
+}
+.sq { display: inline-block; width: 12px; height: 12px; flex: 0 0 12px; }
+.count { font-size: 13px; color: var(--muted); font-weight: 400; margin-left: 6px; }
+.toolbar { margin: 18px 0 4px; display: flex; gap: 10px; flex-wrap: wrap; }
+.toolbar button {
+  border: 1px solid var(--line); background: var(--panel); color: var(--muted);
+  padding: 6px 14px; border-radius: 6px; font-size: 14px; cursor: pointer; font-family: inherit;
+}
+.toolbar button:hover { border-color: var(--accent); color: var(--accent); }
+.nav { margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.nav a {
+  display: inline-flex; align-items: center; gap: 7px; text-decoration: none;
+  color: var(--muted); border: 1px solid var(--line); background: var(--panel);
+  padding: 5px 12px; border-radius: 6px; font-size: 14px;
+}
+.nav a:hover { color: var(--ink); border-color: var(--accent); }
+.callout {
+  border: 1px solid #dcc0bb; border-left: 4px solid var(--danger); background: var(--danger-bg);
+  border-radius: 6px; padding: 16px 20px; margin: 26px 0;
+}
+.callout h2 { border: none; margin: 0 0 8px; padding: 0; color: var(--danger); font-size: 18px; }
+.callout ul { margin: 0; padding-left: 22px; }
+.callout li { margin: 6px 0; }
+table.matrix { width: 100%; border-collapse: collapse; background: var(--panel); margin: 14px 0 6px; }
+table.matrix th, table.matrix td {
+  border: 1px solid var(--line); padding: 10px 14px; text-align: left; vertical-align: top; font-size: 15px;
+}
+table.matrix th { background: var(--quote); }
+table.matrix td:nth-child(2) { color: var(--good); }
+table.matrix td:nth-child(3) { color: var(--danger); }
+.grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+details.card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+}
+details.card[open] { border-color: var(--accent); }
+details.card summary {
+  list-style: none; cursor: pointer; padding: 14px 16px 12px; display: flex;
+  flex-wrap: wrap; align-items: center; gap: 6px 8px; position: relative; padding-right: 96px;
+}
+details.card summary::-webkit-details-marker { display: none; }
+details.card summary:hover { background: var(--bg); }
+.card-head { display: flex; align-items: center; gap: 8px; flex: 0 1 auto; }
+.card-head .sq { width: 10px; height: 10px; flex: 0 0 10px; }
+.card-title { font-weight: 600; font-size: 16px; }
+.chap {
+  position: absolute; top: 12px; right: 16px; margin: 0; font-size: 12px; color: var(--accent); border: 1px solid var(--line);
+  background: var(--quote); padding: 1px 8px; border-radius: 10px; white-space: nowrap;
+}
+.card-meta { margin: 0; display: flex; gap: 6px; flex-wrap: wrap; flex: 0 1 auto; }
+.pill {
+  font-size: 12px; border: 1px solid; border-radius: 10px; padding: 0 8px; line-height: 1.6;
+}
+.card-summary { flex-basis: 100%; width: 100%; margin: 8px 0 0; color: var(--muted); font-size: 14.5px; }
+.card-body {
+  border-top: 1px solid var(--line); padding: 6px 20px 16px; font-size: 15px;
+}
+.card-body ul { padding-left: 22px; margin: 10px 0; }
+.card-body li { margin: 6px 0; }
+.card-body p { margin: 10px 0; }
+.card-body strong { color: var(--accent); }
+.card-body blockquote {
+  margin: 12px 0; padding: 8px 16px; background: var(--quote);
+  border-left: 3px solid var(--accent); border-radius: 4px; color: #4a4236;
+}
+::selection { background: #d9c4a3; }
+footer { margin-top: 60px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>壞男人的權謀霸術 · 對策速查（詳解版）</h1>
+<div class="intro">
+<p>本頁把《壞男人的權謀霸術》全書六章逐節拆成可查閱的知識卡片：每張卡收合時只顯示一句摘要，展開後有機制、操作、案例與但書。先看最上方的「紅線」與「心態 × 位置」定位自己的處境，再依 核心心法 → 對上 → 對下 → 橫向 → 識人 → 自修 六個叢集查找對策。全書的立場：權謀是防身的黑魔法防禦術，先有價值，才有資格談權謀。</p>
+</div>
+<div class="toolbar">
+<button onclick="document.querySelectorAll('details.card').forEach(d=>d.open=true)">全部展開</button>
+<button onclick="document.querySelectorAll('details.card').forEach(d=>d.open=false)">全部收合</button>
+</div>
+<nav class="nav">
+<a href="#cluster-0"><span class="sq" style="background:#7b5aa6"></span>核心心法：權謀覺醒的地基<span class="count">29</span></a>
+<a href="#cluster-1"><span class="sq" style="background:#a6552e"></span>對上：伴君如伴虎<span class="count">21</span></a>
+<a href="#cluster-2"><span class="sq" style="background:#2e6b4f"></span>對下：御下之道<span class="count">25</span></a>
+<a href="#cluster-3"><span class="sq" style="background:#8a5a2b"></span>橫向：組織與派系<span class="count">15</span></a>
+<a href="#cluster-4"><span class="sq" style="background:#8a3a3a"></span>識人與提防<span class="count">15</span></a>
+<a href="#cluster-5"><span class="sq" style="background:#3a5a8a"></span>自我修練：心理素質才是硬道理<span class="count">16</span></a>
+</nav>
+<div class="callout">
+<h2>紅線：這些事做了就等著出局</h2>
+<ul>
+<li>職位低時別鋒芒畢露——心態是阿法，也要先偽裝成聽話的貝塔，過早露鋒＝找死。（1｜1、3｜3）</li>
+<li>當主管別在下屬面前自我揭露脆弱——示弱＝被鄙視、上下不分、引來狼子野心歸零你。（3｜3、3｜6）</li>
+<li>功高震主不留餘地＝必死——「權」與「勢」同時壯大又不釋疑，等著被清算。（4｜7）</li>
+<li>別放任框架被侵蝕——語氣、稱謂、排場的越界不處理，這些人遲早騎到你頭上。（3｜4）</li>
+<li>社交認證／兵符別亂給；要收回就「公開」收回，別私下給面子。（3｜2）</li>
+<li>賞罰二柄絕不交出去——特別是「罰」。把懲罰機制交到別人手上，你就是被架空的周天子。（3｜8）</li>
+<li>別當不選邊的牆頭草——只撿得到肉屑；也別自己另起第三派系＝謀反嫌疑。（2｜4、2｜5）</li>
+<li>別只抱大阿法大腿而不經營人馬——主子一死沒人罩你，吳起、商鞅皆死於車裂。（6｜2）</li>
+<li>靠山倒了別戀棧——派系頭子一死先想退路；藍玉在朱標死後隔年被誅三族。（6｜1）</li>
+<li>睡不該睡的妹＝留下把柄的未爆彈；重用背骨仔／賣主求榮者＝養蛇咬自己。（1｜3、5｜6）</li>
+<li>對主動送上門的高規格禮遇要起疑——連尊嚴都不要的委身討好，常是達成目的後翻臉的前奏。（2｜8）</li>
+</ul>
+</div>
+<h2><span class="sq" style="background:#6b6357"></span>先定位：你的「心態 × 位置」</h2>
+<table class="matrix">
+<tr><th>處境</th><th>該做</th><th>別做</th></tr>
+<tr><td>心態阿法 × 低位（新人）</td><td>暫時隱忍、演成聽話的貝塔，先讓自己有被利用的價值</td><td>過早展露鋒芒與野心</td></tr>
+<tr><td>心態貝塔 × 被拔擢／空降高位</td><td>硬著頭皮把阿法這齣戲演到底，恩威並施鎮住下屬、學藏心</td><td>繼續用貝塔姿態、在下屬面前露怯</td></tr>
+<tr><td>心態阿法 × 高位（主子）</td><td>藏鋒藏心、扣緊賞罰二柄、主動捍衛自己的框架</td><td>完美主義搶下屬的活、把好惡寫在臉上</td></tr>
+<tr><td>任何心態 × 中層（被夾）</td><td>對上釋疑、對下帶心，權衡上下利益輕重</td><td>無腦替下屬強出頭跟公司對幹</td></tr>
+<tr><td>大功在身 × 接近權力核心</td><td>主動釋疑、常懷感恩；聲勢最高時認真考慮急流勇退</td><td>把主僕當兄弟、繼續以權養勢以勢奪權</td></tr>
+</table>
+<section class="cluster" id="cluster-0">
+<h2><span class="sq" style="background:#7b5aa6"></span>核心心法：權謀覺醒的地基<span class="count">29 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">權謀覺醒：男人與男人的 Game</span><span class="chap">1｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">跟女人 Game 失敗最多打不到炮；跟男人 Game 失敗會丟訂單、被鄙視、眾叛親離——難度與報酬都高上數百倍。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：權謀覺醒＝用歷代官場累積的智慧，看懂並應對男人之間的權力互動。跟男人 Game 成功可以一飛沖天，之後「有打不完的炮」；失敗則整組人生壞光光，餓不死但絕對上不去。</li>
+<li>第一步是「階級觀念」：人在江湖無處不階級，識時務者為俊傑，人家比你強你就是要龜，硬幹只是找死。</li>
+<li>第二步是「判斷對方價值的眼光」：知道眼前的人多大咖、該用什麼態度與之相處。</li>
+<li>但書：當人生的主人不是永遠站在刀尖浪頭當主坦。適時隱忍的韜光養晦、清醒的低頭與被利用，才是更高智慧的展現。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">階級因價值而扭轉</span><span class="chap">1｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">階級不是固定標籤，誰需要誰比較多，誰就低頭——張忠謀捧錢來求你時，也要看你臉色。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：他發薪水給你＝他的價值高過你，你需要他多過他需要你；一旦全天下只有你能做他要的生意，強如張忠謀也要排隊。</li>
+<li>但書：就算對方有求於你，若他能提供的價值不只錢（人脈、政商關係、彈個手指讓你化為虛無的能量），仍要衣冠整肅嚴陣以對。跟大咖搞好關係他是貴人，得罪了則是災難。</li>
+<li>心法：與其抱怨階級不公，不如累積「別人非要不可」的價值來扭轉相對位置。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">判斷價值的眼光：押寶要趁早</span><span class="chap">1｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">厲害的男人在對方還沒起飛時雪中送炭打好交情——劉畊宏這輩子做過最正確的事就是早早跟周杰倫鬥牛。</p>
+</summary>
+<div class="card-body"><ul>
+<li>女人三秒內就能從眼神、語氣、肢體語言判斷男人的價值；多數男人要在職場磨一二十年、約四十歲才練出這種本事。</li>
+<li>操作：把「這人是不是個咖、將來會不會是個咖」當成日常觀察的習慣；對還沒發跡的潛力股提早結善緣，成本最低、回報最大。</li>
+<li>反例：很多人在明明有求於人的場合擺譜，連對方多大咖都沒掂過——軍中名言「不打勤，不打懶，專打不長眼」。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">錯置的阿法與貝塔</span><span class="chap">1｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">多數男人剛好做反了——對女人跪舔當貝塔，對男人卻故作姿態裝阿法，四處累積仇恨。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：藍藥丸制約下，男人只能在女人面前當貝塔、在其他男人面前裝阿法來抒發陽剛之氣，結果情場職場兩頭輸。</li>
+<li>「出於恐懼」的真義：必須用外在武裝去捍衛缺乏價值的內在核心才叫出於恐懼。真有價值的人自然有「我有你要的東西，但要看你表現」的不卑不亢。</li>
+<li>對策：對女人拿回主導，對男人學會看階級、看價值、控制情緒——順序跟直覺相反。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">外儒內法：與傳統思維對抗</span><span class="chap">1｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">真正的權謀高手對外推崇儒家溫良恭儉讓來降低對手智商，自己真正在幹的是陰狠御下的法家。</p>
+</summary>
+<div class="card-body"><ul>
+<li>傳統思維兩大遺毒：一是隱含服從權威的「孝順」思維，看到上司命令就把腦袋忘在家裡；二是「坦承溝通」的歪風——完全讓別人知道你在想什麼，下場是被對手知道弱點、被投其所好而引狼入室。</li>
+<li>操作：檯面上講仁義、講溝通、講願景（官腔），檯面下用利益、用制衡、用賞罰（法家）辦事。</li>
+<li>延伸：歷代統治者深知法家治國的妙用，但必須打著儒家大旗讓人民變韭菜——這套知識體系從不下放。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">廣義利益與時間尺度</span><span class="chap">1｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">一般人只看得到金錢美色的短期利益；權謀覺醒者把親情、名聲、輿論都算進去，並分短中長期排序。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：利益不只錢權色，還包括人際關係與聲量；同一個選擇在短期、中期、長期的利益曲線可能完全相反。心中的價值排序必須清楚，「既想當婊子又想立牌坊」就是排序不明。</li>
+<li>案例：項羽「印刓敝」——部下立功該封爵，印信在手裡把玩到稜角都磨掉還捨不得給。官位對領導者是成本最低的獎賞，他連「官位」與「人心」都排不出高下，被韓信認證「婦人之仁」，人心大失。</li>
+<li>心法：男人遇到問題就是想辦法解決，不是鬧情緒。該傷敵一千自損八百還是把餅做大，先把利益牽連全部攤開來算。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">女色是權力戰場的資源</span><span class="chap">1｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">自古「財色」並列。送黃金必配美女、陪睡換機會是只幹不說的潛規則，五千年後照樣有效。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：女色直指男人生物本能，是拉攏、滲透、腐蝕敵營的標配武器；春秋戰國收買敵國權臣就是黃金加美女。</li>
+<li>規律：在媒體上愈像聖人君子、對此類情事罵得愈大聲的，通常私底下玩得愈大。</li>
+<li>但書：這是用來「看懂」的知識——當你有權力，女色會自己上門，重點是評估後果，別讓權力紅利變成把柄。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">有實力才有資格講理想</span><span class="chap">1｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">初出江湖最重要的是在組織生存下來：跟對人、往上爬；手握千軍萬馬才能登高一呼做你想做的事。</p>
+</summary>
+<div class="card-body"><ul>
+<li>職場藍藥丸之一「過度理想主義」：以為心中有理想就有無敵星星護體，卻不知道理想需要實力當底。</li>
+<li>跟幹架一樣，先打得贏再來講武德。參與社運的是韭菜，厲害的是自己號召遊行名利雙收的人。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">「只想把事情做好」是技術人才的墳墓</span><span class="chap">1｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">在組織生存，跟上級搞好關係才是首要任務；不選邊站的技術人才遲早接屎缺、被設局搞掉。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：跟上級關係好，權謀覺醒的主管會若有似無把爽缺分給你，讓你三兩下立功——你有功勞，上頭才有理由升你官。</li>
+<li>反面：整天嚷「只想做事不想搞派系」的人，總有一天成為別人的絆腳石，屆時等著接屎缺或被鬥走。</li>
+<li>延伸（1｜4）：「追求卓越，成功自然追著你跑」只對了一半——能力超群但不通人情世故的白目，最多爬到中產階級，前提還是活著。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">不願爭取自己的利益</span><span class="chap">1｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">孔融讓梨式的「禮讓」教育讓人永遠不知爭取權利，好東西都被吵著要糖吃的人端走。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：明明有籌碼要更多福利，卻被「不為己」的價值觀洗腦，吃大虧還騙自己甘之如飴。</li>
+<li>但書：爭取的前提是先評估自己貢獻的價值跟薪水的差距。手無寸功卻無腦要求加薪，老闆只會想辦法逼你走人。</li>
+<li>指標：有沒有獵頭來挖角，是你的能力是否被市場認可的可靠訊號（2｜4）。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">恃才傲物是致命性格</span><span class="chap">1｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">超高級技術人員習慣被人捧著求，養成恃才傲物——得罪惹不起的大咖，人家可以用錢換掉你，甚至「解決」你。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：形勢比人強時你確實可以任君開口；但世界上很多事可以用錢解決——另找人取代你，或乾脆用錢解決你。</li>
+<li>對策：對小咖不必客氣過頭，對大咖務必嚴陣以對；把「這人我惹不惹得起」當成開口前的必答題。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">中層的利益權衡：別無腦替下屬強出頭</span><span class="chap">1｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">中層主管要在下屬利益與高層利益背道而馳時權衡輕重——只會挺下屬，你就是老闆眼中永遠對幹的不長眼小主管。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：中層是雙面角色——對下是小組織的阿法頭頭，要博感情讓人賣命；對上是大組織裡有利用價值的聽話貝塔，要讓高層願意給你社交認證。</li>
+<li>反例：預算就這麼點，你無腦據理力爭幫工程師要加班費，長久下來升遷永遠沒你的份。</li>
+<li>心法：權衡不是背叛下屬，而是懂得在哪個場合用哪個身份說話。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">紅藥丸是權謀的先修課</span><span class="chap">1｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">兩者都是權力議題、都是既得利益者不願讓你知道的真相、都有藍藥丸制約擋著——先修紅藥丸再學權謀，像張無忌有九陽神功再練乾坤大挪移。</p>
+</summary>
+<div class="card-body"><ul>
+<li>共通點一「權力議題」：任何關係都要有人領導；拿不到權力的人才會妖魔化權力、用「你不會溝通」羞辱掩飾無能。</li>
+<li>共通點二「既得利益者掩蓋真相」：官場是刻意為之（外儒內法不下放）；兩性領域則是政治正確的表態。</li>
+<li>共通點三「藍藥丸制約」：主流傳媒從意識型態上抹煞你身為主人的自覺——主僕不分，員工嘴上說你開明，心裡失去敬意。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">陰謀：有效、但反噬巨大</span><span class="chap">1｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">陰謀是沒有道德底限的出其不意；畢生追求陰謀的人格局小、仇恨累積比超跑還快，人生走不遠。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：拿陰謀暗算他人，對方勢必用陰謀反擊，結局是一片虛無的軍備競賽；沒有人被陰謀惡搞還能一笑置之，狠的會拿後半輩子跟你耗。</li>
+<li>但書：不是要你摒棄不用——每個權謀覺醒者都要對陰謀手段有初步認識，才能一眼洞悉飛來的暗箭。「要打敗流氓，只有比流氓更流氓」，清官要比貪官更奸。</li>
+<li>想通盤了解陰謀，《戰國策》是案頭必備書。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">陽謀＝因勢利導</span><span class="chap">1｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">陽謀是把意圖擺在桌上讓你看，你明知道還是得照他的劇本走——圍魏救趙，龐涓看穿了也只能回軍。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：孫臏不與龐涓正面交鋒，直取魏都大梁。龐涓完全看得懂，但主城要爆就輸了；就算轉攻齊都臨淄，路程兩倍遠是幹話，而且「將在外」的空窗期，國內反對派早就進讒言扣他謀反帽子。時勢所逼，不得不從。</li>
+<li>關鍵字：「攻其所必救」。陽謀著眼資源調動、籌碼分配，常公開喊話釋放訊號；飢餓行銷也是陽謀——明知排隊是走路工，羊群心理還是想湊上去。</li>
+<li>但書：陽謀只有一種情況沒用——對手智力太低看不懂利益變化。這時直接開幹比較快，對牛彈琴浪費時間。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">陰陽並修的取捨</span><span class="chap">1｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">用陽謀的大局觀定戰略，用陰謀的靈活防身。只講陽謀太好預測，只講陰謀格局上不去。</p>
+</summary>
+<div class="card-body"><ul>
+<li>只講陽謀不學陰謀：過於剛正、好預測，遇到真正陰狠的敵人絕對落於下風（對岸軍事文獻嘲笑蔣介石用兵迂腐可為戒）。</li>
+<li>只講陰謀不講陽謀：或許糊弄到一兩個客戶，但天底下又蠢又肥的羊有幾隻？等級絕對上不去。</li>
+<li>善惡不在形式在動機：刀能切菜也能殺人，專使陽謀的惡徒未曾少過，陰謀用得好也能懲奸除惡。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">大人物一開始只跟你玩陽謀</span><span class="chap">1｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">上流階級談合作都是陽謀高來高去、明刀明槍測試掂你斤兩；除非你礙到他，否則不屑對你出陰招。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：陽謀的本質是因勢利導，潛臺詞繞著利益打轉，聰明人一聽就懂；大人物對市井小民「彈個手指就捏死你了」，犯不著大費周章出陰招。</li>
+<li>應用：遇到大人物的各種測試，把它當成智力與格局的面試；真被玩陰的，反而代表你的實力已經威脅到他。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">權謀覺醒 vs 權力執迷</span><span class="chap">1｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">問自己一句話就能分辨：「我是要解決問題，還是滿足慾望？」覺醒是為了好做事，執迷是不安感作祟。</p>
+</summary>
+<div class="card-body"><ul>
+<li>權謀覺醒：不排除異己會被侵門踏戶、不賞罰分明組織會離心離德——手段是為了讓組織上下一心。</li>
+<li>權力執迷：像《黑暗騎士》小丑「追著車跑的狗，追上了也不知道要幹麼」；朱元璋用錦衣衛監控群臣就是典型，維穩說是為了國家，其實是為了家天下。</li>
+<li>但書：兩者不是非黑即白而是光譜。最高境界的權謀覺醒可以把權力執迷包含在內；而且要爬到最高位，還真需要一點執迷的顛狂才敢賭那個最大報酬——愈高端的戰場，病態人格的競爭者愈多。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">潛規則是萬能鑰匙</span><span class="chap">1｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">官腔與潛規則是光與影：檯面規則說人人排隊，塞了紅包窗口馬上辦事。不懂潛規則，每一步都被當白目。</p>
+</summary>
+<div class="card-body"><ul>
+<li>組成：潛規則＝利益集團私下認可的規則。官網章程、官方發言都叫「官腔」，是擋在前面的檯面；真正讓事情動起來的是檯面下的利益流動。</li>
+<li>操作：剛到新公司或新部門，第一件事是搞懂潛規則、跟真正的老大拜碼頭。</li>
+<li>延伸：陰謀陽謀都得服從潛規則底下的暗流規律，它是整個權謀知識體系的骨幹。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">合法傷害權</span><span class="chap">1｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">職務本身賦予的「照規矩卡死你」的權力。九品芝麻官在技術上比皇帝更能傷害你——直接交手的第一線窗口才是主導者。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：承辦窗口永遠可以用「印章糊掉、簽名斷水」合法退件搞你；就算你向上申訴、攔轎申冤，最後還是回到他手上處理。</li>
+<li>案例：軍中打申訴電話是最笨的作法——旅長把連長拉正狗幹一頓後，你還是要在連長底下過日子，等著被夜哨與內務加倍伺候。</li>
+<li>但書：合法傷害權可以互相約束——一群小兵集體申訴外加找記者，旅長就無法私下河蟹。潛規則的真正功能是讓雙方忌憚彼此的傷害權而避免衝突。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">制衡：組織的萬有引力</span><span class="chap">1｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">任何組織出現獨大勢力都會危及生存，自然會長出另一方勢力抗衡——連皇帝都要跟群臣制衡。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：朱元璋利用胡惟庸案廢掉宰相，但公文還是要批，最後明朝長出「內閣首輔」實質接手相權——歷史規律無人能抗。</li>
+<li>機制：皇帝的決定太扯，群臣可以聯手打槍；皇權不受制衡，國家只會爆炸得更快。「生命會找到出路，利益也會找到自己的流動方向。」</li>
+<li>應用：讀歷史、看組織，都從「誰在制衡誰」切入，很多光怪陸離的現象會豁然開朗。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">官腔是打槍他人的最好理由</span><span class="chap">1｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">對方提了愚蠢要求，搬出公司規定或採購章程來擋——老江湖聽到官腔就懂了，聰明的會換條件或檯面下加碼。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：沒有官腔當檯面，潛規則運作不起來。官腔讓你能笑著拒絕又不留把柄。</li>
+<li>類比：妹子打槍貝塔的「最近很忙、想衝事業」全是官腔規則；轉頭為阿法打破規則，因為慕強擇偶才是兩性的真正潛規則——潛規則永遠不能拿到檯面上講。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">昏君只是資訊管道壞掉</span><span class="chap">1｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">每個昏君做決策當下都自認明君。輸入的資訊被壟斷汙染，garbage in garbage out，決策品質再高也沒用。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：領導者必須仰賴「情報」下決策，而情報全靠耳目轉呈。誰控制了你的資訊管道，誰就間接控制了你的決策。</li>
+<li>讀史心法：別站著說話不腰疼嘲笑歷史人物腦殘——把你丟到同樣稀少的資訊環境，你的決策可能更蠢。</li>
+<li>對高位者的警告：連晏子這種心腹等級的寵臣，信任都能被三人成虎動搖，「人言可畏」。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">契約是西方的，關係才是華人的</span><span class="chap">2｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">人資那套「科學管理」源自西方契約精神；華人組織實際運作靠的是關係與醬缸文化——跟老闆熟、被老闆信任，才攀得上高位。</p>
+</summary>
+<div class="card-body"><ul>
+<li>但書：不是否定能力——能力是贏得信任的重要途徑之一，但不能劃等號；很多深受信任的只是條聽話的狗。</li>
+<li>操作：不用跟人資撕破臉，把人資當成要拉攏的派系之一——它是你道上名聲的第一道門面，獵頭挖角會先跟人資探聽。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">《獨裁者手冊》：抓住關鍵少數</span><span class="chap">2｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">領導者要上位，靠的不是萬民擁戴，而是黨內大老、軍系首領這些「關鍵少數」的支持——民主國家也一樣。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：只要派系首腦願意支持，位置就坐得穩。西方公司底層運作跟華人醬缸沒兩樣，天下烏鴉一般黑，要上位就是要結黨。</li>
+<li>應用：想影響一個組織的決策，先畫出它的關鍵少數名單，火力集中在這幾個人身上。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">換了位置換腦袋的結構性真相</span><span class="chap">2｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">內部老幹部「固守舊框架」不是不為也，是不能也——生錢體系上下游全是他的嫡系，大家撈得正爽，幹麼改？</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：當年雄才大略的主管換位置後變保守，是因為他的利益已經跟現有結構綁死。批評前先看懂這層。</li>
+<li>延伸：靠逢迎拍馬上位的無能主管，權謀覺醒的你應能早早看破手腳——在他底下混資歷、架空他或走人，權衡後再做打算。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">從封建宗法到潛規則</span><span class="chap">3｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">封建制度退到幕後變成派系，宗法制度化明為暗變成潛規則——派系運作才是最符合人性的架構。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：宗法（以祖宗為核心的家族法）貼近民情、執行力強、成員互相約束——這三個特性原封不動搬進了現代派系的潛規則。</li>
+<li>應用：每個派系都有各自的潛規則，剛加入新派系，第一件事是先搞懂它的潛規則是什麼。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">被需要的一方才握有權力</span><span class="chap">4｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">「In any relationship, the person with the most power is the one who needs the other the least.」——紅藥丸名言在主僕關係一樣成立。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：孔明不選人才濟濟的曹魏而選一無所有的劉備——曹操那邊荀彧郭嘉把位置卡好卡滿，去了最多不愁吃穿；劉備陣營求才若渴，跟著把事業搞大就是創始元老。以結果論，這算盤打對了。</li>
+<li>應用：選公司、選派系、選老闆，先問「他們有多需要我」；有才華也要有舞臺才得以展現。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#7b5aa6"></span><span class="card-title">說一套做一套：紫藥丸與儒教</span><span class="chap">5｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">歷史定律：用意識型態教出順民，遂行統治意志。漢武帝的「儒教」把君權神授包上宗教外衣，董仲舒自己信不信？不言自明。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：既得利益者用藍藥丸降低別人智商，自己用紅藥丸行事——名利雙收。統治階層外儒內法，嘴上仁義道德，心裡二柄權衡。</li>
+<li>應用：判斷權謀家心中所想，跟判斷女人的真實意圖一樣——別聽他們怎麼說，看他們怎麼做；從行為的最終得利者反推動機。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<section class="cluster" id="cluster-1">
+<h2><span class="sq" style="background:#a6552e"></span>對上：伴君如伴虎<span class="count">21 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">揣摩上意（一）：從提問看關注焦點</span><span class="chap">4｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">會議上最常把誰抓出來狗幹，就是大阿法目前最關心的首要任務——剛好經手的人皮要繃緊。</p>
+</summary>
+<div class="card-body"><ul>
+<li>操作：觀察大阿法最常問的問題，判斷他此刻最關心業績還是產品；再觀察他得到回覆後的反應——他是真要解決問題，還是心中早有定見、只是在驗證想法。</li>
+<li>進階：有時提問是在「數人頭」——茲事體大的案子（換系統、大改組）需要派系相挺，會議上一個個點名是投石問路兼鞏固領導中心。</li>
+<li>《韓非子·說難》的教訓：表面謙恭請教、骨子裡只想驗證自己想法的主子，順著毛摸才是正解，千萬別力排眾議提獨到見解。</li>
+<li>心法：還在底下當小貝塔時，珍惜看戲蜜月期——第一線觀摩高手交鋒是最棒的學習機會。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">揣摩上意（二）：從互動模式看怎麼跟</span><span class="chap">4｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">看大阿法公私分不分明、親近誰、聽誰的——能影響軍師的決定，十之八九能影響大阿法的決定。</p>
+</summary>
+<div class="card-body"><ul>
+<li>公私不分型（要你接送小孩、私下塞紅包）：不用上網哭爸，根據職涯規畫決定要不要拍這馬屁，線索都給你了。</li>
+<li>公私分明型：儘管用工作表現讓他刮目相看，這種才是值得跟的好前輩。</li>
+<li>迂迴路線：正面進攻不易，就跟他信任的軍師交好。順便觀察：一條廢柴都能影響他決策，他的檔次也高不到哪去——看人要連交友圈與決策團隊一起看，樣本愈多愈準。</li>
+<li>紅旗：老闆對老婆言聽計從、把老婆安插進要職——等於開後門裝木馬，學到東西早點閃人。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">揣摩上意（三）：從上位方式與失敗反應看人</span><span class="chap">4｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">白手起家的別跟他拍馬屁；諂媚上位的拿出真才實學反而被打壓。出事時看他扛鍋還是甩鍋。</p>
+</summary>
+<div class="card-body"><ul>
+<li>看上位方式推喜好：靠戰功上位的欣賞實力派；靠逢迎上位的怕你搶風采，不懂藏鋒會被棒打出頭鳥。新創公司老闆沒有升遷軌跡可查，就上網查業界風評。</li>
+<li>看失敗反應斷人品：專案失敗、訂單被搶時，他是降詔罪己一肩承擔、對事不對人釐清問題，還是馬景濤式咆哮甩鍋？有甩鍋慣性的，你的建議出了問題鍋子會飛回你身上。</li>
+<li>總結兩軸：權謀（有沒有本事、值不值得學）× 人品（能不能交心、會不會背刺）。二擇一時選有權謀手段的——至少他搶得到餅；跟天真善良心機全無的「好」老闆，他能不能保住基業都是問題。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">升官起手式：先當個重視契約的螺絲釘</span><span class="chap">4｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">忠義與否要花時間才看得出，但可以從工作態度看出雛形——你對分內工作的重視程度，就是你對契約關係的重視程度。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：打工的本質是契約（口頭承諾也算）。大阿法會從你怎麼對待現在的工作，推想你將來怎麼對待跟他的關係。「哪怕你只是掃地清潔工，永遠有人在你不知道的地方盯著你看，君子慎獨。」</li>
+<li>但書：混吃等死型的錢多事少工作，只適合當創業準備期的避風港；否則十年後回到市場，你連剛畢業的大學生都不如。</li>
+<li>心法：獲得大阿法提拔，比自己苦幹實幹最後懷才不遇強上許多——但社交認證的必要條件仍是專業能力。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">前輩沒有義務教你：先釋疑再偷學</span><span class="chap">4|2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">業務性質的老鳥教會你＝多個潛在競爭者，暗地留好幾手是常態。你該做的是讓他知道拉你起來對他有好處。</p>
+</summary>
+<div class="card-body"><ul>
+<li>操作：「釋疑」——展現可利用價值＋忠義無害的性格，跑腿倒茶替他分憂解勞，讓他相信你不是會反捅一刀的人。</li>
+<li>但書：就算貝塔面做好做滿，仍可能遇到疑心病重的前輩。記住這世上沒人有教你的義務，遇到肯傾囊相授的要感恩，偷藏幾手才是業界常態——多觀察、在一旁偷學。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">跟阿法搞好關係：讓上級看見成果</span><span class="chap">4｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">苦幹實幹自然有人看到＝職場藍藥丸，你會是收割型老江湖的頭號肥羊。學會向上彙報工作成果。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：深懂拍馬屁的老江湖最明白讓上級知道成果的重要，心黑的直接搶下屬功勞收割。你必須走正道讓阿法對你信任——跟阿法的關係與業界名聲是日後爆發力十足的潛在資本。</li>
+<li>鑑別：用正道成果信任你的阿法，人品通常可靠；知道你使陰損手段還重用你的，你要有跟魔鬼打交道的心理準備。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">挑大阿法三看：派系、權謀、人品</span><span class="chap">4｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">一看背後靠山夠不夠穩（打狗看主人），二看有沒有權謀覺醒守得住基業，三看人品敢不敢扛責任。</p>
+</summary>
+<div class="card-body"><ul>
+<li>看派系：靠山穩，別人動你前會投鼠忌器；他在派系裡喊水會結凍，你也有跟著雞犬升天的空間。但書：派系鬥爭若是毀滅性打擊，綁太深的你閃不出暴風圈。</li>
+<li>看權謀覺醒：岳飛戰力滿點但政治零蛋——喊「迎回二聖」威脅宋高宗飯碗、擅自擴軍徵糧形同藩鎮，被鏟除時整個暴風圈的人一起死。跟人品低劣但手腕高超的阿法，可以學陰招自保——保持距離、不進權力核心、東西學完就閃。</li>
+<li>看人品：底限是「敢扛責任」——在他底下不用背莫名其妙的黑鍋。三者兼具的是股價六十塊的台積電，逢低買進。</li>
+<li>但書：人是會變的——換位置換腦袋、年老變蠢（失智是生理問題）。同時別忘了，你自己也會變；品質良好的主僕關係跟優質長期關係一樣稀有。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">選邊站的三個力度：表態、執行、示好</span><span class="chap">4｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">政治信號強度：執行命令＞口頭表態＞間接示好。局勢未明可以裝死，但該表態時不表態＝兩邊不討好。</p>
+</summary>
+<div class="card-body"><ul>
+<li>表態：被點名時用嘴巴解決。中小阿法互鬥時別傻傻「秉公處理」——觀察哪邊派系有前途，風往哪吹往哪倒；要挺弱勢的革命情誼也行，但要清楚利益與風險，別當被拱著戴鋼盔的愚勇。</li>
+<li>執行：行動比言語誠實。兩個派系都交辦任務時，先做想拉攏那方的（「稍後再做」與「完全不做」政治意義不同）。忌越級揣摩上意幫更高層做事——無事獻殷勤必有詐，除非該組織的潛規則就是集體拍馬屁，那就跟著拍。</li>
+<li>示好：透過第三方傳到當事人耳裡才算數——茶水間、吸菸區、群組裡稱讚目標（他本人不能在群組裡），總會有人截圖給他看。愈隱晦愈像真的；效果像播種，要有讓子彈飛的耐性。</li>
+<li>按讚也是政治：跑去按老闆仇家的讚，他心裡絕對有疙瘩——權謀從來不是你怎麼想，而是掌權者的主觀認知。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">接任務前的三個判斷</span><span class="chap">4｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">先摸上級性格（怕事型求無過、雄才型求效益、甩鍋型設防火牆），再判斷任務性質，最後鎖定驗收標準。</p>
+</summary>
+<div class="card-body"><ul>
+<li>任務四類：職務內例行（做好應該、做壞該死，記得回報讓上頭放心）；職務內突發與非職務考核（一戰成名的機會，閃得掉的先評估成本再請纓）；非職務鳥事（他的私事或骯髒活，看透他的性格再決定接不接）。</li>
+<li>驗收標準要反覆確認到雙方一致；交件被雞蛋裡挑骨頭別太在意——有時是計畫趕不上變化，有時是故意打槍兩三次挫你銳氣，將來才好駕馭你，「你的薪水已把這類精神折騰算進去了」。</li>
+<li>要資源趁現在：尚方寶劍、預算、跨部門協調都在開工前談好；弄個流程表展現專案感，之後追加資源阻力較小。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">主動呈報方案＝攤開掌心釋疑</span><span class="chap">4｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">阿法最忌諱下屬趁辦事偷撈權力。事先呈報做法（包括見不得光的手段）＝主動交把柄表忠誠。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：執行任務的呈報會暫時帶給你巨大權力——大阿法根據你的資訊做決策，等於你間接掌控他的行動。所以每條資訊都要對得起他的信任，胡亂呈報公報私仇，被交叉比對抓包的下場不用多說。</li>
+<li>操作：計畫中若有走後門、賄賂等灰色手段，事先講明（說不定還能報帳）；過程中因工作需要結交人脈，也是事先報備比事後被抓到好——他主觀不信你，你就永遠洗不白。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">讓大阿法依賴你：光明與黑暗兩種能力</span><span class="chap">4｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">光明面是他不會而市場稀缺的專業；黑暗面是他不肯做的骯髒活。沒人敢接的燙手山芋是一戰成名的契機。</p>
+</summary>
+<div class="card-body"><ul>
+<li>光明面：能力稀缺到他離不開你，跳槽時他會出高價挽留。</li>
+<li>黑暗面：放話抹黑這類事，形象好的人做不起，只能由側翼代勞——這解釋了為什麼有些無才無德的人能在政壇屹立不搖。</li>
+<li>進核心的最後一塊拼圖是「忠誠」：公開表態（在媒體上挺自家阿法＝斷掉被對手拉攏的空間，退無可退）或替他擋子彈（在他即將覆滅時不等指令挺身相救，直接有恩於他，瞬間建立換帖等級的信任）。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">升不上去的三條路</span><span class="chap">4｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">上策助好主管光榮離開、位置留給你；中策蒐集爛主管黑料交給他的政敵代勞；下策自己走人換戰場。</p>
+</summary>
+<div class="card-body"><ul>
+<li>上策「結善緣」：幫有能力有人品的小阿法衝業績讓他升遷，或主動幫他丟履歷給獵頭（獵頭要業績、他要高薪好位、你要那個缺，三贏）。但書：要先確定你是繼承第一順位；要有讓功的氣度且確定他不是心胸狹隘之輩；還要提防上頭把你們當同派系連坐忌憚——變數一半不在你手上，真的要靠緣分。</li>
+<li>中策「借刀」：對品德低劣的小阿法，表忠接近成為心腹，拿到骯髒事的黑料後絕不自己爆——弄清他的政敵是誰，把黑料轉交政敵代勞，禍水東引、狗咬狗，自己蹺腳看戲。黑料要挑「有第三方在場、查不出爆料者」的（性招待現場人人都是嫌疑犯）；密室裡只有你們兩人的事一爆就知道是你。</li>
+<li>下策「自己離開」：換部門或跳槽，前提是把現職的專業能力與戰績練好，才能愈換愈好。時限：一般公司抓兩年，公務員國營抓五年，過了就換地方。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">功高震主的三重必然</span><span class="chap">4｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">親則生狎（太熟忘了尊卑）、權勢過大（以權養勢、以勢奪權）、繼承人鎮不住——三條都跟你的忠心無關。</p>
+</summary>
+<div class="card-body"><ul>
+<li>親則生狎：跟大阿法「食則同桌，寢則同榻」，神祕感隨距離消失——你發現他放的屁是臭的，言行不自覺出現隱晦不敬，而高位者的社交直覺極其敏銳，稱兄道弟埋下殺機。</li>
+<li>權勢過大：「權」是職務給的合法傷害權，「勢」是背後聽你使喚的人馬，兩者相生相成是執行任務的原罪——八成男人是貝塔，你一扛責任就有一票死心塌地的跟隨者趕都趕不走。是否動手全是大阿法的主觀判定，你有沒有動機一點都不重要。</li>
+<li>繼承人賽局（趙翼《二十二史箚記》）：劉秀、李世民年輕鎮得住老臣，等他們老死即可，落個仁厚美名；趙匡胤有弟弟可馭諸臣，杯酒釋兵權留人性命；朱元璋六十歲天下才定、太子太孫仁弱，只好兩興大獄一網打盡。身為功臣要把「繼承人鎮不鎮得住我」算進自己的生死方程式。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">想善終：急流勇退是上策</span><span class="chap">4｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">在聲勢最高點辭退一切回家含飴弄孫；或常懷感恩主動釋疑；要另立山頭就趁早——愈接近核心才走，愈像竊取資源。</p>
+</summary>
+<div class="card-body"><ul>
+<li>上策：張良模式——聲勢最高時把養老棺材本拿一拿，退出權力戰場。</li>
+<li>中策：發自內心尊重拉拔你的大阿法，認真研讀「展現忠誠的正確方法」，主動釋疑減少殺機。但書：這押注在大阿法的人品上，而再好的人也可能利慾薰心變質。</li>
+<li>下策：直接閃人另立山頭，時間愈早愈好。</li>
+<li>不入流：政變歸零大阿法——風險最大，不是正道。「權力戰場最大的贏家，從來不是最高位的大阿法，而是看破一切、滾過一輪選擇登出的隱士高人。」</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">很黑的時候：降仇恨值再翻紅</span><span class="chap">4｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">在大阿法眼中黑掉時，做壞給他藉口送你上斷頭臺，力求表現他解讀成「你在怪我埋沒你」——唯一解是低調做例行工作等仇恨降下來。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：像《魔獸世界》坦克的仇恨值——滿檔時他就是盯著你等你出包。</li>
+<li>操作：什麼都別爭取，低調做好例行公事；等仇恨降下來後，也不能主動請纓邀功，只能透過大阿法以外的人派任務、用亮眼成果讓他重新注意到你。</li>
+<li>但書：由黑翻紅有運氣成分，所以沒事千萬別讓自己黑掉。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">惹不起就先閃：三種該避鋒的局</span><span class="chap">4｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">對方派系人脈過強、大阿法安插裙帶人馬、競爭對手是病態人格正妹——別據理力爭，先活下來。</p>
+</summary>
+<div class="card-body"><ul>
+<li>裙帶人馬：大阿法把叔伯安插進公文要職當橡皮圖章，人資也會忘掉篩選標準。你的考績再好，「有關係就沒關係」，擊鼓申冤是螳臂當車。</li>
+<li>病態人格正妹：美色是誘迫男人買單的超強武器，她可以不帶感情服務到讓對方欲死，拿到資源就一腳踢開；出包還能聲淚俱下化身受害者，媒體與白騎士齊挺。連老狐狸都在陰溝翻船，早點閃人為上策。</li>
+<li>心法：權謀不是萬靈丹，它的價值之一是判斷「現在該進攻還是保命」。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">吳起與商鞅：只抱大腿不建勢力</span><span class="chap">6｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">兩位變法奇才都深受大阿法信任、忠心耿耿，但變法擋了貴族財路又沒培養嫡系——主子一死，雙雙被車裂。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：只要罩他們的秦孝公、楚悼王還在，貴族只能憤憤任憑宰割；但他們在等反撲機會，大阿法一死就沒人鎮得住。吳起最後跑到楚悼王遺體旁伏屍，讓射他的箭同時射中先王遺體，死後反栽貴族「毀損先王遺體」大罪——聰明陰毒，但代價是命。</li>
+<li>該做而沒做的三件事：變法過程中拉攏人才收為嫡系（廉潔的放高位、陰損的養側翼）；用利益挖對手牆腳、在敵方派系要職安插自己人；勢力起來後自然有線民送情報，可事先沙盤推演。</li>
+<li>但書：結黨會功高震主、不結黨活不下去——這就是鋼索。能善終的忠臣大多在灰色地帶遊走：本身不結黨但人品好人緣好，一票同事願意相挺，「結得比較漂亮罷了」。趙良早警告過商鞅「君之危若朝露」，他戀棧權位不肯退，下場跟吳起一樣。這也是每個空降 CEO 的處境。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">藍玉：太子一死，靠山即成催命符</span><span class="chap">6｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">藍玉的一切囂張都是朱標罩的。朱標病逝隔年，朱元璋立刻興「藍玉案」誅三族、牽連一萬五千人。</p>
+</summary>
+<div class="card-body"><ul>
+<li>背景：藍玉是明初神將，從跟徐達見習一路打到大將軍，也是太子朱標的姻親嫡系——朱元璋容忍他的劣跡，全是為了留給朱標用的布局。</li>
+<li>劣跡清單（每條都是自殺）：受降時硬要哈納出穿自己戰袍，把到手的歸降搞到破局；逼姦元朝妃子，把「梁國公」搞成明升暗貶的「涼國公」還看不懂；守關將領迎接慢了就縱兵攻打自家關口；受封太傅還公然喊「我不堪太師耶」；軍中安插親信、霸占土地、販私鹽——在朱元璋眼中全是謀反前奏，錦衣衛一筆筆記著。</li>
+<li>教訓：一、政治敏銳度歸零的人，聞不出「靠山死了」這種等級的風向變化；二、跋扈性格吸不到謀士，連提醒你跳船的人都沒有；三、上頭對你的容忍常常不是因為你，而是因為你背後的某人——那個人不在了，容忍立刻歸零。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">張遼：降將的天花板與活法</span><span class="chap">6｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">歷任五個老闆卻從不賣主求榮，盡本分打安全牌——曹操給足官位榮寵，但永遠派人跟他分權，絕不讓他獨鎮要地。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：張遼每次跳槽都是老闆敗亡的不得不（丁原、何進、董卓、呂布相繼倒臺），且任內盡心貢獻價值——所以人人敢用他。但「降將」要進權力核心，難度只比登天簡單一點：曹操讓最信任的夏侯淵守漢中，張遼永遠是隨軍作戰、當副將，或被派另一人制衡（天柱山之役與降將張郃編一組、合肥之戰配嫡系李典樂進）。</li>
+<li>張遼的聰明：未得信任前先觀察老闆的用人模式、配合成為不可或缺的一員，而不是異軍突起當山大王；深知自己資源籌碼的極限，「聰明的狗不亂咬主人」——有過亂咬紀錄的狗，被棄養後很難再被認養。</li>
+<li>教訓：接到「明擺著制衡你」的人事命令，嘆口氣、苦笑兩聲，繼續當好員工——張遼在被制衡的局裡照樣打出威震逍遙津。認清職涯天花板也是一種智慧，該給的好處曹操從沒少過。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">荀彧：用「不說話」捅出的回馬槍</span><span class="chap">6｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">曹操野心越界後，荀彧不勸阻也不糾正——幫他打贏熱身賽，卻在赤壁之戰一言不發，看著他往死裡走。</p>
+</summary>
+<div class="card-body"><ul>
+<li>背景：荀彧是曹操的「吾之子房」，官渡之戰的四勝四敗、先滅呂布後滅袁紹的方針全出自他手；但他自我定位始終是「漢臣」，挾天子以令諸侯原是他教的「奉主上以從民望」，曹操野心膨脹越過底限，就超出他的意料了。</li>
+<li>導火線：曹操上奏替荀彧請爵，摺子裡「天下之定，彧之功也」暗藏殺機——出嘴的居首功，帶兵的曹操又該當何賞？分明是藉加封試探漢獻帝框架。荀彧用侍中職務之便扣住奏摺，主僕嫌隙就此展開。</li>
+<li>高招之處：周瑜看得出曹操南征的四大劣勢，四十六歲的荀彧不可能看不出。他故意幫曹操拿下荊州助長野心，卻在主賽閉嘴——給錯建議日後會被興師問罪，「沒說話」毫無政治風險，還順了你打劉表之意。這是連槍桿都摸不著的回馬槍。</li>
+<li>教訓：對高位者——身邊最有才華的人若突然安靜，該想想為什麼；對做臣子的——對抗失控主君，最安全的武器有時是沉默。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#a6552e"></span><span class="card-title">官場沒有「溝通」，只有訊息的釋放與解讀</span><span class="chap">3｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">權謀戰場上沒有溝通這個選項；下屬不可能跑去問老闆「你是不是不挺我」——問了死得更快。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：老闆放任別人貶低你而不作聲，唯一合理解讀是「他想跟我切割」；你不能去求證，只能照政治訊號行動。</li>
+<li>應用：對上，練習解讀訊號的智慧；居上位，注意你的沉默與小動作都在釋放訊息——釋放錯誤訊息的一方，就是那個智障。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<section class="cluster" id="cluster-2">
+<h2><span class="sq" style="background:#2e6b4f"></span>對下：御下之道<span class="count">25 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">主子要讓底下吃得飽</span><span class="chap">3｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">朱元璋把官員薪水壓到生活基準線想根絕貪汙，結果整個明朝官場被迫貪——跟人性規律對幹，皇帝也會被打臉。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：明朝七品知縣年薪換算月薪約三萬二，但招待欽差、孝敬紅包、聘小吏全要自掏腰包，隨便一筆關說費就是不吃不喝一整年的數——不貪活不下去。清官海瑞窮到「蕭條棺外無餘物」，而且他能善終載入史冊根本是生存者偏差，多數清官早被利益集團圍剿至死。</li>
+<li>機制：「居馬上得之，寧可以馬上治之乎」——打天下與治天下是兩套思維。朱元璋帶兵時深知放福利、賞金帛；換位治國卻忘了文官也有一家子嘴要餵。</li>
+<li>心法：「共體時艱」的幹話留給不成材的老闆。能餵飽每張貝塔的嘴，才有資格求最好的人才賣命。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">依親疏遠近分派利益</span><span class="chap">3｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">先確保跟你混的都有飯吃，再依忠心程度分好處——「用人唯才」必須建立在忠誠的前提上。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：看到超強人才，雄才大略的大阿法第一個念頭是收買留用、出高價留人，此時論功行賞才有意義；不願效忠（不接受收買）的人才，你要轉念想「他被對手挖走對我是什麼影響」——很多殺人滅口的骯髒事，就是收買不成才不得不做。</li>
+<li>應用：分餅順序＝忠誠度排序。這不是酬庸，是在向全組織宣告：跟著我混的，老子一定讓他吃得飽。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">可控的灰色地帶：讓下面貪在你眼皮底下</span><span class="chap">3｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">與其全面禁貪逼人比創意，不如故意留灰色地帶——誰貪、貪多少你心如明鏡，執法力道還成為御下的旋鈕。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：潛規則連皇帝都滅不掉，就讓它維持在可控範圍。像禁菸：全面禁絕不如留個模稜兩可的灰色抽菸區——但絕不能明文化，寫成正式規則，偷偷來的刺激感與引誘力就沒了。</li>
+<li>操作：對看順眼的放寬尺度，看不順眼的讓他皮繃緊；時不時大掃蕩，讓底下摸不清上頭在想什麼，殺雞儆猴兼顯深不可測。</li>
+<li>本質：這是人為創造的「勢」——權謀覺醒的大阿法要懂得打造合乎自己利益的潛規則。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">社交認證＝兵符</span><span class="chap">3｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">唯名與器不可假人——寧可多給錢與土地，也不可亂給有象徵意義的名號器物；底下人會照你的認證行動。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例一：劉備當眾入列聽孔明調度，關張才不得不服——社交認證能讓人跳過辛苦打拚直接站上高位，這正是它的威力也是它的危險。</li>
+<li>案例二：仲叔于奚救了衛國主帥，不要封地只要諸侯的樂器與朝服，衛君覺得省錢爽快答應；孔子點評「唯器與名不可以假人」——名器給錯人，江山就麻煩了。</li>
+<li>給認證前想好三件事：一、先想自己的利益（「不問利益先給予」是藍藥丸，拉人之前嚴加考核）；二、再三考核人品（從網路痕跡、群組發言看狼子野心，刻意清除痕跡本身就是警訊）；三、想好所託非人的退場機制。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">收回社交認證：一定要公開</span><span class="chap">3｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">白目可教化就暗示點醒；點不醒的盡速收回認證——當初公開發的兵符，就要公開收回，讓所有人看到你的態度。</p>
+</summary>
+<div class="card-body"><ul>
+<li>判斷框架被犯時先看對方是誰：屁孩掂不清身分差距，容錯高一點；四十歲老江湖公然頂撞，通常是試探你好不好欺負的前奏，放任＝開後門給人捅。精神狀態不穩的另計，別用正常邏輯判斷。</li>
+<li>機制：對權力不知分寸的人，不會把你的兵符當一回事——他把風生水起全歸因於自己好棒棒，內心遲早膨脹到想取而代之，你等於養出在自家農場偷雞的狼。</li>
+<li>但書：私下給面子收回＝沒收回。婆媽等他拿著兵符養大勢力，就來不及了。給了認證之後，務必持續試探對方知不知感恩。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">阿法要有阿法的自覺</span><span class="chap">3｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#7b5aa6;color:#7b5aa6">貝塔上位</span><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">「阿法」要連位置一起看：低位的阿法心態要演貝塔；被拔擢的貝塔就算千百個不願意，也要咬牙把阿法演到底。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：你手底下每個人都睜大眼看你怎麼處理事情，據此決定對你的態度；被鄙視，陽奉陰違完全可以預期。要駕馭權謀覺醒的手下，必須展現更高明的權謀手段——司馬懿在曹操手下乖得跟狗一樣，因為曹操鎮得住他；熬到曹家第三代才出手竊國。</li>
+<li>對趕鴨子上架的新主管：學習當好主人是首要任務。鎮不住底下，組織執行力低落、考績難看、上頭不爽；底下若有權謀覺醒的小阿法，等於送頭——上下夾攻，裡外不是人。</li>
+<li>甜頭：熬過去，政治手腕、識人、內政外交能力大幅提升，眼神會變得有神帶邪氣，光對上眼就能打消部屬的謀反念頭。沒這覺悟就別升了，當個被罩的貝塔也是挺不錯的人生。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">老闆別在檯面上示弱</span><span class="chap">3｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#7b5aa6;color:#7b5aa6">貝塔上位</span></div>
+<p class="card-summary">在臉書哭創業辛苦的老闆，換來的是員工鄙視、上下不分、與病態人格的磨刀霍霍。</p>
+</summary>
+<div class="card-body"><ul>
+<li>三重代價：一、被員工鄙視——大阿法愈一臉掌握乾坤（哪怕裝的），貝塔愈有安全感；自我揭露做多了，員工只會在群組擔心公司要倒、私下嘲笑你的懦弱。二、上下不分——失去敬畏之心的員工做事品質敷衍了事，帶兵帶心的前提是恩威並施分出上下。三、引來狼子野心——弱者（尤其有錢的弱者）就是肥羊；哭訴的緣由還替對方標好了你的情緒弱點，等你生氣沮喪失去判斷力時就是他們出手的東風。</li>
+<li>但書：展現情緒唯一的正當用法，是反過來把它當武器誤導對手。</li>
+<li>補充（4｜8）：苦水只能跟同是老闆的朋友在酒吧裡吐，回頭板起面孔繼續奮鬥；寫在臉書上，鎖好友也擋不住截圖流傳。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">捍衛框架（一）：語氣與稱謂</span><span class="chap">3｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">甩門、不耐煩、用對小弟的語氣跟你說話——「沒大沒小」不處理，這些人遲早騎到你頭上。</p>
+</summary>
+<div class="card-body"><ul>
+<li>稱謂是指標：敬語（某總、某哥、老師）的使用與否透露對方是不懂事還是有意侵門踏戶；不必糾正對方「跟我說話要用敬語」（那樣很瞎），但要把它當觀察訊號。作者自己對多年老友也依其現在的社會地位稱呼，禮多人不怪。</li>
+<li>恩威並施的示範：某副連長私下跟士兵混在一起抽菸給福利（恩），公開場合罵得比誰都兇（威）——甚至搶在連長開罵前先把部隊狗幹一頓，讓連長沒法加碼，事後才說「我這是在救你們」。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">捍衛框架（二）：有人貶低你的人馬＝在分化你</span><span class="chap">3｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">小阿法動不了你，就轉頭在稱謂上輕蔑你的直屬人馬。你不出面制止，等於向對方釋放「我要跟他切割」的訊息。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：某甲是你的人，也代表一部分的你。你放任別人給他取不雅綽號、言語嘲諷，某甲只會解讀成老闆對自己厭倦——他不可能來問你（問了死更快），狼子野心的小阿法只動一張嘴就兵不血刃讓你失掉得力助手。</li>
+<li>對策（3｜5）：三個情境三種力度——會議上側面拐彎警告（用詞留面子，重點是宣告「我的人我會保護」，順便收攏民心）；叫進辦公室直接開罵（私下罵降低仇恨，但記得先扣個「破壞組織和諧」的道德大旗，且別把「他是我的人所以我罩」說破——說破顯得手腕拙劣）；群組裡出言制止（留下紀錄，力道介於前兩者之間）。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">捍衛框架（三）：排場與合照政治學</span><span class="chap">3｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">曹操面聖的排場——殿外重兵、百官背對天子向他跪拜——就是不用說出口的宣示。現代版是名車、衣著與合照站位。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：人類把意識型態寄託在器物上（曹操受九錫）。下屬最簡單的避禍法：車不比老闆好、衣著不壓過老闆。</li>
+<li>合照站位：主位兩旁是兵家必爭之地——蹭到大阿法旁邊入鏡＝白拿社交認證，大家都會猜「這是不是欽點要提拔的」；更有甚者趁兵荒馬亂「不小心」把你擠到旁邊占據主位。要警覺誰在你身旁刻意沾光。</li>
+<li>延伸：孔子的「禮」跟「框架」合在一起看，根本是教人維持框架的手冊——有人失禮、逾越倫常秩序，就是該警覺的時候。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">用懲罰樹立威嚴</span><span class="chap">3｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#7b5aa6;color:#7b5aa6">貝塔上位</span></div>
+<p class="card-summary">威嚴的本質是力量，靠懲罰立出來——殺雞儆猴真有其道理；新手主管到任先「找事」立威。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：有過當眾發飆把人臭幹一頓的紀錄，傳出去反而是領導之路的助力——大家知道你有實力發飆也敢發飆，自動敬你三分。一臉和善的新手大阿法，底下有心作亂的早就蠢蠢欲動。</li>
+<li>操作範例：空降主管到職當天集合小主管交部門報告——報告只是引子，從中雞蛋挑骨頭，藉此告訴所有人「別以為老子是塑膠」。</li>
+<li>對象：讓破壞秩序的人受到嚴懲，重點不是洩憤，是向組織宣告秩序由你定義。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">學鄭莊公：放任罪行升級再一網打盡</span><span class="chap">3｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">對已成氣候的大咖，別在小錯時出手——裝傻放任他把罪行升級到「謀反」等級，才有名義連根拔起。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：〈鄭伯克段於鄢〉——共叔段擴建封地、擅自收編邊城，鄭莊公一路裝昏君；等弟弟真的帶兵謀反，早已好整以暇的大軍一舉殲滅，連當內應的母親一併逐出。若在擴建封地時就出手，最多叫來罵一罵，對方回去換招再來，事情永遠結束不了。</li>
+<li>原則：愈殘酷的整治手段，之前要扣愈大頂的罪名；罪名不成立，就想辦法讓它成立。歷代官場要把人往死裡打的，都是讓上頭以為他要「謀反」。</li>
+<li>操作細節：放任期間要私下安撫被他中傷的自家人馬（穩軍心，但別透露計畫）；罪名一扣上就立刻扣扳機，別給辯解機會，夜長夢多。最難的是傷害控管——你必須對這人的個性瞭如指掌，才能預測犯罪時機、覷準軟肋出手。鄭莊公若非算無遺策，怎能在對方發兵當下就備好大軍？</li>
+<li>但書：還在糾結「扣錯帽子怎麼辦」的，真的可以考慮乖乖當打工仔。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">藏鋒：別搶下屬的活</span><span class="chap">3｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">你簡報做得比全公司好也不能出手代做——開了先例，員工會用擺爛馴化你；鋒出鞘就要見血。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：幫員工做一次簡報，日後他們壓到死線就往上丟等你出手，最後你事必躬親累死，框架整個亂套。個人造業個人擔，要拗下屬加班也行，就是不能往上丟。</li>
+<li>正確用法：用這項專業「監督」——員工知道你是行家，交作業自然戰戰兢兢，無形中立威。非拿不可的大案子才親自出手。</li>
+<li>更高境界：不讓任何人知道你有這項技能——底下以為你好糊弄而現出原形，誰認真誰打混、誰懷鬼胎，全在你眼前露出狐狸尾巴。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">藏拙：弱點自己知道就好</span><span class="chap">3｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">自我揭露＝被鄙視＋被抓軟肋。病態人格知道你對長輩言聽計從就從長輩下手，知道你好色就上美人計。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：羅伯·派汀森被瘋狂女粉絲天天堵門，乾脆約她吃飯、反向操作把妹流程狂吐兩小時苦水——女粉絲從此消失。這就是被鄙視的威力（他是故意的，你可別對想籠絡的人這樣幹）。</li>
+<li>但書：藏拙只是戰術上的權宜之計。長遠該把弱點練到愈來愈少——無拙可藏的內斂強者氣息，能直接打消病態人格的虎狼之心，這才是終極目標。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">藏心：好惡與價值觀都要藏</span><span class="chap">3｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">《韓非子》：人主的好惡被臣下知道，就會被反過來利用——趙高抓住胡亥愛玩的習性，設局讓李斯次次掃興，腰斬於市。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：趙高故意在胡亥跟美女玩樂時通知李斯「老闆現在有空」，李斯次次上奏掃興，胡亥信任全失，最後被捏造謀反罪腰斬。好惡被知道，馬屁會拍到甜蜜點上，討厭之物則被當成肅清政敵的工具。</li>
+<li>進階：厲害的下屬都擅長察言觀色——你嘴上不說，皺個眉頭也會被抓住當行事依據。不控制微表情，就跟赤身裸體沒兩樣。</li>
+<li>甜頭：學會藏心，換底下的人胡亂揣測上意來拍你馬屁，你好整以暇看戲——從他們拍馬屁的方式，誰奸誰忠呼之欲出。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">形象管理三境界：對敵、對自己人、對世人</span><span class="chap">3｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">人們照你展現的形象臆測你、決定行動——想要對方做什麼，先逆向工程自己該演什麼。連自己人都要騙。</p>
+</summary>
+<div class="card-body"><ul>
+<li>對敵人：賭神在五百副牌裡埋「摸戒指」的假動作、周瑜打黃蓋讓詐降合理——但這類有所為而為的戲有斧鑿痕跡，敵人不被貪念蒙蔽就可能識破，且瞞不過身邊的內賊（高義問題）。</li>
+<li>對自己人：與其無底限信任，不如接管組織那一刻就戴好面具——連心腹都不吐實情，一兩句實話被截圖流傳就是破口；連自己人都瞞得過，事跡敗露的機會少很多。</li>
+<li>對世人：全世界只有你知道自己在幹麼。人生是場遊戲，對家人、夥伴、朋友理性評估效益、戴上合適的面具。空城計的精髓：「亮生平謹慎不曾弄險」的形象本身就是武器。</li>
+<li>但書：面具戴得久要有堅實的核心價值（使命感、願景）撐著，否則入戲過深失去自我，變成沒有骨幹的變形蟲——病態人格多屬此類。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">不表態的社交智慧</span><span class="chap">3｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">政治立場這類話題連提都別提；有人大放厥詞就微笑聽——反駁一來破壞感情，二來被當成智障。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：聽的過程能看清對方的邏輯與思考脈絡，是聰明人還是智障一目了然。聰明人不會選擇反駁，問到你再答，答多少看交情與利益。</li>
+<li>進階：你的不表態會引出好為人師的人開口「指導」——姑且聽之，這是判斷品德與才華的最佳時刻；心眼壞一點可以裝傻「請教」，引他犯蠢講出更多不懂的東西。對沒才華又愛裝屄的朋友不用交惡，平淡相處，但信用打折、合作三思。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">內聖外王：把手弄髒的清醒</span><span class="chap">3｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">內心有崇高理想，但為了讓影響力擴大，配合眾生演入世戲碼——該進廚房時不怕手髒。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：貝塔想盡辦法獲得阿法認同，阿法想找更大的阿法要社交認證——想往上爬就得照入世規則走。內聖外王讓你理智清醒地進廚房，該把手弄髒時有義無反顧的決心。</li>
+<li>路徑建議：先累積硬價值（經濟實力、社會地位），再點藏心技能，練多聽多看少說話——有硬價值支撐才有底氣。沒有價值卻想靠神祕感、身心靈自信課抬高身價，說穿就是中二。</li>
+<li>觀察：歷史上內聖外王的強人，多數是官場過於剛直、四處碰壁後才淬鍊出來的。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">賞罰二柄，罰尤其不能放手</span><span class="chap">3｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">《韓非子》：「明主之所導制其臣者，二柄而已矣。」誰真正掌握賞罰，誰就有真正的權力——周天子就是丟了「罰」才被架空。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：「賞」不難——給錢、給頭銜（頭銜對華人有時比鈔票好用，東漢和清朝還賣官）；「罰」才是關鍵，司法定罪＋武力執行。西部小鎮警長孤掌難鳴，黑幫老大就成了真實的執法單位，公權力被架空。</li>
+<li>明法 vs 暗法：你的規章制度是明法，小阿法透過潛規則執行的賞罰是暗法——兩者誰強，看背後掌握的資源（國家機器動起來，黑幫也只能閃遠一點）。</li>
+<li>操作：上臺後首要之務是把懲罰機制納入嫡系直接掌控。二柄扣在手上，就算被架空也有限度，還能翻盤；交出去，就等著被徹底侵蝕。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">決策與執行分開：秦始皇馭尉繚</span><span class="chap">2｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">秦始皇聽尉繚之計，卻派李斯執行——讓大腦與雙手斷開，任何一方想搞鬼都沒辦法。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：執行任務的過程可以憑職務之便收攏人心（負責撒錢收買各國權臣的人，順手就能培養自己的跨國人馬）。把決策跟執行拆開，有執行力的沒有決策權，有決策權的無力執行。</li>
+<li>附帶好處：尉繚已有去意，秦始皇不殺他（損聲望）也不放他（資敵），高高供在國尉之位軟禁——既全愛才之名，又廢其行動力。</li>
+<li>但書：這是維穩之計，犧牲的是反應速度——事事回決策圈再挑忠臣執行，十天半月就過去了，遲早演變成官僚體系。應對外部突發，仍需適當授權讓人決策執行一把抓，這就考驗被授權者的忠心與你的危機處理。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">培養接班人：基層歷練與立功</span><span class="chap">5｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">接班人空降高位＝放空這家公司股票。要讓他在基層收攏人心、自己擺平老臣，再暗中給他立功機會。</p>
+</summary>
+<div class="card-body"><ul>
+<li>基層歷練的重點不是專業（過門檻即可），是威信與人心——近距離接觸是累積聲望最快的方法。能服眾，小阿法自然挺身相助；劉邦劉備都沒什麼專長，靠的是將將之才。</li>
+<li>讓他自己擺平老臣：你出手幫忙，老臣只會表面相挺、底下嘲笑他狐假虎威，你一卸權他們就傾巢而出（曹魏被司馬家端走就是這件事沒做好）。兵符可以暫給，真實景仰必須他親手打造。</li>
+<li>給立功機會：把沒人敢接的超級屎缺交給他，搞定了再桀驁的老臣也服——但要確定他罩得住，否則賠上他的威望與你的識人之明。保險做法是給明擺的爽缺立功：孔明派馬謖守街亭正是刻意培養接班資本，結果馬謖不成材，孔明只能斬馬謖止血，雙輸。</li>
+<li>家教前提：孩子要窮著養，砸錢補償只會養出動不動找靠山的廢柴；言教不如身教，並讓他讀歷史——「歷史是人生的考古題」。看富二代是人才還是二世祖，就看他有沒有走過這套歷練。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">馭英雄：扶植對手，勿只加碼</span><span class="chap">5｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">超級業務扛起公司八成業績，加碼獎金只會養大「幹麼給公司抽」的野心；正解是扶植另一個英雄跟他鬥。</p>
+</summary>
+<div class="card-body"><ul>
+<li>方案一（加碼獎勵）：人不是狗，賞賜會餵大野心——下一步就是帶著客戶與人馬出去開業（美髮、健身業的日常）。老闆沒虧待他也一樣，人在野心膨脹時想不了江湖道義；而創業水深，雙輸收場的居多。</li>
+<li>方案二（拉他入股）：避免了咬布袋，但擋不住他分心搞副業；半利誘入股的股東沒有革命情感，公司不順時坐領股利在外另起爐灶；若他只是猛張飛還讓他碰權力核心，更是自找麻煩。</li>
+<li>方案三（扶植制衡者）：讓他有危機意識——人對損失的恐懼大於得利的爽感，他會拚命打敗你扶植的對手，「爭第一都來不及了，創業？能吃嗎？」再混用方案一二當互鬥的獎品，二桃殺三士，一步步辨識、過濾、拉攏、剔除。</li>
+<li>底線：找到人品忠義的真英雄之前，組織內唯一的英雄只能是你。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">大阿法該坐著下棋，不該搶著搬棋子</span><span class="chap">6｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">孔明親自校對公文，被楊顒諫「上下不可相侵」——主人搶奴僕的活，形疲神困終無一成，最後把自己累死在五丈原。</p>
+</summary>
+<div class="card-body"><ul>
+<li>楊顒的莊園比喻：奴耕婢炊、雞司晨、犬吠盜，主人才能雍容高枕；每件事都自己做，難道是主人才智不如奴婢雞狗？是「失為家主之法」。「坐而論道，謂之王公；作而行之，謂之士大夫。」</li>
+<li>丙吉問牛不問鬥毆：街頭鬥毆有地方官管，春天牛喘氣卻可能是氣候異常影響全國收成——這是權責分立的高級思想。反過來說，臣子插手不在其位的事，會被合理懷疑撈權力（陳平不肯知錢穀之數，「自有主者」）。</li>
+<li>機制：大阿法的時間與心力是組織最寶貴的資源，工作是戰略與用人；將帥無能累死三軍，錯誤決策賠上的是所有人。</li>
+<li>結局：司馬懿從「食少事繁」試探出孔明命不久矣——事必躬親連敵人都看得出你要完。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">身先士卒的正確打開方式</span><span class="chap">6｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">將才該身先士卒（士氣就是戰力），帥才不該親身犯險——吳起用嘴替士兵吸膿，鼓舞效果不亞於上陣殺敵。</p>
+</summary>
+<div class="card-body"><ul>
+<li>將 vs 帥：營長帶幾百人是戰術執行單位，身先士卒合情合理（《勇士們》摩爾中校「第一個踏上戰場、最後一個離開」）；元帥背負整場大局，下棋的人跑去當棋子是角色錯置。御駕親征的皇帝多是吉祥物，政治意義大於實質。</li>
+<li>現代版：部門趕工時，主管幫不上忙也要留下來陪加班——人坐在那就好，用行動說「我陪著你們」；大家加班你準時下班，茶水間很快有你的閒話。</li>
+<li>補充（6｜8）：帥才可以是文人（范仲淹把西夏打得不要不要的），將才必須是武人。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#2e6b4f"></span><span class="card-title">帝王模型：軍師、丞相、統帥</span><span class="chap">6｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">劉邦自認謀略不如張良、內政不如蕭何、軍事不如韓信，「吾能用之，此吾所以取天下也」——找齊三傑，組織效率發揮到極限。</p>
+</summary>
+<div class="card-body"><ul>
+<li>軍師：大阿法的另一個大腦。謀士有陽謀陰謀、攻守之分，大阿法的責任是弄清每個軍師的屬性放對位置；找不到張良這種光暗兼修的總軍師，養個智囊團也行。</li>
+<li>丞相：一國總經理，平時安邦定國、戰時後勤補給（蕭何入咸陽先收典章律令地圖）。最容易被前線武人鄙視，只有綜觀全局的大阿法知道其重要——所以有「將相和」的佳話。孔明其實是丞相型人才。</li>
+<li>統帥：門檻最高。軍隊是一國殺器，所託非人要麼兵敗如山倒、要麼反過來被威脅——所以曹操劉備只能自己上（贏了周瑜輸了赤壁、贏了漢中輸了夷陵），孫權有周瑜陸遜就能好整以暇等戰果。找不到統帥前，大阿法只能自己緊握殺器。</li>
+<li>模板效力：李善長一句「法其所為（劉邦），天下不足定也」，朱元璋照抄——軍師劉基、丞相李善長、統帥徐達——抄到天下。但前提是你本身是個咖：袁紹照抄也只能找到三傻。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<section class="cluster" id="cluster-3">
+<h2><span class="sq" style="background:#8a5a2b"></span>橫向：組織與派系<span class="count">15 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">草創期員工的真實心理</span><span class="chap">2｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">新創員工看似不計名利，其實各有圖謀：新鮮人拿「好拗」換能力成長，空降主管靠老闆人脈補位。</p>
+</summary>
+<div class="card-body"><ul>
+<li>社會新鮮人：新鮮的肝與沒有家累的自由度，隱含難以取代的價值「好拗」——用一點薪水（外加一點健康）換能力巨幅成長，是雙方在人力市場成交的主因。厲害的員工會邊做邊觀察老闆為人，決定幹兩三年賺履歷走人，還是把本事學完再走（郭嘉先在袁紹底下打工，看破他好謀無決才投曹操）。</li>
+<li>空降主管：內部培養緩不濟急（練到能用要三五年），只能空降熟手兼母雞帶小鴨。但書：三五年後底層員工能力練起來、有了專業自主判斷，很可能跟當年的空降主管衝突甚至出走。</li>
+<li>「尋求穩定的熟手」反而不適合草創期——新創必須是市場裡的 Bug 才能活，力求穩定的員工遠不如新鮮人好用。</li>
+<li>給新鮮人的擇業建議：除了薪水，要看能力成長的尾勁——選對老闆，在他打小怪時躲在一旁偷吸經驗值。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">組織成長的甜蜜期會結束</span><span class="chap">2｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">草創期一致對外是向心力最強的甜蜜期；員工能力覺醒後，要麼跳槽要麼暗示加薪——這時要靠帶心和畫大餅。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：人類只要有外部生存壓力就團結，沒空內鬥；公司一穩定，就換老闆要安撫能力覺醒的員工。加薪必要，但真正留人靠帶心——讓員工看到組織成長與未來願景，畫大餅也是帶心的重要技能。</li>
+<li>案例：朱元璋貧農出身能號召徐達、常遇春、劉基、李善長，是因為這群人看到他坐上龍椅後自己也雞犬升天的場景（雖然真實結局是兔死狗烹）。</li>
+<li>指標：一家公司永遠只有未滿三年的新人或工讀生，通常是老闆有問題——能力帶不過草創期，或人品被老員工看破而離職。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">派系是組織的最小單位</span><span class="chap">2｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">標籤（同鄉、同校、同好）只是派系的殼，利益才是核心——沒有利益往來就不構成派系。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：標籤是大腦降低社交成本的生存機制，物以類聚讓人聚攏；但派系必須有共同利益維繫向心力（朱元璋底下的淮西集團 vs 浙東集團就是地域派系）。</li>
+<li>辨識：真正的派系都暗著來，沒有辦事處讓你填表入會。剛進組織要觀察誰常一起抽菸、開會誰幫誰 cover 發言；跟掃地阿姨、總機小妹混熟聽八卦；茶水間與吸菸區是絕佳情報站——然後你才知道該找誰拜碼頭、對哪幾位前輩立正站好。</li>
+<li>顛覆直覺的例子：總經理與掃廁所阿伯——阿伯常回報茶水間八卦、總經理私下塞紅包，阿伯就是總經理的嫡系錦衣衛。位階低不等於不在派系核心，緊扣利益才看得清人際網。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">派系無法鏟除，只能制衡</span><span class="chap">2｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">蜀漢有四大派系（創業嫡系、荊州、東州、益州）；鏟除派系後利益重新分配又會長出新派系——白忙一場。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：劉備陣營絕非萬眾一心——關張趙的創業嫡系、孔明龐統黃忠魏延的荊州人馬、法正李嚴的東州集團、黃權王平的益州土豪。初代創業者鎮得住各派（大家看劉備面子），劉備一掛，孔明治蜀就是為三大派系制衡焦頭爛額。白帝城託孤留李嚴在場，後世解讀正是為了制衡孔明。</li>
+<li>機制：每個看似中央集權的組織都有派系（曹魏、東吳皆然），史書不寫，要靠利益與地域的觀察入微自己拼出來。</li>
+<li>結論：權謀覺醒的領導者只能讓底下派系支持自己、再利用他們互相制衡；最難的部分永遠是派系之間的利益分配。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">空降部隊只有一次立功機會</span><span class="chap">2｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">孔明初出茅廬的博望坡，是只許勝不許敗的生死之戰——空降主管第一仗打贏才有籌碼，打輸連老闆都會懷疑自己看走眼。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：空降高管上任第一件事不是改革，而是弄清權力結構、安插自己人馬——這必動到現有派系的奶酪，雙方開始鬥法。鬥贏了媒體歌功頌德；鬥輸了被架空，要人沒人，半年後以「文化水土不服」為由體面走人。</li>
+<li>給老闆的操作：引進空降主管，參考劉備——刻意讓他立功。有功勞才有威信領導部門；關羽服則張飛服，關張都服，小咖自然跟著走，派系整合才順利。</li>
+<li>給空降者的警告：機會只有一次。第一仗失敗，舊勢力從此表面官腔、實際消極不配合甚至故意搞你，你將無法立功累積政治籌碼，最後只能走人。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">牆頭草只撿得到肉屑</span><span class="chap">2｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">「哪裡有好處往哪靠」是權謀新手的蠢話——派系領導人拿到肉先餵自己人，牆頭草的最高成就是撿肉屑時不被踢開。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：你不選邊站，就永遠不在分肉名單上。幹一輩子打工仔靠肉屑過活的人，沒看過真正的肉長什麼樣子，才會質疑選邊站的必要。</li>
+<li>前置守則：與人為善但有限度——對侵蝕自身利益的小人不願正面對決，利益會被一點一滴拿走；該比中指時挺身而出，反而大大收攏自己人的心。另外要跟身邊的智障與惡名昭彰者保持距離，否則負面品牌效應連你一起陪葬。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">在派系上位：忠誠、能力、Game</span><span class="chap">2｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">入門先當好用又認分的貝塔——忠誠是必備（沒技能也有飯吃），能力是加分（聽話又好用的狗），要平起平坐得會 Game。</p>
+</summary>
+<div class="card-body"><ul>
+<li>忠誠：權謀覺醒的老闆需要嫡系人馬，也要向天下宣告「跟我混的吃得飽」——你願意展現忠誠他都看在眼裡。說穿了就是誠信，只是這年頭背骨仔太多，標配變稀有。</li>
+<li>能力：確定自己有老闆需要的能力（獵頭來挖是可靠指標），權謀覺醒的阿法會加薪、談分成把你綁住；毫無表示的老闆是想用香蕉請獅子，不跟也罷。</li>
+<li>Game：想當二把手，要學會「觀察」與「表態」。權謀覺醒的阿法用隱晦的言語試探測你的智力——沒接住暗示，再忠心也只能當許褚、李逵之流的近衛軍。開國皇帝身邊的心腹都是智謀型（劉邦張良、劉備孔明、朱元璋劉基），因為只有他們通得過智力測驗。伴君如伴虎，表錯情的下場是人頭落地——這是權力核心利益伴隨的風險。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">派系的五種凝結劑</span><span class="chap">2｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">價值觀（宗教是原型）、地區出身、背景出身（校友會）、深層利益、恩怨情仇——實戰中多半盤根錯節複選。</p>
+</summary>
+<div class="card-body"><ul>
+<li>價值觀與理念：黨派的原型是宗教——信徒真心相信教主能帶自己上天堂，大餅畫好畫滿，吃不吃得到另說。</li>
+<li>地區／背景：淮西集團 vs 浙東集團；科技公司的臺大幫交大幫——同校畢業「比較好喬事情」，派系的誕生就是為了喬事情，凡事照規定是用來對付外人的。</li>
+<li>深層利益：老鳥業務占著爽缺，教會菜鳥＝養出搶飯碗的人——表面答應教育訓練實際上另有盤算，職場藍藥丸卻叫這「溝通不良」。</li>
+<li>恩怨情仇：結仇是派系生成最快的方式。人對恩惠記兩天、對仇恨記一輩子；前功不能抵後過，對已結仇的人施恩，他只會解讀成挑釁，更想消滅你（古龍式的深刻人性）。仇家連成一氣就是「復仇者聯盟」，所以仇恨管理的上策是根本別結仇。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">另起爐灶＝謀反</span><span class="chap">2｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">甲乙派系替大阿法帶來好處，他睜一隻眼閉一隻眼；你要自建丙派系搞三國鼎立，非奸即盜。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：權力非常主觀——大阿法覺得你是什麼你就是什麼，沒人在意你怎麼想。忠於大阿法就直接效忠或挑個現成派系待著；身無長物還聚眾，上頭絕不會認為你是為了他的利益。</li>
+<li>帝王對「謀反」的敏感度堪比鯊魚嗅血：謀反必須結黨聚眾，所以歷代帝王最不能容忍臣下結黨，朱元璋的錦衣衛就是幹這事的。手段細緻的會先找你喝咖啡暗示，看你是白目還是有所圖；可怕的是就算你忠心耿耿只是講錯話，他仍可能認定你有二心，百口莫辯。</li>
+<li>對策：長眼觀察組織派系組成，找個好地方窩著，先跟在小阿法身邊歷練，徐而圖之。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">結交派系（一）：先有用</span><span class="chap">2｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span></div>
+<p class="card-summary">投靠派系先拿出籌碼證明貢獻——是個咖就主動敲門讓對方評估；是 nobody 就先養能力再毛遂自薦。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：派系拉你入夥是為了以後好喬事情。你若有名號，主動敲門本身就是暗示，大阿法自會評估合作效益——以及最重要的：「一旦你窩裡反，我有沒有後著鎮住你」（很多人挖角大咖時忘了想這題）。</li>
+<li>nobody 的路線：潛沉養出專業能力後「兜售」自己——直接指出對方缺什麼、你的解決方案、為什麼非你不可。直白粗暴但一擊命中效果驚人。</li>
+<li>更優雅的作法：學歷代謀士挑主人——先進言給個餌，看他識不識貨、咬餌後會不會投桃報李留住你。兩者都成立，才是值得跟的明主。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">結交派系（二）：表態的藝術</span><span class="chap">2｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">被兩個以上派系看上時要適時表態站隊，否則對方「得不到你又忌憚你」，只剩除之而後快一個選項。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：你不說站哪邊，人家無法評估要不要在你身上加碼；能力愈強，不表態愈危險。</li>
+<li>派系級表態：大阿法要做大事時會發訊號要小阿法們表態，涉及龍椅存亡的投票是決生死的時刻——大阿法最怕的就是平常打點好的小阿法臨場跳票。</li>
+<li>但書：被反對派重金收買而背主，人為財死可以理解，但圈子很小，背骨事蹟傳出去對江湖聲名大有影響——除非利益大到能徹底人間蒸發，否則以道義為優先。身為大阿法則永遠要有「手下背叛時的後著」，最好在紅旗出現時就防微杜漸。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">結交派系（三）：投名狀與交把柄</span><span class="chap">2｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">交出自己的把柄能提升大阿法的安全感——但前提是你強到危及他的權力；廢柴交把柄只是跳梁小丑。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：王倫要林冲提人頭上梁山——投名狀毀掉大好前程，人生只剩黑道升級路線，上級因此放心分好處給你：背叛我，你死得更慘。但林冲是名滿天下的八十萬禁軍教頭才需要納投名狀；你實力不夠，沒人在乎你的把柄。</li>
+<li>現代版：「一起扛過槍、同過窗、分過贓、嫖過娼」——一起幹壞事本質是互交把柄，把制衡自己的力量親手交給對方，最能塑造兄弟義氣。主管客戶拉你上酒店，半推半就也有立投名狀的意味；婉拒的自由你有，但某些產業裡「這杯先乾了才有資格談訂單」，要權衡。</li>
+<li>但書：跟派系攪和愈深分到愈多，但派系出包被抄家時，你經營的人脈瞬間變成通往墳場的車票——福禍都要自己擔。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">派系互鬥是老闆默許的制衡</span><span class="chap">2｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">業務部與技術部鬥到死，公司高層放任不管——因為最後得利者是公司，甚至必須這麼做才能利益最大化。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：只要組織夠大，底下必然長出小阿法與派系（部門本身就是派系）。放任某派獨大，下場是處處受制於人：業務部若占九成利潤，頭子橫著走、外包圖利廠商、培養人馬——最後帶著客戶與團隊出去開公司跟你對幹。</li>
+<li>制衡手法：技術部與業務部有上下游關係，天然互相「卡死」；扶植多個業務部門互搶業績（反正錢都進公司戶頭）；按產品線切分讓他們必須談分錢。</li>
+<li>大阿法的角色：在背後下指導棋當資源分配者——年度會議上「指點」一下工時計算或專案優先序，就能改變雙方互鬥的動態，聰明的小阿法聽得懂，再不爽也只能認栽。</li>
+<li>觀察：CEO 只有一個，副總永遠好幾個——副總獨大，下一個倒楣的就是老總。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">尉繚的分化術：重金買通敵營權臣</span><span class="chap">2｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">「願大王毋愛財物，賂其豪臣，以亂其謀，不過亡三十萬金，則諸侯可盡。」不必要他賣國，敗壞朝政即可。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：出兵勞民傷財，直接花錢買通對方政權的反對派，讓他們領錢不做事、刻意敗壞國政削弱國力。兩黨制國家尤其好用——目標只有兩個，押寶容易。</li>
+<li>最陰險之處：十個大員買通九個，剩下那個忠義不收錢的，會瞬間變成九人的眼中釘——他們會自主多一個任務：把這僅存的忠臣搞掉。「誰愛國誰就該死」，甚至可以打九折，讓那九人自己解決最後一人。</li>
+<li>防禦視角：企業商戰、派系互鬥都適用這招銀彈攻勢，唯有遠見與忠義之人能把白花花的銀子拒於門外——看到組織內忠良之士被群起圍攻時，先想想是不是這個劇本。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a5a2b"></span><span class="card-title">世家與廢柴：用人背後的派系算計</span><span class="chap">6｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">曹操收荀彧＝謀士加名利提款機雙重收穫；但用「才華平庸、只有背後勢力」的人買派系，要算清代價。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：東漢世家的地位堪比現在的 KOL，結交世家＝名聲加源源不絕的錢糧。荀彧本人是王佐之才，附送荀家勢力，是中樂透等級的用人。</li>
+<li>反面思考：如果來求官的人一無是處、只有背後勢力龐大——給個位置結交派系不是不行，但要想：廢柴放要職會不會敗壞組織效率（別小看廢柴的破壞力）？派系反過來獅子大開口怎麼辦？一切都是權衡，格局愈高看到的利益牽扯愈多。</li>
+<li>作者的引申：非要結交沒有戰鬥力又只講理念的人，就放到無關緊要的閒差——向背後勢力交代了，又不會讓他跳出來壞事。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<section class="cluster" id="cluster-4">
+<h2><span class="sq" style="background:#8a3a3a"></span>識人與提防<span class="count">15 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">有些妹，不能睡</span><span class="chap">1｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">權力紅利最大的誘惑是女色，但濫用的代價是留下把柄——想選議員立委時，開房間的偷拍就是對手的攻擊武器。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：有了權力，女色會自己上門。自己投懷送抱的妹子層次還低，主導權在你手上；真正危險的是把美色當籌碼的權謀覺醒女人。</li>
+<li>延伸：缺乏紅藥丸覺醒的政壇風雲人物，一時管不住小頭睡了不該睡的妹，從此被政敵抓住把柄，成為被「藍金黃」操控的傀儡。紅藥丸護體的權謀覺醒，才能明白這條官場真理。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">辨識權謀覺醒的壞女人</span><span class="chap">1｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">三個特徵：通常是正妹、眼神犀利甚至勢利、絕對有黑歷史——前任個個慘賠而她房車愈來愈多的，是黑山老妖。</p>
+</summary>
+<div class="card-body"><ul>
+<li>她們的手法：談吐高雅身段柔和、清楚何時魅惑何時消失讓男人心癢、關鍵時刻還能提點男人事業（韭菜養大再割）；最厲害的是不輕易讓你睡——得不到的才最美，理智永遠在慾望前面，上床只是達成目的的手段之一。</li>
+<li>練眼神：八成直男分不出純樸正直與勢利奸邪的眼神差異，判讀需要大量樣本——用身邊藍藥丸朋友的失敗案例訓練（「別人的失敗才是我們的成功之母」），十來個案例就能練出基本識人直覺；也可以直接查交往紀錄——社群時代一定打聽得到。</li>
+<li>但書：遇到權謀覺醒又美色超絕的女人幾乎無解，老狐狸也會小頭充血智商打一折。她們只在金字塔頂端遊走，一般人反而沒被歸零的資格。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">為什麼女人不擅長權力鬥爭</span><span class="chap">1｜3</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">慕強擇偶讓她們鄙視該拉攏的弱者、被強敵風采迷惑；情緒化則是決策殺手——所以歷史上的女帝都從後宮發跡。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：搞權鬥必須拉攏羽翼未豐的弱者扶植成助力，但發自基因的鄙視讓女人錯失扶植機會。武則天與慈禧都是先成為王的女人、再成為王——把王歸零取而代之等同變相篡位。</li>
+<li>觀察：政商場上混得好的女人，都是理智先行、用智慧克制慕強詛咒的人。現代民主機制讓女性能從基層往上爬，不再需要歸零獨裁者。</li>
+<li>應用：跟女性對手交鋒時，她的慕強與情緒化是可利用的弱點；跟理智先行的女強人交手，則要當成頂級權謀家對待。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">病態人格：純粹的邪惡</span><span class="chap">3｜3、6｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">4% 的人毫無良知。只要你有可被歸零的價值，他們必定覬覦——用篤定語氣再三強調的「必定」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>獵物篩選：他們專挑弱者下手，尤其有錢有資本的弱者——連只想混爽缺的普通人都知道找軟弱主管，何況整天覬覦權位的病態人格。</li>
+<li>高辨識度的 SOP：不蹲馬步不打造價值，千方百計把自己的名字跟你擺在一起、私下套近乎騙信任——你稍不留神交出社交認證，他就拿著騙來的兵符到外面偷拐搶騙。</li>
+<li>對付：上兵伐謀，讓對方起心動念前就認定你棘手而打退堂鼓；已經溜進生活圈的，平淡遠離；讓他進到權力核心、知道你的弱點又涉及巨大利益的，「用點權謀手段解決這種人與背後派系」是文明社會裡唯一辦法——病態人格的臉皮比輪胎厚，軟硬釘子都擋不住他的「毅力」。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">刻意雕琢的和善是警訊</span><span class="chap">3｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">平常客氣得體卻有種整形過頭的人工感——要等突發狀況才看得到真實人格，有些人就是特別會藏。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：披著人皮的變形蟲，言談間想討好但有強大的不一致感；道行不夠的容易上當，老狐狸（或吃過大虧的人）才知道他在玩什麼把戲。</li>
+<li>操作：對這種人保持觀察，重要的社交認證與利益綁定，等看過他在壓力與憤怒下的樣子再說。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">楊廣：表裡不一的極致</span><span class="chap">6｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">奢侈好色的楊廣抓住爸媽的弱點（楊堅尚節儉、獨孤皇后重專情），演戲演到把太子哥哥擠掉——藏心失敗的家長版。</p>
+</summary>
+<div class="card-body"><ul>
+<li>病態人格全席：殺兄弒父淫母；帥、有文采、二十歲滅陳——優異條件正是病態人格的溫床。性關係混亂（染指父親寵妃宣華夫人）；收割功勞（仗都是高熲打的，他掛名姍姍來遲，還順便收「秋毫無犯」的仁義美名）；極度自戀（「設令朕與士大夫高選，亦當為天子矣」；才華真正高絕的詩人薛道衡被他找理由賜死，《隋書》記「天下冤之」）。</li>
+<li>演技案例：聽說楊堅要來，連夜把新家具換成布滿灰塵的舊物、樂器換成斷弦的破琴；在母后面前只跟正宮住、出征前痛哭跪別，小妾懷孕都下令打掉以維持「專情」人設。</li>
+<li>教訓一（對上位者）：你被底下抓住喜好，就會有楊廣這種人揣摩上意一步步奪權——再次驗證藏心的重要。</li>
+<li>教訓二（親情藍藥丸）：楊堅以為五子同母就不會兄弟相殘，把人性看得太淺——「無腦相挺親人」與無腦相信任何人一樣危險。</li>
+<li>附帶技巧（他用得很溜）：好消息由你本人宣布，壞消息交給副手或棄子宣布——光這點改變就能拉攏人心。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">背骨仔絕不重用</span><span class="chap">5｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">呂布式的賣主求榮者，跨過第一次道德門檻後，背叛就跟吃飯喝水一樣簡單——給夠好處連百姓家奴都當。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：呂布被擒還想說服曹操「明公將步，令布將騎，則天下不足定也」，連曹操都差點被糊弄，靠劉備補刀「明公不見布之事丁建陽及董太師乎」。曹操只要想遠一點：掃平天下的最後一刻，就是自己的步兵對上呂布的騎兵之時。</li>
+<li>隱性背骨仔：被你拉拔上位卻不把提攜放心上、自認「我本來就是個咖只是缺舞臺」的，也算——不知感恩的人野心會隨你的善意愈養愈大，覺得自己比你更有資格領導這一切。</li>
+<li>對策：別跟背骨仔合作；因利益龐大暫時合作，務必提防被反咬（除非你打算黑吃黑順便把他吃掉）。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">提防背骨的三個前置動作</span><span class="chap">5｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">恩不能亂給（無功受祿養大野心）、當面給賞觀察反應、事後跟他身邊的人閒聊探聽真實想法。</p>
+</summary>
+<div class="card-body"><ul>
+<li>恩不能亂給：不相稱的獎勵讓獎懲機制亂套、其他部屬心生怨懟，受賞方野心膨脹——養出咬布袋的老鼠。</li>
+<li>觀察受賞反應：獎勵要自己當面告知（賞是二柄之一，別經手代理人，把正向情緒跟自己連結），順便看他是真心感激，還是閃過「早該給了」的不屑神色。</li>
+<li>閒聊探情報：十個人有八個沉不住氣，他對賞賜有想法一定跟朋友吐露；也看他的社群發言——每件好事都自認理所當然的人，絕不可能對你的賞賜滿懷感激。</li>
+<li>底層邏輯：給獎賞是為了拉攏壯大勢力；拉攏不了或有開後門風險的，幹麼找自己麻煩。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">降將可用，背骨仔不可用</span><span class="chap">5｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">陳平韓信是情勢所逼的降將，劉邦重用；丁公賣主放水，劉邦稱帝後第一個斬他——「使後世為人臣者無效丁公」。</p>
+</summary>
+<div class="card-body"><ul>
+<li>降將的合格條件（陳平、韓信示範）：任職期間有真實功績；跳槽時沒有捅老闆一刀（陳平離開時還把項羽賞的黃金退回，留好名聲讓下任老闆打聽）；離開原因是老闆本身的問題（項羽刻薄寡恩、獻策不用）。</li>
+<li>丁公的死因：領項羽薪水卻在追擊時放走劉邦——劉邦立刻推想「今天一句幹話就能讓你放我，日後別人許以重利，你會不會也窩裡反？」賣主求榮者殺無赦，留你只是統戰需要，目的一到第一個兔死狗烹。</li>
+<li>給投降主義者的忠告：以為替敵人做事、搞窩裡反能在對方成功後謀得一官半職——大錯特錯，雄才大略的明主都知道會賣主的一輩子會賣主。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">田豐：剛而犯上的愚忠</span><span class="chap">6｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">戰略眼光一流（勸袁紹奉天子、偷襲許昌、打消耗戰全對），但看不懂主子好感度已崩、又沒朋友求情——下獄被殺。</p>
+</summary>
+<div class="card-body"><ul>
+<li>昏著一：無法體察好感度。袁紹用「小孩生病」的爛理由拒絕偷襲方案，田豐的反應竟是舉杖擊地破口大罵——主子已不信任你，正確動作是閉嘴觀察徐而圖之，或學荀彧郭嘉另投明主。</li>
+<li>昏著二：看不見謀士間的派系鬥爭。袁紹耳根子軟，身邊圍的是趨炎附勢的小人；一說田豐死因是政敵進讒言「田豐聽到你戰敗拍手大笑」，袁紹怒而殺之。</li>
+<li>昏著三：自命清高不結派系，出事沒人緩頰。很多大阿法下令「拖出去斬了」時心裡希望有人跳出來求情——同僚聲淚俱下，他才有臺階順勢輕罰，既保威信又保愛將；你人緣太差沒人演這齣，他只能心不甘情不願罰下去。</li>
+<li>昏著四：真命天子症——「只要我繼續貢獻價值，主公總會想起我的好」，用價值挽回已經回不去的主僕關係，標準職場藍藥丸，主控權全在對方手上。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">相由心生與行為模式：尉繚看穿秦始皇</span><span class="chap">2｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">好殺之名在外的人突然對你委身禮遇，必有更深算計——利用價值一失，翻臉殺人毫不憐憫。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：秦始皇對布衣尉繚「衣服食飲與繚同」，尉繚從其面相（蜂準長目、摯鳥膺、豺聲）與過往行為模式（擺平嫪毐的狠辣）判斷「誠使秦王得志於天下，天下皆為虜矣」，想跑但來不及了。</li>
+<li>兩性版：女生被病態人格渣男「豁盡全力去愛」感動——為達目的連尊嚴都不要的男人，達成目的後翻臉不認人也是可以預期的。</li>
+<li>心法：判斷居心不能看單次行為，要對照他的過往行為模式；反常的熱情本身就是資訊。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">預判競爭對手：利益、弱點、派系</span><span class="chap">5｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">對手從利益衝突處冒出來（你搶了誰覬覦十年的缺？）；九成人死在不肯正視自己的弱點；對手背後常是整個派系。</p>
+</summary>
+<div class="card-body"><ul>
+<li>用利益衝突篩選：剛進公司就要弄清楚，你的升遷擋了誰的財路——資深前輩可以表面客氣、背地把你搞下臺，你等於在對付隱形敵人。茶水間是 RPG 的酒館，情報都在那。</li>
+<li>先想好自己的弱點：對手一定往你的弱點打。性好漁色的，會「剛好」被白手套帶去酒店性招待、被錄影加油添醋爆料——原本只想打個炮，升遷之路就斷送。承認弱點違反人性（成功是自己棒、失敗全怪別人），能正視弱點就贏過大多數對手；正視之後還要動手解決，絕不能僥倖。沒弱點？對手會弄個框讓你自己跳。</li>
+<li>思及背後派系：你的出線若擋到某派系的巨大利益，全派系會傾力搞你——會議上莫名其妙找你麻煩的、專案上挖洞的，都是成員。事前沙盤推演，並趁早加入能抗衡的派系，孤家寡人知道箭從哪來也擋不住。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">競爭對手不是敵人</span><span class="chap">4｜2、5｜4</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">競爭對手因立場而生、可逆（轉行就能把酒言歡）；敵人是你死我活、不可逆。沒必要就別讓衝突升級成敵人。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：把對手當殺父仇人是二分法誤區——「就算殺了一個我，還有千千萬萬個我」，對手是系統問題，殺不完。合於利則動，不合於利則止。</li>
+<li>最好的心態：把重點放在自己身上，拉開差距——你走在他前面不遠，他覺得追得上，酸言酸語全來；看不到你車尾燈，九五%的人就放棄掙扎另找目標。</li>
+<li>但書：爬上新階級會遇到更強的新對手，流程重跑——除非退隱，否則殺之不盡，跟他們共存，當成督促自己優化的力量。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">殺與不殺：由對手的人格決定</span><span class="chap">5｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">決定該不該徹底殲滅對手的不是你，是你的對手——他若抱著玉石俱焚衝過來，你的善良底限就是你的死穴。</p>
+</summary>
+<div class="card-body"><ul>
+<li>奪嫡的邏輯：非死即生的零和賽局——所有人都知道贏家會對輸家斬草除根（只有死人才能真的放下仇恨），所以人人拿命來玩；李世民玄武門連姪子都殺光，從宗室名冊刪除殆盡。遺產從一百萬加零加到整個江山，人性的脆弱一路現形；「忠誠是因為背叛的代價不夠高」。</li>
+<li>給好人的判斷準則：比你的對手更了解他自己——他是一時利令智昏（可處處留手找機會教化），還是被情緒掌控的病態人格（盡早除之而後快，以免禍及蒼生）。</li>
+<li>延伸：權謀要玩得漂亮，永遠站在對手的角度想他的下一步，甚至預想他會如何算計你、再將計就計早兩步布局（曹操華容道就是被這思維算走的）。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#8a3a3a"></span><span class="card-title">太子的位置是箭靶</span><span class="chap">5｜5</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">奪嫡搶的是皇帝的主觀意識，動用軍隊＝謀反自爆；當上太子也別高興——要活到登基那刻才算贏。</p>
+</summary>
+<div class="card-body"><ul>
+<li>流程：皇子→參與奪嫡→立為太子→繼承帝位，每一關都是鬥智博心機：搞政治事件打擊對手在皇帝心中的地位、拉抬自己；太子有人占缺就把他拉下來換人。</li>
+<li>應用：現代版是「接班人卡位」——法定繼承人（太子）只是箭靶之所在，坐上去之後的防守比攻上去更難。被指定為接班人的那天，就是全組織的狼子野心對準你的那天。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<section class="cluster" id="cluster-5">
+<h2><span class="sq" style="background:#3a5a8a"></span>自我修練：心理素質才是硬道理<span class="count">16 張</span></h2>
+<div class="grid">
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">先和自己打一架</span><span class="chap">1｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">權謀武功的入門心法是替價值觀洗三溫暖：與生物性對抗、與傳統思維對抗、與自尊對抗——基本功練一輩子也不為過。</p>
+</summary>
+<div class="card-body"><ul>
+<li>與生物性對抗：人類是穿西裝拿刀叉的猴子，公的找交配、母的慕強、組織裡搶猴王。先明白猴性才有資格當棋手；也別以為自己高尚——懂這項劣根性，面對誘惑才多一項武器，避免貪一時享樂被抓把柄。</li>
+<li>與傳統思維對抗：見「外儒內法」卡。</li>
+<li>與自尊對抗：權謀戰場永遠有人用激將法試探虛實——情緒沒掌控好，輕則被制敵機先，重則「怒而興師」。最上等的高手把情緒展露當武器誤導對手；中等靜若深淵喜怒不形於色；等而下之「卒然臨之而大驚，無故加之而暴怒」。</li>
+<li>現實：價值觀的轉變只能靠震撼教育或案例一點一滴洗腦，可能剎那頓悟，也可能一年半載，還有人一輩子想不通——有些人天生就是吃草的料。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">智子思維：被鎖死的價值觀</span><span class="chap">1｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">《三體》的智子鎖死地球基礎科學；藍藥丸價值觀鎖死你的見地——價值觀不改，給你再多好東西也消化不了。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：所有手段方法都立基在價值觀與見地上，如同工程科技立基在基礎科學上。上限被鎖，等於拿黑暗時代的裝備對抗洋槍大砲。</li>
+<li>補充：權謀知識沒人願意教你——高手忙著鬥爭沒空著書，而且食物鏈頂端絕不希望韭菜獲得高級知識；流傳出來的都是統治者希望你擁有的價值觀。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">看待強者：先克制情緒，再分析籌碼</span><span class="chap">1｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">一般人看到強者不是鄙視就是仇視——那是技不如人的自我療癒。權謀家冷靜分析對方籌碼、派系、靠山，再決定打不打。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：二八法則是歷史規律，強者統治弱者是必然；就算對手是運氣好，那也是身為強者才有的樂透資格。「人家比你強，理當比你爽，遊戲規則就是這樣。」</li>
+<li>操作：形勢輸人先壓住不快，拿《孫子兵法·始計篇》盤點雙方實力，打不過還可以加入他。被情緒掌控意氣用事，三兩下就被淘汰出局。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">好人為什麼墮落：晏子治東阿</span><span class="chap">1｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#8a5a2b;color:#8a5a2b">中層</span></div>
+<p class="card-summary">晏子清廉治理東阿被罵到臭頭，改成收賄剝民、打點上下後反被大讚——資訊管道被誰把持，決定你在老闆眼中的樣子。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：晏子第一輪「屬託不行，貨賂不至」，百姓無飢，齊景公卻要治罪；第二輪「屬託行，貨賂至」、加稅少繳國庫、孝敬國君左右，百姓餓一半，齊景公迎而賀之。晏子藉此機會教育，齊景公下席道歉：「東阿者，子之東阿也，寡人無復與焉。」</li>
+<li>機制：君王只能靠考察官員、地方貴族、身邊心腹獲得資訊——這三條管道都能被錢打通（考察官員對你有實實在在的合法傷害權；貴族食物鏈上下互養；心腹也是人，也吃財色）。你不打點，就等著被抹黑到信任全失。</li>
+<li>教訓：如果你是晏子，心志不堅就退隱山林、良幣被逐；領悟「東混西混一帆風順，苦幹實幹撤職查辦」而同流合汙，好人就這麼墮落。必須有堅強意志加上「清官要比貪官更奸」的手段，才能挺過蜚短流長。</li>
+<li>對高位者：你的耳目就是你的命門，經營資訊管道的多元與交叉驗證，別讓任何一方壟斷。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">歸零是權謀覺醒的契機</span><span class="chap">1｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">項羽烏江兵敗只剩二十八騎仍有翻盤本錢——「捲土重來未可知」。被歸零後留住命，把怒火當覺醒的原動力。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：只有身居要職被惡搞、被派系鬥到滿盤皆輸的切膚之痛，才能真正提醒你權謀覺醒的重要。項羽武力百分但政治零蛋，謀臣親信一一離去，輸劉邦沒什麼好怨——但若回江東讀書檢討、把技能點加在政治與智謀，「真·項羽」大有可為。</li>
+<li>但書：同樣的歸零經驗也可能走歪——像紅藥丸走歪變仇女黑藥丸，權力議題上走歪就變權力執迷。把你歸零的人，說不定有天成為你的「反貴人」。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">對付權力執迷者：找瘋狗咬他、或捧殺</span><span class="chap">1｜6</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span><span class="pill" style="border-color:#8a3a3a;color:#8a3a3a">高位</span></div>
+<p class="card-summary">權力執迷者缺乏大局觀、最容易被利益驅動——幫他安排另一個權力執迷的瘋狗牽制，自己買雞排看戲。</p>
+</summary>
+<div class="card-body"><ul>
+<li>對戰組合：覺醒 vs 覺醒＝陽謀居多的君子之爭，言語框架上大做文章；覺醒 vs 執迷＝你的智力必須高過他，否則死於陰招——人家在撩陰插眼，你還講武德就輸了；執迷 vs 執迷＝狗咬狗，正是你要製造的局。</li>
+<li>捧殺案例：李登輝把軍權在握的郝柏村「高升」為行政院長，四兩撥千斤解除武裝——「你就給他做官，一直給他升他就高興，但高興過後，事情就發生，發生他就下臺，下臺就沒了。」</li>
+<li>但書：權謀覺醒不是無敵——生死關頭的決策伴隨巨大道德糾結（數萬人命 vs 數千萬人命），病態人格能毫無困難地決定，有良知的你要有背負萬世罵名的決心。這也是為什麼許多權謀覺醒的名臣選擇告老還鄉。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">內聖：人生的終極成就是平靜</span><span class="chap">5｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">追權力必結仇，填慾望是永無寧日的虛無——早早可以退休的達官顯貴硬要在刀尖浪頭攪和，最後家破人亡。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：「不施霹靂手段，難顯菩薩心腸」——腦袋要同時有黑白兩種思維。只有黑，被仇恨反噬；只有白，在宇宙有空理你之前就被惡徒吃乾抹淨。</li>
+<li>作者的立場：選擇當好人，一是善終機率遠高於當混蛋，二是「能活下來的好人」難度更高、更值得征服；壞人翻翻《刑法》就能當。</li>
+<li>心法：明白人生的終極成就是平靜而不是無止境的權力名利，這份內在核心是想善終者的自我要求。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">外王：價值體系的弱肉強食</span><span class="chap">5｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">確定手上握有對方要的價值，就不用怕任何議論——嘴你的人終究會向你的價值低頭。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：世界依「價值體系的弱肉強食」運轉。台積電的技術獨步全球，各國政府喊話也沒用——不熟就去後面排隊。整天罵男人的激進女性主義者，看到精實鮮肉照樣浮現真實慾望：吃素的獅子聞到血還是會興奮。</li>
+<li>應用：有此認知後，道德規範與社會制約對你不再是束縛，而是驅使他人的工具——外儒內法的政客從不信自己嘴上的仁義。</li>
+<li>心法：活得灑脫的方法不是不在乎，是確定自己的價值是別人要的。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">提防正能量與聖人形象</span><span class="chap">5｜1</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">「聖人不死，大盜不止」——愈是拿公益、正能量當大旗的，愈要看他檯面下在幹麼；光暈效應會讓人忘記查驗德行。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制一：聖人形象讓人只看包裝好的一面，暗地裡偷幹的骯髒事沒人注意（作者第一本書提過的南部講師用基金會善款名義收割學費多年）。</li>
+<li>機制二：當正能量成為至高美德，「為了大同死千萬人也死不足惜」的邏輯就出現了——部分左派高層根本不信自己提倡的理想，道德大旗只是募款名目與煽動信仰。</li>
+<li>應用：出來混要懂包裝——別像作者一樣用真小人形象走跳；同時對別人的高大上包裝保持免疫。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">跟極端左派學鬥爭</span><span class="chap">5｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">專業鬥爭者不事生產、整天鑽研榨取價值；創造價值的右派忙著工作，處於挨打劣勢——要學對手的職業級手法。</p>
+</summary>
+<div class="card-body"><ul>
+<li>辨識極端左派：崇高的道德大旗（平權、環保——問到代價就兩手一攤）；底下有群不事生產的信徒（學生最好吸收：累積實力的孤獨期正是心靈最脆弱時，「你不用創造價值，上街逼別人吐福利就能爽」很誘人）；對創造者進行道德勒索（「碰瓷」式公審，沒議題就製造議題）。</li>
+<li>反擊四式：一、反守為攻——搶麥克風與話語權，主動出擊讓對方忙於應付（彼得森打臉節目還只是守勢）；二、改變稱謂——語言的力量巨大，別接受「保守派」的貶義標籤，稱對方「激進派」、自稱「穩健派」，標籤先貼先贏；三、招募青年才俊——對手早在學術圈埋樁，思想布局要以數十年為單位；四、以更高的道德指控回敬——他扣你帽子本來就沒邏輯，「既然是他先不講武德，大家來比誰更不講武德」，重點是先保住手上的價值，絕不因羞愧感拱手讓人。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">情緒掌控的三個層次</span><span class="chap">5｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">因情勢不能發飆（得罪不起就吞）、因實力不需要發飆（槍大支就能不戰而屈人）、因立場輪不到你發飆。</p>
+</summary>
+<div class="card-body"><ul>
+<li>情勢：發飆即開戰，要有利可圖再發飆。對方比你大尾、後臺比你硬，餵你吃屎也要硬吞——控制不住還自稱「太過阿法」的，只能送你 8+9 稱號。</li>
+<li>實力：拳王徐燦被問能打幾個普通人，答「一直打」。有實戰實力的人反而不隨意出手，鎮定自信的眼神就讓人知道不好惹——槍比人大支，才有底氣用眼神殺人。智力戰場同理。</li>
+<li>立場：餐廳鄰桌小孩哭鬧、聚會上朋友的女友發神經——再不爽也輪不到外人發飆，唯一有立場的是當事人。能認知立場差異而控制情緒，就算合格。（順帶：鎮不住自己女人的男人會被全場鄙視，只是沒人會告訴他。）</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">高EQ是面具，不是不還手</span><span class="chap">5｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">被打一巴掌還把右臉湊過去不叫高EQ，叫鄉愿。幽默回應只是防守，要打敗敵人還是得進攻。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：政敵不講武德也不講道理，只要你的倒臺對他有極大利益，必往死裡打；你被媒體稱讚「高EQ」而自爽，正中對方下懷——這次失敗還有下次，根本解法只有扳倒他。</li>
+<li>君子 vs 小人（《宋史·蘇轍傳》）：「一爭之後，小人必勝，君子必敗」——小人貪利忍恥、打不退；君子潔身重義、被潑髒水就氣到翻桌不玩，劣幣逐良幣。</li>
+<li>操作：必須維持形象的話，反擊的骯髒活交給側翼與網軍——笑著用高EQ回應抹黑，轉身冷靜下令傾巢反擊。指著別人罵網軍的，往往自己就養著最大的網軍：貼標籤是為了讓戰場只剩自己有網軍。</li>
+<li>身心靈警語：不可證偽的知識全靠講師良心；世俗混不下去才逃去身心靈的，長久下來談吐樣貌都會怪怪的——它該是功成名就後反思人生的第二座山，不是逃生門。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">權謀初學者的走火入魔</span><span class="chap">4｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">三種岔路：認為世人皆壞（失去信任這個社會化基礎）、什麼都用權謀解決（手上是鎚子看什麼都是釘子）、堅持在組織裡混到死。</p>
+</summary>
+<div class="card-body"><ul>
+<li>信任：拔除「人人是好人」的天真不等於矯枉過正——每次喬事情都重新考核人品，光識人就飽了。嫡系人馬的本質就是信任的替代品。</li>
+<li>備而不用：權謀內化後平常收著，出現訊號時它自然跳出來提醒你「該注意了」。跟好友吃飯還算計對方所圖，太累了。</li>
+<li>組織不是唯一解：權謀分對上（最難：仰人鼻息，還有功高震主的殺頭罪）、外交（平級合縱連橫）、御下（最簡單：資源在你手上）。在組織裡往上爬要三種全用；受不了夾心餅乾的日子，走孤狼路線只需要外交技能加提防小人的常識——門檻最低的活法。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">男人的成長時刻表</span><span class="chap">1｜1、4｜2</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#3a5a8a;color:#3a5a8a">低位</span><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">男人的社交智慧落後女人十到十五年；求學時期躲班代的習慣帶進職場，要吃三五年的虧才悟出權力的重要。</p>
+</summary>
+<div class="card-body"><ul>
+<li>機制：女人從小被跪舔搭訕，二十五歲就有男人中高階主管等級的社交直覺與階級觀念；男人未經琢磨的鬥性只會悶頭往前衝。</li>
+<li>求學版：有權力意識的人去搞系學會（順便拿阿法光環把學妹），多數人選班代能閃則閃——「敬權力而遠之」的壞習慣直接帶進職場。</li>
+<li>對策：承認這個時差，主動補課——識人、看派系、對上彙報、控制情緒，每一項都是可以刻意練習的技能，這本書就是教材。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">英雄是種奢侈品</span><span class="chap">5｜7</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">能力只是入場券；能力上升，敵人強度呈指數上升；活下來之後還要過「黑暗面反噬」這關——潮水退了才知道誰是真英雄。</p>
+</summary>
+<div class="card-body"><ul>
+<li>門檻一（能力）：現實世界裡超能力的替代品是金錢與權力。</li>
+<li>門檻二（活下來）：嶄露頭角就會吸引以往生活圈不曾出現的強敵與覬覦者（包括打算歸零你的女人），需要更優雅的社交智慧留住盟友、更強的心理素質抵禦外侮。</li>
+<li>門檻三（黑暗面）：克服幾次殘酷鬥爭後野心養大、覺得自己無所不能——人永遠無法把順風順水謙卑地歸因於運氣。南懷瑾：「英雄能征服天下，卻征服不了自己。」急流勇退從不在英雄的生涯規畫裡，多數在順風時加碼開槓桿，下場是樹敵無數家破人亡。</li>
+<li>自修要求：不僅要入世取得功名，還要有把自身心理狀態當棋局在下的上帝視角。</li>
+</ul></div>
+</details>
+<details class="card">
+<summary>
+<div class="card-head"><span class="sq" style="background:#3a5a8a"></span><span class="card-title">功成名遂身退，天之道也</span><span class="chap">6｜8</span></div>
+<div class="card-meta"><span class="pill" style="border-color:#6b6357;color:#6b6357">通用</span></div>
+<p class="card-summary">張良選最貧瘠的留縣當封地、退出權力中心修仙——看破劉邦「三萬戶」試探的人，才是權力戰場真正的贏家。</p>
+</summary>
+<div class="card-body"><ul>
+<li>案例：劉邦讓張良在富饒的齊地自擇三萬戶（蕭何曹參才各一萬戶）——敢收，你就是最有謀反本錢的大戶，還瞬間引爆同僚猜忌，一顆延後爆炸的炸彈。張良選了與劉邦初識的窮縣留地，拐彎表達念主之情、斷絕謀反疑慮，然後離場。</li>
+<li>對照組：韓信手握殺器，下場悽慘；蕭何要靠強占民宅「自汙」毀名聲，才澆熄劉邦「丞相收攏民心」的疑慮。三傑中政治敏感度最高的是張良。</li>
+<li>心法：財富自由後急流勇退。留在權力戰場攪和，整個系統必定讓仇恨管理失控引來殺機——這是全書壓軸的善終之道。</li>
+</ul></div>
+</details>
+</div>
+</section>
+<footer>共 121 張卡片 · 依《壞男人的權謀霸術》全書六章逐節整理 · 點卡片展開詳解</footer>
+</div>
+</body>
+</html>
