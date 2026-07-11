@@ -12,8 +12,11 @@
          font-family:-apple-system,"PingFang TC","Microsoft JhengHei","Noto Sans TC",Segoe UI,sans-serif;
          display:flex; flex-direction:column; align-items:center; padding:48px 20px; }
   h1 { font-size:22px; font-weight:700; margin:0 0 6px; }
-  p.sub { color:var(--muted); margin:0 0 32px; font-size:14px; }
-  .grid { display:grid; gap:14px; width:100%; max-width:720px; }
+  p.sub { color:var(--muted); margin:0 0 28px; font-size:14px; }
+  .wrap { width:100%; max-width:720px; }
+  h2.group { font-size:14px; color:var(--muted); font-weight:600; margin:26px 0 12px;
+             letter-spacing:.05em; }
+  .grid { display:grid; gap:14px; }
   a.card { display:block; text-decoration:none; color:var(--text); background:var(--panel);
            border:1px solid var(--border); border-radius:12px; padding:18px 20px; transition:.15s; }
   a.card:hover { border-color:var(--accent); transform:translateY(-2px); }
@@ -24,15 +27,31 @@
 </head>
 <body>
   <h1>neganchor 資料庫</h1>
-  <p class="sub">直播筆記與讀書會整理</p>
-  <div class="grid">
+  <p class="sub">直播筆記、線上課程與讀書會整理</p>
+  <div class="wrap">
+    <h2 class="group">直播筆記與教養</h2>
+    <div class="grid">
     <a class="card" href="notes.html"><div class="t">直播筆記瀏覽器</div><div class="d">539+ 篇直播筆記，依分類（職場／社交／識人／女人／階級／自我成長／父職指南）瀏覽與搜尋</div></a>
     <a class="card" href="father-playbook.html"><div class="t">紅藥丸父職教養手冊</div><div class="d">依「核心原則／兒子／女兒 × 孩子年齡」整理的教養 playbook</div></a>
+    </div>
+    <h2 class="group">線上課程</h2>
+    <div class="grid">
+    <a class="card" href="dark-personality.html"><div class="t">黑暗人格共生體</div><div class="d">自戀／操控／病態人格修煉與應用（7 個章節）</div></a>
+    <a class="card" href="read-people.html"><div class="t">火眼金睛識人學</div><div class="d">識人術：職場、朋友、伴侶、富貴人家（6 個章節）</div></a>
+    <a class="card" href="money-leverage.html"><div class="t">金錢槓桿動力學</div><div class="d">金錢、人性與人脈資本戰略（14 個章節）</div></a>
+    <a class="card" href="harem-management.html"><div class="t">男子漢後宮管理學</div><div class="d">多重關係的經營與管理（2 個章節）</div></a>
+    <a class="card" href="main-wife-management.html"><div class="t">男子漢正宮管理學</div><div class="d">正宮關係的屬性調教（1 個章節）</div></a>
+    <a class="card" href="female-infidelity.html"><div class="t">女性外遇心理學</div><div class="d">主題讀書會：女性外遇心理（1 個章節）</div></a>
+    <a class="card" href="origin-class-theory.html"><div class="t">原生階級黑暗論</div><div class="d">原生階級與人生際遇（1 個章節）</div></a>
+    </div>
+    <h2 class="group">書籍整理</h2>
+    <div class="grid">
     <a class="card" href="bad-men-trilogy.html"><div class="t">壞男人三部曲</div><div class="d">全書整理</div></a>
     <a class="card" href="quanmou-countermeasures.html"><div class="t">權謀霸術 · 對策速查</div><div class="d">快速查閱對策</div></a>
     <a class="card" href="quanmou-close-reading.html"><div class="t">權謀霸術 · 逐節精讀</div><div class="d">逐節精讀筆記</div></a>
     <a class="card" href="engineering-full-course.html"><div class="t">權謀霸術工程學 · 全課精讀</div><div class="d">全課程精讀</div></a>
     <a class="card" href="engineering-countermeasures.html"><div class="t">權謀霸術工程學 · 課程對策速查</div><div class="d">課程對策速查</div></a>
+    </div>
   </div>
   <footer>Published via GitHub Pages</footer>
 </body>
